@@ -1,0 +1,17 @@
+.model{text-align:center;}
+table{margin:0 auto;border:1px solid #E0E0E0;text-align:center; font-size:15px;border-collapse:collapse;}
+ul>li{list-style:none;}
+table tr{height:40px;font-size:13px;}
+ul{display:inline-block;}
+li{float:left;border-left:2px solid #E0E0E0;padding:0px 10px;vertical-align:middle;}
+.first{border:none;padding-left:5px;}
+.first+li+li{color:#D67B48;}
+.last+li{border:none;}
+.fonts{font-size:30px;padding:10px;}
+.last+li table tr td{border:1px solid #E0E0E0;font-size:10px;padding:2px 3px;}
+.last+li table tr td+td+td{background-color:#999;color:#fff;}/*默认点击总榜*/
+.last+li table{border-collapse:collapse;}
+.last+li table tr{height:4px;}
+.thh{height:60px;font-size:13px;border-top:#E0E0E0;border-bottom:#E0E0E0;background-color:#F3F3F3;}
+.shense{background-color:#F8F8F8;border-left:none;}
+.color{color:#D67B48;}
