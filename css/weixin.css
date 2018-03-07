@@ -1,0 +1,173 @@
+/*设置一个背景*/
+body{
+    background-image: url('../img/weixin/bg-body.jpg');
+    background-position:-451px -91px;
+    background-repeat:no-repeat;
+}
+/*设置界面*/
+div.main{
+    width:300px;
+    height:500px;
+    position:absolute;
+    top:100px;
+    left:100px;
+    border-radius:10px;
+    border:1px solid #CECECE;
+    /*background-color:#fff;*/
+    background-image: url('../img/weixin/bg-image.jpg');
+    background-position:-10px -100px;
+    background-repeat:no-repeat;
+}
+/*设置死神Azrael样式*/
+.azrael{
+    border:2px solid lightskyblue;
+    border-radius:10px;/*设置圆角*/
+    width:110px;
+    height:30px;
+    text-align:center;
+    line-height:30px;/*垂直居中*/
+    position:absolute;
+    background-color:#B1E8FD;
+    top:41px;
+    left:70px;
+}
+/*设置尖角符号*/
+.azrael:before,.azrael:after{
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    top:9px;
+    border:6px solid transparent;
+}
+.azrael:before{
+    left:-11px;
+    border-right-color:#B1E8FD;
+    z-index:1;
+}
+.azrael:after{
+    left:-14px;
+    border-right-color:lightskyblue;
+    z-index:0;
+}
+/*设置炼金术士Alchemist样式*/
+.Alchemist{
+    border:2px solid lightskyblue;
+    border-radius:10px;/*设置圆角*/
+    width:110px;
+    height:30px;
+    text-align:center;
+    line-height:30px;/*垂直居中*/
+    position:absolute;
+    background-color:#B1E8FD;
+    top:99px;
+    left:106px;
+}
+/*设置尖角符号*/
+.Alchemist:before,.Alchemist:after{
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    top:9px;
+    border:6px solid transparent;
+}
+.Alchemist:before{
+    left:109px;
+    border-left-color:#B1E8FD;
+    z-index:1;
+}
+.Alchemist:after{
+    left:112px;
+    border-left-color:lightskyblue;
+    z-index:0;
+}
+/*头像定位*/
+img[alt="Azrael"]{
+    width:30px;
+    position:relative;
+    left:19px;
+    top:37px;
+}
+img[alt="Alchemist"]{
+    width:25px;
+    position:relative;
+    left:208px;
+    top:95px;
+}
+/*--------------------------------*/
+.Lili{
+    border:2px dashed palevioletred;
+    border-radius:10px;
+    width:110px;
+    height:30px;
+    background-color:plum;
+    position:relative;
+    text-align:center;
+    line-height:30px;/*垂直居中*/
+    left:107px;
+    top:115px;
+}
+/*设置尖角符号*/
+.Lili:before,.Lili:after{
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    top:9px;
+    border:6px solid transparent;
+}
+.Lili:before{
+    left:109px;
+    border-left-color:plum;
+    z-index:1;
+}
+.Lili:after{
+    left:112px;
+    border-left-color:palevioletred;
+    z-index:0;
+}
+.Lucy{
+    border:2px dashed #dbbe28;
+    border-radius:10px;
+    width:110px;
+    height:30px;
+    text-align:center;
+    line-height:30px;/*垂直居中*/
+    background-color: #a5dd20;
+    position:relative;
+    left:107px;
+    top:108px;
+}
+/*设置尖角符号*/
+.Lucy:before,.Lucy:after{
+    content:'';
+    width:0;
+    height:0;
+    position:absolute;
+    top:9px;
+    border:6px solid transparent;
+}
+.Lucy:before{
+    left:109px;
+    border-left-color:#a5dd20;
+    z-index:1;
+}
+.Lucy:after{
+    left:112px;
+    border-left-color:#dbbe28;
+    z-index:0;
+}
+/*头像定位*/
+img[alt="Lili.gif"]{
+    width:30px;
+    position:relative;
+    left:245px;
+    top:84px;
+}
+img[alt="Lucy.gif"]{
+    width:25px;
+    position:relative;
+    left:245px;
+    top:75px;
+}
