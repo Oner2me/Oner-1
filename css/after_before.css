@@ -1,0 +1,83 @@
+/*设置背景色*/
+body{
+    background-image:url('../img/bg-flower1.gif');
+    background-repeat:repeat;
+    background-size:500px;
+}
+/*设置第一个div的样式*/
+.tom{
+    background: rgba(245,245,245,1);
+    border-radius:8px;
+    border:1px solid black;
+    text-align:center;
+    width:180px;
+    height:40px;
+    line-height:40px;
+    position:absolute;
+    left:80px;
+    top:80px;
+}
+/*设置第一个div的befor和after*/
+.tom:before,.tom:after{
+    content:'';/*before自带的属性*/
+    position:absolute;
+    top:13px;
+    width:0;
+    height:0;
+    border:6px solid transparent;
+}
+.tom:before{
+    left:-11px;
+    border-right-color: rgba(245,245,245,1);
+    z-index:1;
+}
+.tom:after{
+    left:-12px;
+    border-right-color: rgba(0,0,0,1);
+    z-index:0;
+}
+/*设置第二个div的样式*/
+.jerry{
+    background: rgba(245,245,245,1);
+    border-radius:8px;
+    border:1px solid black;
+    text-align:center;
+    width:180px;
+    height:40px;
+    line-height:40px;
+    position:absolute;
+    left:200px;
+    top:200px;
+}
+/*设置第二个div的after和before*/
+.jerry:after,.jerry:before{
+    content:'';
+    position:absolute;
+    top:13px;
+    width:0;
+    height:0;
+    border:6px solid transparent;
+}
+.jerry:before{
+    right:-11px;
+    border-left-color: rgba(245,245,245,1);
+    z-index:2;
+}
+.jerry:after{
+    right:-12px;
+    border-left-color: rgba(0,0,0,1);
+    z-index:0;
+}
+/*设置tom头像*/
+img[alt='tom.gif']{
+    width:30px;
+    position:absolute;
+    left:33px;
+    top:92px;
+}
+img[alt='jerry.gif']{
+    width:30px;
+    position:absolute;
+    left:400px;
+    top:210px;
+}
