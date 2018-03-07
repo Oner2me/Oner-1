@@ -1,0 +1,121 @@
+/*放置图片*/
+.main{text-align:center;width:1000px;margin:0 auto;}
+/*设置第一个table的样式*/
+table.ft{
+    margin:15px auto;
+    border:1px solid #CECECE;
+    background-color:#EDEDED;
+    font-size:10px;
+    width:1000px;
+    padding:10px;
+}
+table.ft td{text-align:left;}
+/*设置span颜色*/
+span{color:#C80505;}
+/*设置左边小说排行榜*/
+.left{
+    text-align:left;
+    width:175px;
+    margin-top:25px;
+    float:left;
+}
+/*设置span*/
+.left span{
+    font-size:25px;
+    border-left:3px solid #FF6600;
+    padding-left:10px;
+}
+/*设置ul*/
+.left ul li{
+    font-size:15px;
+    color:#999;
+    padding:8px 0;
+    border-bottom:1px dashed #CECECE;
+}
+.left ul{margin:16px;padding:0;}
+/*设置右边全站会员点击榜*/
+.right{
+    float:right;
+    width:823px;
+    height:600px;
+}
+.right table{
+    border-collapse:collapse;
+    border:1px solid #EDEDED;
+    width:823px;
+}
+/*第一行第一个单元格的字体大小*/
+.right table tr:first-child td:first-child{font-size:30px;text-align:center;color:black}
+/*第一行第二个单元格ul设置*/
+.right table tr:first-child td:first-child+td>ul{
+    list-style:none;/*去掉ul前面的点*/
+    padding:0;/*让ul紧挨着边框*/
+    display:inherit;/*设置这个，ul就不会在占着空间，li就会居中了*/
+}
+/*第一行第二个单元格右对齐*/
+.right table tr:first-child td:first-child+td{
+    text-align:left;
+}
+.right table tr:first-child td:first-child+td ul li{
+    float:left;
+    padding:0 10px;
+    font-size:15px;
+    color:black;
+    border-left:1px solid #CECECE;
+}
+/*去掉第一个li左边的边框*/
+.right table tr:first-child td:first-child+td ul li:first-child{
+    border:none;
+    color:#FF6600;
+}
+/*设置第一行最后一个td中ul及li 设置*/
+.right table tr:first-child td:last-child ul{
+    list-style:none;
+    display:inherit;
+}
+.right table tr:first-child td:last-child ul li{
+    float:left;
+    border:1px solid #CECECE;
+    padding:3px;
+    color:black;
+}
+/*设置第一个li中周字背景及颜色*/
+.right table tr:first-child td:last-child ul li:first-child{
+   background-color:#999999;
+    color:#fff;
+}
+
+/*设置right下表格的行*/
+.right table tr{height:40px;}
+/*设置第一行的行高*/
+.right table tr:first-child{
+    height:66px;
+}
+.right table tr td{font-size:10px;color:#999999;}
+.right table tr th{
+    font-size:12px;
+    height:50px;
+    border-top:1px solid #CECECE;
+    border-bottom:1px solid #CECECE;
+    background-color:#EDEDED;
+}
+/*设置小说作品作者名字高亮*/
+.right table tr td:first-child+td+td{color:#FF6600}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
