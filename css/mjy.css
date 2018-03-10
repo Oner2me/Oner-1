@@ -1,0 +1,65 @@
+/*body自带8px的margin--清空所有可能存在的margin与padding*/
+*{margin:0;padding:0;}
+/*清除样式*/
+u,a,del{text-decoration:none;}
+/*设置第一个盒子box-top和第三个盒子*/
+.box-top,.box-bottom,.about_box{margin:0 auto;width:1200px;text-align:center;}
+/*Logo图标和字体设置*/
+.logo{float:left;}
+.logo{text-align:center;font-size:11px;color:#D12016;}
+img[alt="logo.png"]{display:block;margin-top:9px;padding:0 7px;}
+/*菜单栏设置*/
+.menu{float:right;}
+.menu ul{list-style:none;}
+/*清楚ul的浮动保证宽度不受影响*/
+.menu ul:after,.pro_banner ul:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+/*li设置浮动*/
+.menu ul li{float:left;margin-left:60px;line-height:84px;font-size:18px;padding:0 7px;}
+.menu ul li:first-child{background:url("../img/mjy/square.png") 2px 0px;position:relative;}
+img[alt="san.png"]{display:block;position:absolute;left:33px;bottom:17px;}
+img[alt="banner"]{width:100%;margin-bottom:78px;}/*设置中间的盒子里面banner图*/
+/*设置下面的盒子*/
+.box-bottom span{display:block;width:1000px;font-size:30px;color:#C50505;margin:0 auto;position:relative;}
+.box-bottom span:before,.box-bottom span:after{content:'------------------------------';color:#C8C8C8;}
+/*通过定位让----横杆和文字间有些距离*/
+.box-bottom span:before{position:absolute;right:0px;}
+.box-bottom span:after{position:absolute;left:0px;}
+u{display:block;font-size:20px;color:#999999;margin:0 auto 28px auto;}
+/*产品展示图片*/
+.pro_banner ul{margin:0;padding:0;list-style:none;}
+.pro_banner{margin:0 auto;}/*设置最外层div居中*/
+.pro_banner ul li{float:left;margin-bottom:46px;position:relative;}
+.pro_banner ul li img{display: block;margin:0;}
+.mark{margin:0 63px;}/*设置中间图片的外边距*/
+img[alt="radium"]{position:absolute;right:0%;bottom:0%;}
+.pro_banner ul li div{position:absolute;right:0%;bottom:5%;width:200px;height:26px;text-align:center;}/*定位文字*/
+/*更多产品*/
+.pro_banner+div{height:21px;line-height:21px;font-size:18px;color:#FE4545;margin-top:42px;}
+img[alt="R"],img[alt="B"]{display:inline-block;margin:0 0 -3px 6px;}
+/*波浪线*/
+img[alt="wave"]{display:block;margin:0 auto 38px auto;}
+/*关于我们*/
+.about_self{width:100%;height:580px;background-color:#F4E8E8;padding-top:56px;margin-bottom:48px;}
+.about_c{margin-top:60px;margin-bottom:88px;}
+.about_c:after{content:'';width:0;height:0;visibility:hidden;display:block;clear:both;}
+.about_l{float:left;}
+img[alt="about_self"]{display:block;}
+.about_r{float:right; width:593px;text-indent:2em;text-align:justify;font-size:18px;margin-top:74px;}
+/*更多相关*/
+.about_c+div{height:21px;line-height:21px;font-size:18px;color:#000;}
+/*新闻中心*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
