@@ -1,0 +1,108 @@
+/*初始化设置*/
+*{margin:0;padding:0}
+ul,ol{list-style:none;}
+a,u,del,s{text-decoration:none;}
+/*首部*/
+.top{height:46px;line-height:46px;font-size:14px;width:1200px;margin:0 auto;color:#6E6E6E;}
+hr{border:0.5px solid #CF0000;}
+.nav{margin:0 auto;width:1200px;}
+.nav img{float:left;margin:14px 0 0 52px;}
+.nav ul li{float:left;height:122px;line-height:122px;padding-right:61px;}
+.nav ul{margin-left:300px;}
+.nav ul:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+/*设置首页激活的样式*/
+.sign{color:#D01E1E;position:relative;}
+.sign:before,.sign:after{content:'';display:block;background:url('../img/cls/Slash.png') no-repeat;width:17px;height:17px;position:absolute;  }
+.sign:before{left:25px;bottom:72px;}
+.sign:after{left:-12px;bottom:32px;}
+/*banner图*/
+.banner img{width:100%;margin-bottom:-4px;}
+/*中部的banner图布局*/
+.c_banner{
+    width:1200px;
+    height:786px;
+    margin:-1px auto 112px auto;
+    position:relative;
+    background:url('../img/cls/shape_9.png') center bottom no-repeat;
+    text-align:center;
+    border-top:1px solid transparent;
+    z-index:0;
+}
+/*内部文字*/
+.c_banner p{margin-top:240px;color:#d8031f;font-size:24px;}
+.c_banner dl{width:430px;position:absolute;left:395px;top:275px;}
+.c_banner dl dt{font-size:40px;color:#575757;}
+.c_banner dl dd{font-size:12px;color:#8C8C8C;line-height:34px;text-align:left;}
+.c_t{width:402px;height:208px;background:url('../img/cls/shape_3.png');position:absolute;left:400px;top:0;text-align:center;}
+.c_t span{display:block;color:#fff}
+.c_t span+span{font-size:12px;margin:2px 0 26px 0;}
+.c_t span:first-child{font-size:35px;margin-top:50px;}
+.c_t img{position:absolute;left:191px;z-index: 1;}
+.c_t img:first-child{bottom:57px;}
+.c_t img:last-child{bottom:49px;}
+/*左侧图片定位*/
+.c_l{width:296px;height:338px;position:absolute;left:0;top:118px;}
+.c_l img{position:absolute;left:0;}
+.c_l img:first-child{top:0;z-index:1;}
+.c_l img:last-child{bottom:0;z-index:0;}
+/*右侧图片定位*/
+.c_r{width:296px;height:338px;position:absolute;right:0;top:118px;}
+.c_r img{position:absolute;right:0;}
+.c_r img:first-child{top:0;z-index:1;}
+.c_r img:last-child{bottom:0;z-index:0;}
+/*左侧线条定位*/
+img[alt="shape_4"]{position:absolute;left:233px;bottom:177px;}
+/*右侧线条定位*/
+img[alt="shape_5"]{position:absolute;right:233px;bottom:188px;}
+/*下边的灰色方块*/
+.c_b{width:85px;height:85px;position:absolute;left:560px;bottom:28px;}
+.c_b img:last-child{position:absolute;bottom:28px;left:28px;}
+/*产品中心*/
+.general_style{width:1200px;height:52px;margin:0 auto;position:relative;}
+.general_style div{position:absolute;font-weight:bold;text-align:center;width:800px;left:203px;}
+.general_style div:first-child{font-size:35px;color:#d30018;top:-8px;z-index:1;}
+.general_style div:last-child{font-size:35px;color:#DBDBDB;bottom:-8px;z-index:0;}
+/*产品中心的图片*/
+.pro_center{margin:58px auto 134px auto;width:1096px;padding:0 52px;}
+.pro_center ul li{float:left;width:321px;height:520px;position:relative;}
+.pro_center ul li:first-child+li{margin:0 66px;}
+.pro_center ul:after{content:"";display:block;width:0;height:0;visibility:hidden;clear:both;}
+.pro_center dt{text-align:center;font-size:18px;color:#7A7A7A;margin:16px 0;}
+.pro_center dd{text-align:left;font-size:12px;color:#A4A4A4;text-indent:2em;line-height:24px;padding:0 10px;}
+/*产品下标红色三角带加号*/
+.mark{position:absolute;right:0;bottom:0;width:41px;height:42px;}
+.mark img[alt="shape_6"]{position:absolute;left:26px;top:26px;}
+/*新闻资讯*/
+.new_inf{margin:92px auto 0 auto;width:1200px;}
+.new_inf ul li:first-child{float:left;margin-left:35px;}
+.new_inf ul li:last-child{float:right;margin-left:23px;width:914px;}
+.new_inf ul:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+.new_inf img{display:block;}
+.new_inf ul:first-child{margin-bottom:44px;}
+.new_inf ul ol li{clear:both;}
+.new_inf ul:first-child ol li{color:#E51A31;}
+.new_inf ul:first-child ol li:last-child{color:#BDBDBD;}
+.new_inf ul ol li:first-child{font-size:28px;margin:0}
+.new_inf ul ol li:last-child{font-size:12px;margin-top:10px;}
+.new_inf ul ol img{display:inline-block;margin:0 0 10px 10px;}
+.new_inf ul:last-child ol li:last-child{color:#BDBDBD;}
+/*了解更多公司动态图片*/
+.new_inf+div{
+    width:580px;height:45px;
+    background:url('../img/cls/shape_10.png');
+    margin:83px auto 77px auto;line-height:45px;text-align:center;
+    font-size:20px;color:#fff;}
+/*联系我们内容*/
+.connect_us{width:1160px;margin:99px auto 75px auto;padding:0 20px;}
+.connect_us ul{float:left;margin-left:30px;}
+.connect_us ul li{text-align:center;width:251px;}
+.connect_us:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+/*底部分类*/
+.footer{background:#333333;margin:0 auto;color:#fff;border:1px solid transparent;}
+.footer>ul{margin:60px auto 0 auto;width:1200px;}
+.footer ul li {float:left;font-size:12px;margin-left:30px;}
+.footer ul:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+.footer ul li ul li{clear:both;line-height:33px;}
+.footer img[alt="QR"]{display:block;}
+.footer ul li ul li:first-child{font-size:16px;}
+
