@@ -99,10 +99,14 @@ img[alt="shape_5"]{position:absolute;right:233px;bottom:188px;}
 .connect_us:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
 /*底部分类*/
 .footer{background:#333333;margin:0 auto;color:#fff;border:1px solid transparent;}
-.footer>ul{margin:60px auto 0 auto;width:1200px;}
-.footer ul li {float:left;font-size:12px;margin-left:30px;}
+.footer>ul{margin:60px auto 30px auto;width:1200px;}
+.footer ul>li {float:left;font-size:12px;margin-left:29px;}
 .footer ul:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
-.footer ul li ul li{clear:both;line-height:33px;}
-.footer img[alt="QR"]{display:block;}
+.footer ul li ul li{clear:both;line-height:33px;text-align:center;}
+.footer img[alt="QR"]{display:block;margin-top:20px;}
 .footer ul li ul li:first-child{font-size:16px;}
-
+.footer ul li ul li.footer_mark{font-size:30px;}
+.footer ul li ul.footer_ul{border-left:1px solid #575757;border-right:1px solid #575757;}
+.footer ul li ul.footer_ul li{margin-right:29px;}
+/*最后一行*/
+.footer div{width:1200px;margin:0 auto 10px auto;text-align:center;font-size:12px;}
