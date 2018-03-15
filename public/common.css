@@ -1,0 +1,30 @@
+/*---------重置标签样式---------*/
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+img{display:block;border:none;}
+a,u,s,del{text-decoration:none;}
+h1,h2,h3,h4,h5,h6,i,em,b,strong{color:#333;font:normal 12px '微软雅黑';}
+input,select,textarea,button,a{outline:none;}
+textarea{resize:none;}
+.clear{clear:both;}
+.clearfix:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
+/*---------网页头部标签样式---------*/
+.header{width:1200px;margin:0 auto;}
+.header>a,.header>ul{float:left;}
+.header>a{position:relative;width:234px;}
+.header>a img{display:inline-block;margin:16px 0 0 7px;}
+.header>a i{position:absolute;left:93px;bottom:19px;font-size:14px;color:#da251c;}
+.header ul{width:512px;margin-left:210px;}
+.header ul li {float:left;width:72px;line-height:120px;text-align:center;margin-left:25px;}
+.header ul li a:link{color:#333;}
+.header ul li a:hover{display:inline-block;width:72px;background:#f8c400;}
+.current{background:#f8c400;}/*当前状态*/
+/*---------网页尾部标签样式---------*/
+.footer{background:#f0994e;border-top:1px solid transparent;margin-top:30px;}
+.footer .content{width:1200px;margin:34px auto 0 auto;}
+.footer .left{float:left;margin-left:102px;font-size:12px;}
+.footer .left li a{color:#333;}
+.footer ul,.footer ol,.footer p{margin-bottom:48px;}
+.footer .left ul li{float:left;margin-right:55px;}
+.footer .qr_code{float:right;margin-right:90px;text-align:center;}
+.footer .qr_code img{margin-bottom:5px;}
