@@ -1,0 +1,11 @@
+/*banner图*/
+.banner img{width:100%}
+/*产品详情*/
+.main{width:1200px;margin:0 auto;}
+.main .content{margin:80px 0 0 0;}
+.main .content img{float:left;}
+.main .content .right{float:right;width:483px;font-size:13px;text-align:justify;line-height:26px;}
+.main .content .right h2{font-size:16px;display:block;line-height:18px;margin-bottom:10px;}
+.main .text{margin:50px 0 85px 0;font-size:12px;}
+.main .text p:first-child{float:left;}
+.main .text p:last-child{float:right;}
