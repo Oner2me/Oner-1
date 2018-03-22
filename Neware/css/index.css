@@ -1,0 +1,129 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner img {
+  width: 100%;
+}
+.banner .circle {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+}
+.banner .circle ul {
+  position: relative;
+  left: -50%;
+}
+.banner .circle ul li {
+  float: left;
+}
+.banner .circle ul li:first-child + li {
+  margin: 0 28px;
+}
+.banner .select {
+  position: absolute;
+  left: 112px;
+  top: 0;
+}
+.banner .select ul {
+  font-size: 18px;
+  background: #000;
+  width: 320px;
+  height: 456px;
+  border-top: 1px solid #000;
+}
+.banner .select ul h2,
+.banner .select ul h3 {
+  color: #fff;
+  padding-left: 64px;
+}
+.banner .select ul li {
+  height: 75px;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #000;
+  position: relative;
+}
+.banner .select ul li:first-child h2 {
+  font-weight: bold;
+}
+.banner .select ul li h2 {
+  margin: 12px 0 4px 0;
+}
+.banner .select ul li h3 {
+  margin-bottom: 10px;
+}
+.banner .select ul li div {
+  position: absolute;
+  width: 17px;
+  height: 19px;
+  top: 10px;
+  left: 43px;
+}
+.banner .select ul li.hot div {
+  background: url('../img/sprite.png') 0 0 no-repeat;
+}
+.banner .select ul li.Fabulous div {
+  background: url('../img/sprite.png') 0 -19px no-repeat;
+}
+.banner .select ul li.best div {
+  background: url('../img/sprite.png') 0 -38px no-repeat;
+}
+.banner .select ul li.watch div {
+  background: url('../img/sprite.png') 4px -57px no-repeat;
+}
+.banner .select ul li.style div {
+  background: url('../img/sprite.png') 4px -76px no-repeat;
+}
+.banner .select ul li.like div {
+  background: url('../img/sprite.png') 0 -95px no-repeat;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid transparent;
+}
+.main .hot {
+  margin: 40px 0 0 0;
+}
+.main .hot ol li {
+  float: left;
+  width: 383px;
+  text-align: center;
+}
+.main .hot ol li:first-child + li {
+  margin: 0 25px;
+}
+.main .hot ol li:hover div {
+  border-color: #f99d1c;
+}
+.main .hot ol li:hover div:before {
+  border-bottom-color: #f99d1c;
+}
+.main .hot ol li h2 {
+  font-size: 18px;
+  color: #666;
+  margin: 3px 0 9.5px 0;
+}
+.main .hot ol li.current div:before {
+  border-bottom-color: #f99d1c;
+}
+.main .hot ol li.current div {
+  border-color: #f99d1c;
+}
+.main .hot ol li div {
+  width: 381px;
+  border: 1px solid transparent;
+  position: relative;
+}
+.main .hot ol li div:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -14px;
+  left: 183px;
+  border: 6.5px solid transparent;
+}
+.main .hot hr {
+  border-color: #f99d1c;
+}
