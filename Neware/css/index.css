@@ -7,7 +7,7 @@
 }
 .banner .circle {
   position: absolute;
-  bottom: 25px;
+  bottom: 18.75px;
   left: 50%;
 }
 .banner .circle ul {
@@ -158,4 +158,85 @@
   text-align: center;
   background: #e6e6e7;
   margin-top: 20.5px;
+}
+.main .fabulous {
+  margin: 52px 0 54px 0;
+}
+.main .fabulous h3 {
+  font-size: 24px;
+  color: #2b2b2b;
+  margin: 9px 0;
+}
+.main .fabulous ul > li {
+  float: left;
+}
+.main .fabulous ul > li.fab_1 ol li {
+  float: left;
+}
+.main .fabulous ul > li.fab_1 ol li:first-child {
+  width: 200px;
+  height: 371px;
+  background: #fadfb8;
+  text-align: center;
+}
+.main .fabulous ul > li.fab_1 ol li:first-child h2 {
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  background: #f99d1c;
+}
+.main .fabulous ul > li.fab_1 ol li:first-child h3 {
+  font-size: 16px;
+  color: #fd030f;
+}
+.main .fabulous ul > li.fab_1 ol li:first-child h4 {
+  font-size: 14px;
+  color: #fd030f;
+}
+.main .fabulous ul > li.fab_1 ol li:last-child {
+  width: 183px;
+  border: 1px solid #c9c7c7;
+  border-left: none;
+  text-align: right;
+}
+.main .fabulous ul > li.fab_1 ol li:last-child div {
+  position: relative;
+}
+.main .fabulous ul > li.fab_1 ol li:last-child div h2 {
+  position: absolute;
+  left: 10px;
+  top: 19px;
+  font-size: 16px;
+}
+.main .fabulous ul > li.fab_1 ol li:last-child div img[alt="fab_1_2"] {
+  padding: 45px 0 12px 85px;
+}
+.main .fabulous ul > li.fab_1 ol li:last-child div img[alt="fab_1_3"] {
+  padding: 52px 0 19px 85px;
+  border-top: 1px solid #c9c7c7;
+}
+.main .fabulous ul > li.fab_2 {
+  width: 258px;
+  height: 369px;
+  border: 1px solid #dcdcdc;
+  margin-left: 12px;
+}
+.main .fabulous ul > li.fab_2 div {
+  position: relative;
+}
+.main .fabulous ul > li.fab_2 div:first-child {
+  border-bottom: 1px solid #dcdcdc;
+}
+.main .fabulous ul > li.fab_2 div ol {
+  position: absolute;
+  left: 22px;
+  top: 9px;
+}
+.main .fabulous ul > li.fab_2 div ol li:first-child {
+  font-size: 16.36px;
+  margin-bottom: 5px;
+}
+.main .fabulous ul > li.fab_2 div ol li:last-child {
+  font-size: 14px;
+  color: #ce3f00;
 }
