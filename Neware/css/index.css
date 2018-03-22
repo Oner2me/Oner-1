@@ -124,6 +124,38 @@
   left: 183px;
   border: 6.5px solid transparent;
 }
-.main .hot hr {
-  border-color: #f99d1c;
+.main .hot ul {
+  padding: 14px 0 0 0;
+  border-top: 1px solid #f99d1c;
+}
+.main .hot ul li {
+  float: left;
+  margin-right: 13px;
+  position: relative;
+}
+.main .hot ul li:last-child {
+  margin-right: 0;
+}
+.main .hot ul li div {
+  width: 81px;
+  height: 80px;
+  position: absolute;
+  left: 9px;
+  top: 47px;
+}
+.main .hot ul li div h2 {
+  font-size: 16px;
+}
+.main .hot ul li div h3 {
+  font-size: 14px;
+  color: #fd030f;
+}
+.main .hot ul li div a {
+  width: 70px;
+  height: 20px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  background: #e6e6e7;
+  margin-top: 20.5px;
 }
