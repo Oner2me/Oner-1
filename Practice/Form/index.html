@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Form表单练习</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="关键字"/>
+        <meta name="discription" content="描述" />
+        <meta name="author" content="一然" />
+        <link rel="shrotcut icon" href="" />
+        <link rel="stylesheet" href="" />
+        <style>
+            fieldset{
+                width:500px;
+                background:url('img/bg.jpg') fixed no-repeat;
+            }
+            textarea{resize:none;}
+            .eva{vertical-align:top;}
+            input,select,textarea,button{outline:none;}
+        </style>
+    </head>
+    <body>
+        <center>
+            <form action="" name="form1" method="get" enctype="multipart/form-data" >
+                <fieldset>
+                    <legend>Form_Practice</legend>
+                    <table>
+                        <tr>
+                            <td>用户：</td>
+                            <td>
+                                <input type="text" name="username" value="" size="50" maxlength="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>密码：</td>
+                            <td>
+                                <input type="password" name="password" value="" size="50" maxlength="10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>性别：</td>
+                            <td>
+                                <label for="man">男</label>
+                                <input type="radio" name="sex" checked id="man" />
+                                <label for="women">女</label>
+                                <input type="radio" name="sex" id="women" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>爱好：</td>
+                            <td>
+                                <label for="zy">周易</label>
+                                <input type="checkbox" name="hobby" id="zy" checked />
+                                <label for="xx">玄学</label>
+                                <input type="checkbox" name="hobby" id="xx" />
+                                <label for="wx">五行</label>
+                                <input type="checkbox" name="hobby" id="wx" />
+                                <label for="bg">八卦</label>
+                                <input type="checkbox" name="hobby" id="bg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>学历：</td>
+                            <td>
+                                <select>
+                                    <option value="">--请选择--</option>
+                                    <option value="1">大学本科</option>
+                                    <option value="2">小学文凭</option>
+                                    <option value="3">物业游民</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="eva">评价：</td>
+                            <td>
+                                <textarea name="evaluate" id="" cols="51" rows="6"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>上传：</td>
+                            <td>
+                                <input type="file" name="upload" multiple/>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td colspan="2">
+                                <input type="reset" />
+                                <input type="submit" />
+                                <input type="button" value="按钮" />
+                                <input type="hidden" name="hoo" value="3" />
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
