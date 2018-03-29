@@ -1,0 +1,113 @@
+/*--------标题样式--------*/
+.title{
+  margin:0 auto;width:172px;height:82px;
+  background:url('../img/title_border.png');
+  text-align:center;
+  P{font-size:30px;color:#0e0d0e;padding-top:10px;}
+  font-size:14px;color:#4a699e;
+}
+/*--------网页轮播图--.banner--------*/
+.banner{
+  width:100%;
+  img{width:100%;margin:0 auto;}
+}
+/*--------关于我们--.about_us--------*/
+.about_us{
+  width:1200px;margin:92px auto 90px auto;
+  .content{
+    margin:36px 0 90px 0;
+    .about_left{
+      float:left;
+      p{
+        width:560px;margin:0 15px;
+        line-height:28px;text-indent:2em;
+        text-align:justify;
+        &:first-child{margin-top:34px;}
+      }
+      ul{
+        margin:51px 0 0 21px;
+        li{
+          float:left;width:48px;height:50px;
+          margin:0 48px;background:blue;
+          &.icon1{background:url('../img/sprite.png') 0 0;}
+          &.icon2{background:url('../img/sprite.png') 0 -50px;}
+          &.icon3{background:url('../img/sprite.png') 0 -98px;}
+          &.icon4{background:url('../img/sprite.png') 0 -147px;}
+        }
+      }
+    }
+    img{float:right;}
+  }
+}
+/*--------产品中心--.product_center--------*/
+.pro_title{
+  margin:14px 0 32px 0;
+}
+.product_center{
+  width:100%;background:#f2f2f2;padding-bottom:29px;
+  border-top:1px solid #f2f2f2;
+  .pro_center{
+    background:url("../img/product_bg.png") center center no-repeat ;
+    &>ul{
+      position:relative;
+      top:-10px;
+      width:1200px;margin:0 auto;
+      &>li{
+        float:left;margin-right:26px;
+        width:280px;height:571px;
+        &:first-child{background:#6684b0;}
+        background:#d7eef9;
+        &:last-child{margin-right:0;}
+        p{
+          font-size:18px;
+          margin:26px 0 25px 22px;
+        }
+        ol{
+          font-size:14px;
+          margin:0 0 41px 19px;
+          li{line-height:22px;}
+        }
+      }
+      .border_top{border-top:1px solid transparent;}
+    }
+  }
+  }
+/*--------新闻中心--.new_center--------*/
+.news_center{
+  width:1200px;margin:95px auto 68px auto;
+  .news_list{
+    margin:29px 0 56px 0;
+    ul{
+      li{
+        float:left;width:567px;height:131px;
+        position:relative;border:6px solid transparent;
+        margin:0 42px 34px 0;
+        img{
+          position:absolute;right:-6px;bottom:-6px;
+        }
+        .news_left{
+          float:left;margin:0 23px;width:70px;
+          text-align:center;
+          h2{
+            font-size:64px;display:inline-block;
+            margin-top:33px;line-height:70px;
+          }
+          div{
+            width:53px;margin:0 auto;
+            border:1px solid #4a699e;
+          }
+          h3{font-size:14px;}
+        }
+        .news_right{
+          float:left;width:426px;
+          p{font-size:16px;margin:26px 0 24px 0;}
+          font-size:14px;line-height:22px;
+        }
+        &:hover,&.current{
+          border-color:#75829d;
+        }
+      }
+      .li_r{margin-right:0;}
+    }
+  }
+}
