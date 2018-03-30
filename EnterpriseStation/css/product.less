@@ -1,0 +1,127 @@
+/*------产品中心------*/
+.banner{
+  img{width:100%;}
+}
+.main {
+  width: 1200px;
+  margin: 84px auto 92px auto;
+  .menu {
+    width: 175px;
+    height: 358px;
+    position: relative;
+    float: left;
+    .content {
+      position: absolute;
+      top: 18px;
+      left: 14px;
+      background: #c3ccdc;
+      div {
+        width: 146px;
+        height: 76px;
+        text-align: center;
+        border-top: 1px solid #abb8d0;
+        background: #abb8d0;
+        h2 {
+          font-size: 18px;
+          color: #1c366d;
+          margin-top: 19px;
+        }
+        h3 {
+          font-size: 12px;
+          color: #4a699e;
+        }
+      }
+      ul {
+        margin: 36px auto 0 auto;
+        li {
+          width: 90px;
+          line-height: 37px;
+          position: relative;
+          margin: 0 auto 18px auto;
+          font-size: 14px;
+          text-align: right;
+          padding-right: 10px;
+          font-weight: bold;
+          color: #263f75;
+          div {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border-top: none;
+            position: absolute;
+            left: 12px;
+            top: 16px;
+            background: #4c699d;
+          }
+          &:hover, &.current {
+            background: #4c699d;
+            border-radius: 10px 10px 0 0;
+            a {
+              color: #fff;
+            }
+            div {
+              background: #fff;
+            }
+          }
+          &:after, &:before {
+            content: '';
+            width: 54px;
+            height: 0;
+            border-top: 1px solid #e0e4ed;
+            position: absolute;
+            bottom: -1px;
+          }
+          &:after {
+            left: 50%;
+          }
+          &:before {
+            right: 50%
+          }
+        }
+      }
+    }
+  }
+  .product{
+    float:right;width:994px;
+    &>p{
+      width:994px;color:#7a7d82;font-size:14px;
+      padding-right:7px;text-align:right;
+      line-height:30px;background:#dde1eb;
+      a:hover{color:#4a699e;}
+    }
+    ul{
+      margin:34px 0 12px 0;
+      li{
+        width:300px;height:448px;margin:0 47px 18px 0;
+        text-align:center;float:left;position:relative;
+        div{
+          position:absolute;width:300px;height:448px;
+          left:0;top:0;
+          p{font-size:18px;margin:382px 0 5px 0;}
+          h2{font-size:14px;}
+          &:hover{
+            background:rgba(127,148,184,0.8);
+            p,h2{a{color:#fff;}color:#fff;}
+          }
+        }
+        &.pro_right{margin-right:0;}
+      }
+    }
+    .paging{
+      width:419px;margin:20px auto 0 auto;
+      line-height:20px;height:20px;border-top:1px solid transparent;
+      &>a{display:block;margin:0 9px;float:left;}
+      ol{
+        float:left;
+        li{
+          float:left;width:20px;line-height:20px;text-align:center;
+          margin-left:4px;
+          &.selected,&:hover{
+            background:#4a699e;
+          }
+        }
+      }
+    }
+  }
+}
+
