@@ -1,0 +1,117 @@
+/*------新闻详情------*/
+.banner{
+  img{width:100%;}
+}
+.main {
+  width: 1200px;
+  margin: 84px auto 92px auto;
+  .menu {
+    width: 175px;
+    height: 358px;
+    position: relative;
+    float: left;
+    .content {
+      position: absolute;
+      top: 18px;
+      left: 14px;
+      background: #abb6cd;
+      div {
+        width: 146px;
+        height: 76px;
+        text-align: center;
+        border-top: 1px solid #abb8d0;
+        background: #90a1c0;
+        h2 {
+          font-size: 18px;
+          color: #1c366d;
+          margin-top: 19px;
+        }
+        h3 {
+          font-size: 12px;
+          color: #4a699e;
+        }
+      }
+      ul {
+        margin: 36px auto 0 auto;
+        li {
+          width: 90px;
+          line-height: 37px;
+          position: relative;
+          margin: 0 auto 18px auto;
+          font-size: 14px;
+          text-align: right;
+          padding-right: 10px;
+          font-weight: bold;
+          color: #263f75;
+          div {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border-top: none;
+            position: absolute;
+            left: 12px;
+            top: 16px;
+            background: #4c699d;
+          }
+          &:hover, &.current {
+            background: #4c699d;
+            border-radius: 10px 10px 0 0;
+            a {
+              color: #fff;
+            }
+            div {
+              background: #fff;
+            }
+          }
+          &:after, &:before {
+            content: '';
+            width: 54px;
+            height: 0;
+            border-top: 1px solid #e0e4ed;
+            position: absolute;
+            bottom: -1px;
+          }
+          &:after {
+            left: 50%;
+          }
+          &:before {
+            right: 50%
+          }
+        }
+      }
+    }
+  }
+  .detail{
+    float:right;width:994px;
+    &>p{
+      width:994px;color:#7a7d82;font-size:14px;
+      padding-right:7px;text-align:right;
+      line-height:30px;background:#dde1eb;
+      a:hover{color:#4a699e;}
+    }
+    div{
+      text-align:center;margin-top:30px;
+      h3{font-size:16px;display:inline-block;}
+      h4{
+        font-size:14px;color:#9c9c9f;
+        margin:10px 0 11px 0;
+        span{
+          display:inline-block;width:10px;
+        }
+      }
+      p{
+        text-indent:2em;font-size:14px;
+        text-align:left;line-height:25px;
+        margin-bottom:12px;
+      }
+      img{margin:25px 0 28px 28px;}
+    }
+    ol{
+      margin-top:18px;
+      li{
+        margin-bottom:19px;font-size:14px;
+        &:hover{a{color:#4a699e}}
+      }
+    }
+  }
+}
