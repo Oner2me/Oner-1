@@ -1,0 +1,158 @@
+/*------新闻中心------*/
+.banner img {
+  width: 100%;
+}
+.main {
+  width: 1200px;
+  margin: 84px auto 92px auto;
+}
+.main .menu {
+  width: 175px;
+  height: 358px;
+  position: relative;
+  float: left;
+}
+.main .menu .content {
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  background: #abb6cd;
+}
+.main .menu .content div {
+  width: 146px;
+  height: 76px;
+  text-align: center;
+  border-top: 1px solid #abb8d0;
+  background: #90a1c0;
+}
+.main .menu .content div h2 {
+  font-size: 18px;
+  color: #1c366d;
+  margin-top: 19px;
+}
+.main .menu .content div h3 {
+  font-size: 12px;
+  color: #4a699e;
+}
+.main .menu .content ul {
+  margin: 36px auto 0 auto;
+}
+.main .menu .content ul li {
+  width: 90px;
+  line-height: 37px;
+  position: relative;
+  margin: 0 auto 18px auto;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #263f75;
+}
+.main .menu .content ul li div {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border-top: none;
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  background: #4c699d;
+}
+.main .menu .content ul li:hover,
+.main .menu .content ul li.current {
+  background: #4c699d;
+  border-radius: 10px 10px 0 0;
+}
+.main .menu .content ul li:hover a,
+.main .menu .content ul li.current a {
+  color: #fff;
+}
+.main .menu .content ul li:hover div,
+.main .menu .content ul li.current div {
+  background: #fff;
+}
+.main .menu .content ul li:after,
+.main .menu .content ul li:before {
+  content: '';
+  width: 54px;
+  height: 0;
+  border-top: 1px solid #e0e4ed;
+  position: absolute;
+  bottom: -1px;
+}
+.main .menu .content ul li:after {
+  left: 50%;
+}
+.main .menu .content ul li:before {
+  right: 50%;
+}
+.main .news {
+  float: right;
+  width: 994px;
+}
+.main .news > p {
+  width: 994px;
+  color: #7a7d82;
+  font-size: 14px;
+  padding-right: 7px;
+  text-align: right;
+  line-height: 30px;
+  background: #dde1eb;
+}
+.main .news > p a:hover {
+  color: #4a699e;
+}
+.main .news ul li {
+  height: 133px;
+  border-bottom: 1px solid #cecccd;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 26px;
+}
+.main .news ul li p {
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+.main .news ul li h2 {
+  margin-bottom: 18px;
+  color: #8f8f90;
+}
+.main .news ul li h2 span {
+  display: inline-block;
+  width: 20px;
+}
+.main .news ul li:hover {
+  color: #4a699e;
+  border-color: #4a699e;
+}
+.main .news ul li:hover p,
+.main .news ul li:hover h2,
+.main .news ul li:hover a {
+  color: #4a699e;
+}
+.main .news .paging {
+  width: 419px;
+  margin: 20px auto 0 auto;
+  line-height: 20px;
+  height: 20px;
+  border-top: 1px solid transparent;
+}
+.main .news .paging > a {
+  display: block;
+  margin: 0 9px;
+  float: left;
+}
+.main .news .paging ol {
+  float: left;
+}
+.main .news .paging ol li {
+  float: left;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: 4px;
+}
+.main .news .paging ol li.selected,
+.main .news .paging ol li:hover {
+  background: #4a699e;
+}
