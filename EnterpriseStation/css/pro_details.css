@@ -1,0 +1,131 @@
+/*------产品详情------*/
+.banner img {
+  width: 100%;
+}
+.main {
+  width: 1200px;
+  margin: 89px auto 90px auto;
+}
+.main .menu {
+  width: 175px;
+  height: 358px;
+  position: relative;
+  float: left;
+}
+.main .menu .content {
+  position: absolute;
+  top: 18px;
+  left: 14px;
+  background: #abb6cd;
+}
+.main .menu .content div {
+  width: 146px;
+  height: 76px;
+  text-align: center;
+  border-top: 1px solid #abb8d0;
+  background: #90a1c0;
+}
+.main .menu .content div h2 {
+  font-size: 18px;
+  color: #1c366d;
+  margin-top: 19px;
+}
+.main .menu .content div h3 {
+  font-size: 12px;
+  color: #4a699e;
+}
+.main .menu .content ul {
+  margin: 36px auto 0 auto;
+}
+.main .menu .content ul li {
+  width: 90px;
+  line-height: 37px;
+  position: relative;
+  margin: 0 auto 18px auto;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #263f75;
+}
+.main .menu .content ul li div {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border-top: none;
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  background: #4c699d;
+}
+.main .menu .content ul li:hover,
+.main .menu .content ul li.current {
+  background: #4c699d;
+  border-radius: 10px 10px 0 0;
+}
+.main .menu .content ul li:hover a,
+.main .menu .content ul li.current a {
+  color: #fff;
+}
+.main .menu .content ul li:hover div,
+.main .menu .content ul li.current div {
+  background: #fff;
+}
+.main .menu .content ul li:after,
+.main .menu .content ul li:before {
+  content: '';
+  width: 54px;
+  height: 0;
+  border-top: 1px solid #e0e4ed;
+  position: absolute;
+  bottom: -1px;
+}
+.main .menu .content ul li:after {
+  left: 50%;
+}
+.main .menu .content ul li:before {
+  right: 50%;
+}
+.main .product_detail {
+  float: right;
+  width: 994px;
+}
+.main .product_detail > p {
+  width: 994px;
+  color: #7a7d82;
+  font-size: 14px;
+  margin-right: 7px;
+  text-align: right;
+  line-height: 30px;
+  background: #dde1eb;
+}
+.main .product_detail > p a:hover {
+  color: #4a699e;
+}
+.main .product_detail .detail {
+  margin-top: 32px;
+}
+.main .product_detail .detail img {
+  float: left;
+}
+.main .product_detail .detail div {
+  float: right;
+  margin-right: 16px;
+  width: 512px;
+  font-size: 14px;
+  line-height: 28px;
+}
+.main .product_detail .detail div h3 {
+  font-size: 27px;
+  margin: 5px 0;
+  display: inline-block;
+  margin-left: 160px;
+}
+.main .product_detail .detail div h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.main .product_detail .detail div h5 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
