@@ -1,0 +1,123 @@
+/*-------Banner图-------*/
+.banner{
+  margin-bottom:74px;
+  img{width:100%;}
+}
+/*-------Title标题-------*/
+.title{
+  width:100%;margin:0 auto;
+  .content{
+    width:39px;height:107px;margin:0 auto;position:relative;
+    img[alt="title_icon"]{
+      position:absolute;left:6px;top:8px;
+    }
+    span{
+      position:absolute;font-size:20px;width:90px;height:30px;left:-65%;bottom:25%;
+      line-height:30px;background:#fff;display:block;text-align:center;
+    }
+  }
+}
+
+/*//用伪类做--可惜没法公用
+.title{
+  width:100%;margin:0 auto;
+  .content{
+    width:39px;height:107px;background:url('../img/title_border.png');
+    margin:0 auto;position:relative;
+    &:before{
+      content:'';
+      width:27px;height:37px;background:url('../img/title_icon.png');
+      display:block;position:absolute;left:6px;top:8px;
+    }
+    &:after{
+      content:'公司介绍';position:absolute;font-size:20px;
+      width:90px;height:30px;line-height:30px;background:#fff;
+      left:-65%;bottom:25%;
+      text-align:center;
+    }
+  }
+}*/
+/*-------公司介绍-------*/
+.about_us{
+  width:1200px;margin:60px auto 80px auto;
+  .content{
+    .left{
+      float:left;width:484px;height:275px;position:relative;
+      border-bottom:1px solid #c8c8c8;
+      img{position:absolute;left:60px;top:-2px;z-index:2;}
+      &:before{
+        content:'';width:180px;height:203px;border:1px solid #c8c8c8;
+        display:block;position:absolute;left:141px;top:-27px;
+      }
+      &:after{
+        content:'';width:245px;height:127px;position:absolute;
+        border-left:1px solid #c8c8c8;border-top:1px solid #c8c8c8;
+        left:0;bottom:0;
+      }
+    }
+    .right{
+      float:right;width:707px;height:274px;border:1px solid #c8c8c8;
+      margin-right:7px;position: relative;
+      //用图片
+      img{margin:24px 0 0 51px;}
+      /*//用代码
+      ul{
+        width:605px;height:229px;background:red;
+        margin:24px 0 0 51px;
+        li{
+          float:right;margin:0 6px;font-size:13px;
+          width:12px;text-align:center;line-height:18px;
+          div.comma{height:14px;background:url('../img/date.png')-4px 6px;}
+          div.quotes{height:14px;background:url('../img/date.png')-20px 6px;}
+          div.stop{height:14px;background:url('../img/date.png')-36px 6px;}
+          div.period{height:14px;background:url('../img/date.png')-36px 6px;}
+          div.point{height:19px;background:url('../img/date.png')0 6px;}
+          div.year1{height:51px;background:url('../img/date.png')47px -149px;}
+          div.year2{height:49px;background:url('../img/date.png')68px -151px;}
+          div.month{height:24px;background:url('../img/date.png')12px 2px;}
+          div.day{height:24px;background:url('../img/date.png')28px 3px;}
+        }
+      }
+      */
+      div{
+        width:15px;height:93px;text-align:center;font-size:14px;font-weight: bold;
+        position:absolute;top:64px;right:-8px;background:#fff;padding-top:15px;
+      }
+      a{
+        width:62px;height:22px;display:inline-block;color:#fff;line-height:22px;
+        position:absolute;bottom:-11px;right:53px;background:#dba914;text-align:center;
+      }
+    }
+  }
+}
+/*-------新闻中心-------*/
+.new_center{
+  width:100%;margin:0 auto;background:#343642;padding:74px 0 70px 0;
+  margin-bottom:74px;
+  .title{
+    span{color:#bcc0d9;background:#343642;}
+  }
+  .new_con{
+    margin:38px auto 0 auto;width:1200px;background:#343642;
+    img{float:left;}
+    ul{
+      float:right;
+      li{
+        width:601px;height:100px;
+        &:first-child{background:#3e4151;}
+        &:first-child+li{margin:30px 0;background:#3f4258;}
+        &:last-child{background:#3b3e4d;}
+        .left{
+          text-align:right;float:left;width:89px;color:#fff;
+          h2{font-size:39px;line-height:28px;margin-top:20px;}
+          span{font-size:12px;}
+        }
+        .right{
+          width:432px;float:left;margin-left:21px;font-size:12px;
+          color:#fff;line-height:19px;
+          p{font-size:14px;margin:16px 0 14px 0;}
+        }
+      }
+    }
+  }
+}
