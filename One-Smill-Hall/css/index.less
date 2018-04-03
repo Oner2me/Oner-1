@@ -103,9 +103,9 @@
     ul{
       float:right;
       li{
-        width:601px;height:100px;
-        &:first-child{background:#3e4151;}
-        &:first-child+li{margin:30px 0;background:#3f4258;}
+        width:601px;height:100px;margin-top:30px;
+        &:first-child{background:#3e4151;margin-top:0;}
+        &:first-child+li{background:#3f4258;}
         &:last-child{background:#3b3e4d;}
         .left{
           text-align:right;float:left;width:89px;color:#fff;
@@ -117,6 +117,82 @@
           color:#fff;line-height:19px;
           p{font-size:14px;margin:16px 0 14px 0;}
         }
+      }
+    }
+  }
+}
+/*-------产品中心-------*/
+.product_center{
+  width:1200px;margin:94px auto 154px auto;position:relative;
+  ul{
+    margin:0 auto;width:987px;
+    li{
+      float:left;width:329px;height:494px;
+      position:relative;
+      &.float_state{
+        position:relative;top:70px;z-index:2;
+      }
+      &:first-child{margin:0 -55px 0 55px;}
+      &:last-child{margin-left:-55px;}
+      div{
+        position:absolute;left:0;bottom:0;height:100px;
+        width:100%;background:rgba(100,99,97,0.4);
+        text-align:center;color:#fffefe;
+        h2{font-size:14px;margin:16px 0 6px;}
+        p{font:12px/18px '微软雅黑';text-align:left;width:292px;margin:0 auto;}
+      }
+    }
+  }
+  div{
+    &.left,&.right{
+      position:absolute;width:66px;height:66px;top:201px;
+    }
+    &.left{left:0;}
+    &.right{right:0;}
+  }
+}
+/*-------联系我们-------*/
+.contact_us{
+  width:100%;background:#343642;padding:74px 0 30px;
+  .title{
+    span{color:#bcc0d9;background:#343642;}
+  }
+  .contact_con{
+    margin:70px auto 0;width:1200px;
+    .left{
+      float:left;
+      ul{
+        li{
+          position:relative;color:#dfe0e7;line-height:80px;
+          width:307px;border-bottom:1px solid #444654;
+          div{
+            width:16px;height:17px;background:red;position:absolute;
+            left:0;top:31px;
+          }
+          span{margin-left:32px;}
+          &.mark{
+            width:505px;
+            div{background:url('../img/sprite.png') 0 -17px;}
+          }
+          &:last-child{border:none;}
+          &:first-child{div{background:url('../img/sprite.png') 0 1px;}}
+          &.mark+li{div{background:url('../img/sprite.png') 0 -37px;}}
+          &:last-child{div{background:url('../img/sprite.png') 0 -56px;}}
+        }
+      }
+    }
+    .right{
+      float:right;
+      form{
+        width:550px;color:#dfe0e7;font-size:13px;
+        input{width:486px;height:12px;border:1px solid #4c4e5c;}
+        textarea{width:487px;height:90px;border:1px solid #4c4e5c}
+        input,textarea{background:#343642;}
+        input[type="submit"]{width:61px;height:20px;color:#fff;background:#deab14;float:right;}
+        .t_space{height:32px;}
+        .m_space{height:46px;}
+        .b_space{height:22px;}
+        .leaving{vertical-align: top;}
       }
     }
   }
