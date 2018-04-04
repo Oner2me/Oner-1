@@ -1,0 +1,10 @@
+1.同样的变量，一个是局部，一个是全局，都没赋值，为啥调用时，全局的会报错？
+var abc;//这样是对的，相当于var声明了一个abc的空间
+def=abc;
+console.log(def);
+//输出结果：undefined
+-----------------------------------------------------------------
+abc;//这样写会报错，因为既没有用var声明，也没有用=等号赋值，系统会不知道这个是干什么的
+def=abc;
+console.log(def);
+//错误信息：Uncaught ReferenceError: abc is not defined
