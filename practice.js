@@ -1,3 +1,3 @@
-var abc;
-def=abc;
-console.log(def);
+//var abc;
+//def=abc;
+//console.log(def);

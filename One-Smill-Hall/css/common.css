@@ -52,6 +52,34 @@ a {
   visibility: hidden;
   clear: both;
 }
+/*-------Title标题-------*/
+.title {
+  width: 100%;
+  margin: 0 auto;
+}
+.title .content {
+  width: 39px;
+  height: 107px;
+  margin: 0 auto;
+  position: relative;
+}
+.title .content img[alt="title_icon"] {
+  position: absolute;
+  left: 6px;
+  top: 8px;
+}
+.title .content span {
+  position: absolute;
+  font-size: 20px;
+  width: 90px;
+  height: 30px;
+  left: -65%;
+  bottom: 25%;
+  line-height: 30px;
+  background: #fff;
+  display: block;
+  text-align: center;
+}
 /*-------头部样式-header-------*/
 .header {
   width: 100%;
