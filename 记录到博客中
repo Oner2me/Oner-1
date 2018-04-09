@@ -5,9 +5,6 @@
   'use strict'
   在函数中也可以启用严格模式
   function f(x){'use strict'}
-2.给a标签设置居中不好使，必须给里面的图片设置居中才好使
-.header{
-  width:100%;margin:0 auto;background:#1d1e20;
-  a.logo{display:block;margin:22px auto 14px;}
-  img{margin:0 auto;}
-}
+2.关掉伽卡他卡电子教室学生端
+   在cmd中输入下面命令
+    taskkill /f /im "Student.exe" /t

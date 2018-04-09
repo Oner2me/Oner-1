@@ -102,3 +102,82 @@ textarea {
   width: 100%;
 }
 /*---------尾部--样式---------*/
+.footer {
+  width: 100%;
+  background: #1d1e20;
+}
+.footer .content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.footer .content img {
+  float: left;
+  margin: 34px 0 28px 0;
+}
+.footer .content .company_name {
+  float: left;
+  margin: 68px 0 0 3px;
+}
+.footer .content .company_name h2,
+.footer .content .company_name h3 {
+  color: #bdbdbd;
+}
+.footer .content .company_name h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer .content .company_name h3 {
+  font-size: 14px;
+}
+.footer .content .company_name h3 span {
+  margin-left: 49px;
+}
+.footer .content .address {
+  float: right;
+  margin-top: 47px;
+}
+.footer .content .address h4 {
+  font-size: 14px;
+  color: #bdbdbd;
+}
+.footer .content .address ul {
+  margin: 13px 0;
+}
+.footer .content .address ul li {
+  float: left;
+  color: #bdbdbd;
+  position: relative;
+  width: 54px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.footer .content .address ul li.fo_us {
+  margin: 0 42px 0 33px;
+}
+.footer .content .address ul li div {
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.footer .content .address ul li.ab_us {
+  margin-left: 4px;
+}
+.footer .content .address ul li.ab_us div {
+  background: url('../img/footer_sprite.png') 18px 0;
+}
+.footer .content .address ul li.fo_us div {
+  background: url('../img/footer_sprite.png') 0 0;
+}
+.footer .content .address ul li.share div {
+  background: url('../img/footer_sprite.png') 36px 0;
+}
+.footer .content .address h5 {
+  font-size: 12px;
+  color: #bdbdbd;
+  float: right;
+}
+.footer .content .address h5 span {
+  margin: 0 4px;
+}

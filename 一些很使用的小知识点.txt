@@ -9,3 +9,5 @@
   只能给a标签设置字体颜色才可以
 5.操作ps时候,可以用选框工具量好距离在拉标尺，标尺会紧紧地贴上边框，超好用
 6.ps快捷键设置ctrl+alt+shift+k
+7.jquery
+    http://jquery.cuishifeng.cn/
