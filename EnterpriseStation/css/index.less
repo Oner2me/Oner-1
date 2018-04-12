@@ -48,27 +48,25 @@
   border-top:1px solid #f2f2f2;
   .pro_center{
     background:url("../img/product_bg.png") center center no-repeat ;
-    &>ul{
+    ul{
       position:relative;
       top:-10px;
       width:1200px;margin:0 auto;
-      &>li{
+      li{
         float:left;margin-right:26px;
-        width:280px;height:571px;
-        &:first-child{background:#6684b0;}
-        background:#d7eef9;
+        width:280px;height:570px;
         &:last-child{margin-right:0;}
-        p{
-          font-size:18px;
-          margin:26px 0 25px 22px;
+        img{width:280px;height:301px;}
+        div{
+          border-top:1px solid transparent;
+          padding:2px 0 26px 18px;background:#d7eef9;
+          h2{font-size:18px;margin:24px 0;}
+          p{width:202px;font-size:16px;height:168px;}
         }
-        ol{
-          font-size:14px;
-          margin:0 0 41px 19px;
-          li{line-height:22px;}
+        &:hover{
+          div{background:#6684b0;h2,p{color:#f7f4f4;}}
         }
       }
-      .border_top{border-top:1px solid transparent;}
     }
   }
   }

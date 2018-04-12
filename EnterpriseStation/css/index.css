@@ -80,38 +80,45 @@
 .product_center .pro_center {
   background: url("../img/product_bg.png") center center no-repeat;
 }
-.product_center .pro_center > ul {
+.product_center .pro_center ul {
   position: relative;
   top: -10px;
   width: 1200px;
   margin: 0 auto;
 }
-.product_center .pro_center > ul > li {
+.product_center .pro_center ul li {
   float: left;
   margin-right: 26px;
   width: 280px;
-  height: 571px;
-  background: #d7eef9;
+  height: 570px;
 }
-.product_center .pro_center > ul > li:first-child {
-  background: #6684b0;
-}
-.product_center .pro_center > ul > li:last-child {
+.product_center .pro_center ul li:last-child {
   margin-right: 0;
 }
-.product_center .pro_center > ul > li p {
-  font-size: 18px;
-  margin: 26px 0 25px 22px;
+.product_center .pro_center ul li img {
+  width: 280px;
+  height: 301px;
 }
-.product_center .pro_center > ul > li ol {
-  font-size: 14px;
-  margin: 0 0 41px 19px;
-}
-.product_center .pro_center > ul > li ol li {
-  line-height: 22px;
-}
-.product_center .pro_center > ul .border_top {
+.product_center .pro_center ul li div {
   border-top: 1px solid transparent;
+  padding: 2px 0 26px 18px;
+  background: #d7eef9;
+}
+.product_center .pro_center ul li div h2 {
+  font-size: 18px;
+  margin: 24px 0;
+}
+.product_center .pro_center ul li div p {
+  width: 202px;
+  font-size: 16px;
+  height: 168px;
+}
+.product_center .pro_center ul li:hover div {
+  background: #6684b0;
+}
+.product_center .pro_center ul li:hover div h2,
+.product_center .pro_center ul li:hover div p {
+  color: #f7f4f4;
 }
 /*--------新闻中心--.new_center--------*/
 .news_center {
