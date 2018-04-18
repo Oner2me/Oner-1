@@ -15,11 +15,50 @@
 }
 /*--------网页轮播图--.banner--------*/
 .banner {
+  overflow: hidden;
+  position: relative;
+}
+.banner ul {
+  width: 1000%;
+  position: relative;
+}
+.banner ul li {
+  float: left;
+  width: 10%;
+}
+.banner ul li img {
   width: 100%;
 }
-.banner img {
-  width: 100%;
-  margin: 0 auto;
+.banner span {
+  position: absolute;
+  display: block;
+  width: 56px;
+  height: 66px;
+  top: 200px;
+}
+.banner span.left {
+  background: url('../img/sprite.png') 165px 197px;
+  left: 55px;
+}
+.banner span.right {
+  background: url('../img/sprite.png') 165px 123px;
+  right: 55px;
+}
+.banner ol {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  margin-left: -72px;
+}
+.banner ol li {
+  float: left;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px;
+  background: url('../img/sprite.png') 165px 29px;
+}
+.banner ol li.on {
+  background: url('../img/sprite.png') 165px 47px;
 }
 /*--------关于我们--.about_us--------*/
 .about_us {

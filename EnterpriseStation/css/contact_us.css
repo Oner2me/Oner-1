@@ -4,7 +4,7 @@
 }
 .content {
   width: 1200px;
-  margin: 110px auto 92px auto;
+  margin: 110px auto 0;
 }
 .content .left {
   width: 343px;
@@ -81,6 +81,8 @@
 .content .right form table .button {
   text-align: center;
 }
-.content .map img {
-  width: 100%;
+#map {
+  width: 1200px;
+  height: 330px;
+  margin: 0 auto 90px;
 }

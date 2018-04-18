@@ -1,0 +1,7 @@
+  新版本:http://api.map.baidu.com/lbsapi/createmap/index.html
+  旧版本：http://api.map.baidu.com/lbsapi/creatmap/
+
+  秘钥：GOMTKSLGzgfQFSWkw4cCWZkinN7uPDhb
+
+ 图标：http://api.map.baidu.com/lbsapi/createmap/images/icon.png
+      http://app.baidu.com/map/images/us_mk_icon.png

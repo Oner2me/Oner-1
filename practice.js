@@ -1,9 +1,24 @@
-
-$(function(){
-    $(document).bind('mousemove',function(e){
-        $('#text').text('x轴坐标：'+ e.pageX+','+'Y轴坐标'+ e.pageY);
-    });
-    $('.a1').click(function(e){
-        e.preventDefault();
-    });
+/*$(document).bind('mousemove',function(e){
+    $('#text').text('x轴坐标：'+ e.pageX+','+'Y轴坐标'+ e.pageY);
 });
+$('.a1').click(function(e){
+    e.preventDefault();
+});
+$('input').eq(0).click(function(){
+    $('#log').toggle('slow');
+});
+$('input').eq(1).click(function(){
+    $('#log').slideToggle('slow');
+});
+$('input').eq(2).click(function(){
+    $('#log').fadeToggle('slow');
+});
+$('input').eq(3).click(function(){
+    $('#log').fadeTo('slow',0.6);
+});
+$('input').eq(4).click(function(){
+    $('#log').fadeIn('slow');
+});
+$('input').eq(5).click(function(){
+    $('#log').fadeOut('slow');
+});*/
