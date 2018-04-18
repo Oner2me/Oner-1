@@ -21,6 +21,8 @@
 .banner ul {
   width: 1000%;
   position: relative;
+  left: -1423px;
+  top: 0;
 }
 .banner ul li {
   float: left;
@@ -187,10 +189,9 @@
   text-align: center;
 }
 .news_center .news_list ul li .news_left h2 {
-  font-size: 64px;
+  font: 64px/70px '微软正黑体';
   display: inline-block;
-  margin-top: 33px;
-  line-height: 70px;
+  margin-top: 32px;
 }
 .news_center .news_list ul li .news_left div {
   width: 53px;
@@ -208,7 +209,7 @@
 }
 .news_center .news_list ul li .news_right p {
   font-size: 16px;
-  margin: 26px 0 24px 0;
+  margin: 24px 0 20px 0;
 }
 .news_center .news_list ul li:hover,
 .news_center .news_list ul li.current {
