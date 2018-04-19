@@ -1,10 +1,15 @@
 /*--------标题样式--------*/
 .title{
-  margin:0 auto;width:172px;height:82px;
-  background:url('../img/title_border.png');
-  text-align:center;
-  P{font-size:30px;color:#0e0d0e;padding-top:10px;}
-  font-size:14px;color:#4a699e;
+  margin:0 auto;width:172px;
+  text-align:center;padding:14px 0 12px;
+  h2{
+    font:30px/36px '微软雅黑 Regular';
+    color:#0e0d0e;
+  }
+  h3{
+    font:16px/20px '微软雅黑 Regular';color:#4a699e;
+    span{margin-left:16px;}
+  }
 }
 /*--------网页轮播图--.banner--------*/
 .banner{
@@ -20,13 +25,14 @@
   span{
     position:absolute;display:block;
     width:56px;height:66px;top:200px;
+    cursor: pointer;
     &.left{
-      background:url('../img/sprite.png') 165px 197px;
-      left:55px;
+      background:url('../img/sprite.png') 219px 197px;
+      left:55px;display:none;
     }
     &.right{
-      background:url('../img/sprite.png') 165px 123px;
-      right:55px;
+      background:url('../img/sprite.png') 108px 123px;
+      right:55px;display:none;
     }
   }
   ol{
@@ -34,31 +40,33 @@
     bottom:26px;left:50%;margin-left:-72px;
     li{
       float:left;width:18px;height:18px;margin:0 15px;
-      background:url('../img/sprite.png') 165px 29px;
+      cursor: pointer;
+      background:url('../img/sprite.png') 108px 29px;
       &.on{
-        background:url('../img/sprite.png') 165px 47px;
+        background:url('../img/sprite.png') 108px 47px;
       }
     }
   }
 }
 /*--------关于我们--.about_us--------*/
 .about_us{
-  width:1200px;margin:92px auto 90px auto;
+  width:1200px;margin:92px auto 90px;
+  .title{
+    background:url('../img/title_about.png') no-repeat;
+  }
   .content{
-    margin:36px 0 90px 0;
+    margin:36px 0 90px;
     .about_left{
       float:left;
       p{
-        width:560px;margin:0 15px;
-        line-height:28px;text-indent:2em;
-        text-align:justify;
-        &:first-child{margin-top:34px;}
+        font:14px/28px '微软雅黑 Regular';
+        width:558px;margin:0 15px;
+        text-indent:2em;
       }
       ul{
-        margin:51px 0 0 21px;
+        margin-left:21px;
         li{
-          float:left;width:48px;height:50px;
-          margin:0 48px;background:blue;
+          float:left;width:48px;height:50px;margin:0 48px;
           &.icon1{background:url('../img/sprite.png') 0 0;}
           &.icon2{background:url('../img/sprite.png') 0 -50px;}
           &.icon3{background:url('../img/sprite.png') 0 -98px;}
@@ -70,12 +78,14 @@
   }
 }
 /*--------产品中心--.product_center--------*/
-.pro_title{
-  margin:14px 0 32px 0;
-}
 .product_center{
-  width:100%;background:#f2f2f2;padding-bottom:29px;
+  background:#f2f2f2;padding-bottom:29px;
   border-top:1px solid #f2f2f2;
+  .title{
+    margin:14px auto 32px;width:189px;
+    background:url('../img/title_product.png') no-repeat;
+    span{margin-left:15px;}
+  }
   .pro_center{
     background:url("../img/product_bg.png") center center no-repeat ;
     ul{

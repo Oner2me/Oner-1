@@ -22,7 +22,7 @@ function addClickHandler(target,window){
 }
 function addMapOverlay(){
     var markers = [
-        {content:"中国地区广东省深圳市莲花山公园",title:"",imageOffset: {width:-46,height:-21},position:{lat:22.559491,lng:114.065148}},
+        {content:"中国地区广东省深圳市莲花山公园",title:"",imageOffset: {width:-46,height:-21},position:{lat:22.559491,lng:114.065148}}
     ];
     for(var index = 0; index < markers.length; index++ ){
         var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);

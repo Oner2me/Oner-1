@@ -1,3 +1,19 @@
+//鼠标移上banner两边按钮显示，移出时隐藏
+$('.banner').hover(function(){
+    $('.banner span').show();
+},function(){
+    $('.banner span').hide();
+});
+//关于我们样式
+$('.about_us .content .about_left p').eq(0).css('margin-top','32px');
+$('.about_us .content .about_left p').eq(1).css('margin-bottom','50px');
+$('.about_us .content .about_left ul li').eq(0).css('background','url("img/sprite.png") 0 0');
+$('.about_us .content .about_left ul li').eq(1).css('background','url("img/sprite.png") 0 -50px');
+$('.about_us .content .about_left ul li').eq(2).css('background','url("img/sprite.png") 0 -98px');
+$('.about_us .content .about_left ul li').eq(3).css('background','url("img/sprite.png") 0 -147px');
+
+//关于我们样式
+
 var i=0;
 var ul = $('.banner ul');
 var ol_li = $('.banner ol li');
@@ -49,6 +65,21 @@ function stop(){
     clearInterval(Timer);
 }
 //鼠标移上停止轮播，移开开始轮播
-$('.banner').hover(stop,play);
+//$('.banner').hover(stop,play);
 
-play();
+//play();
+
+//鼠标移上轮播图的左右按钮，按钮的图片更换
+$('.banner .left').mouseover(function(){
+    $(this).css('background','url("img/sprite.png") 276px 197px');
+});
+$('.banner .left').mouseout(function(){
+    $(this).css('background','url("img/sprite.png") 219px 197px');
+});
+$('.banner .right').mouseover(function(){
+    $(this).css('background','url("img/sprite.png") 54px 123px');
+});
+$('.banner .right').mouseout(function(){
+    $(this).css('background','url("img/sprite.png") 108px 123px');
+});
+
