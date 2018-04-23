@@ -36,6 +36,8 @@
         li {
           width: 90px;
           line-height: 37px;
+          border-radius: 10px 10px 0 0;
+          behavior:url('PIE/PIE.htc');
           position: relative;
           margin: 0 auto 18px auto;
           font-size: 14px;
@@ -47,6 +49,7 @@
             width: 7px;
             height: 7px;
             border-radius: 50%;
+            behavior:url('PIE/PIE.htc');
             border-top: none;
             position: absolute;
             left: 12px;
@@ -55,12 +58,11 @@
           }
           &:hover, &.current {
             background: #4c699d;
-            border-radius: 10px 10px 0 0;
             a {
-              color: #fff;
+              color: #e0e4ed;
             }
             div {
-              background: #fff;
+              background: #e0e4ed;
             }
           }
           &:after, &:before {
@@ -96,7 +98,7 @@
         text-align:center;float:left;position:relative;
         div{
           position:absolute;width:300px;height:448px;
-          left:0;top:0;
+          left:0;top:0;z-index:3;
           p{font-size:18px;margin:382px 0 5px 0;}
           h2{font-size:14px;}
           &:hover{

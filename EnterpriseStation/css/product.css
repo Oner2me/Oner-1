@@ -40,6 +40,8 @@
 .main .menu .content ul li {
   width: 90px;
   line-height: 37px;
+  border-radius: 10px 10px 0 0;
+  behavior: url('PIE/PIE.htc');
   position: relative;
   margin: 0 auto 18px auto;
   font-size: 14px;
@@ -52,6 +54,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
+  behavior: url('PIE/PIE.htc');
   border-top: none;
   position: absolute;
   left: 12px;
@@ -61,15 +64,14 @@
 .main .menu .content ul li:hover,
 .main .menu .content ul li.current {
   background: #4c699d;
-  border-radius: 10px 10px 0 0;
 }
 .main .menu .content ul li:hover a,
 .main .menu .content ul li.current a {
-  color: #fff;
+  color: #e0e4ed;
 }
 .main .menu .content ul li:hover div,
 .main .menu .content ul li.current div {
-  background: #fff;
+  background: #e0e4ed;
 }
 .main .menu .content ul li:after,
 .main .menu .content ul li:before {
@@ -119,6 +121,7 @@
   height: 448px;
   left: 0;
   top: 0;
+  z-index: 3;
 }
 .main .product ul li div p {
   font-size: 18px;

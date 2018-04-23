@@ -8,3 +8,5 @@
 2.关掉伽卡他卡电子教室学生端
    在cmd中输入下面命令
     taskkill /f /im "Student.exe" /t
+3.PIE下载地址
+http://github.com/lojjic/PIE/downloads
