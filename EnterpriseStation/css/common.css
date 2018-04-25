@@ -61,7 +61,7 @@ textarea {
 }
 .header a.logo {
   float: left;
-  margin-top: 19px;
+  margin-top: 18px;
 }
 .header ul {
   float: right;
@@ -116,29 +116,31 @@ textarea {
   margin-top: 30px;
   color: #fff;
   float: right;
-  width: 451px;
+  width: 452px;
 }
 .footer .footer_list .footer_right p {
   color: #fff;
+  font: 14px/22px '微软雅黑 Regular';
   float: left;
-  width: 187px;
-  height: 59px;
-  margin-top: 56px;
-  line-height: 23px;
+  width: 188px;
+  margin-top: 54px;
 }
-.footer .footer_list .footer_right .qr {
+.footer .footer_list .footer_right .two_dimension_code {
   float: right;
   text-align: center;
-  line-height: 22px;
 }
-.footer .footer_list .footer_bottom {
-  line-height: 55px;
+.footer .footer_list .footer_right .two_dimension_code span {
+  display: block;
+  font: 14px/22px '微软雅黑 Regular';
+}
+.footer .footer_list .copy {
+  line-height: 56px;
   font-size: 14px;
   text-align: center;
   color: #fff;
 }
-.footer .footer_list .footer_bottom u {
+.footer .footer_list .copy span {
   display: inline-block;
-  margin: 0 13px 0 34px;
+  margin: 0 14px 0 34px;
   color: #fff;
 }
