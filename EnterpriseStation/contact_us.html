@@ -9,6 +9,7 @@
     <link rel="shrotcut icon" href="logo.ico" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/contact_us.css" />
+    <script src="js/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=GOMTKSLGzgfQFSWkw4cCWZkinN7uPDhb"></script>
 </head>
 <body>
@@ -17,11 +18,11 @@
         <img src="img/logo.png" alt="logo">
     </a>
     <ul class="clearfix">
-        <li><a href="index.html">公司首页</a><div></div></li>
-        <li><a href="about_us.html">关于我们</a><div></div></li>
-        <li><a href="news_center.html">新闻中心</a><div></div></li>
-        <li><a href="product.html">产品中心</a><div></div></li>
-        <li class="current"><a href="contact_us.html">联系我们</a><div></div></li>
+        <li><a href="index.html">公司首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="news_center.html">新闻中心</a></li>
+        <li><a href="product.html">产品中心</a></li>
+        <li class="current"><a href="contact_us.html">联系我们</a></li>
     </ul>
 </div>
     <div class="banner">
@@ -41,61 +42,37 @@
         </div>
         <div class="right">
             <form action="" name="form1" method="post">
-                <table>
-                    <tr>
-                        <td class="text_right">姓名：</td>
-                        <td colspan="2">
-                            <input type="text" name="username" class="input_1"/>
-                        </td>
-                        <td>QQ：</td>
-                        <td>
-                            <input type="text" name="QQ" class="input_2"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="interval"></td>
-                    </tr>
-                    <tr>
-                        <td class="text_right">电话：</td>
-                        <td colspan="2">
-                            <input type="text" name="iphone" class="input_1"/>
-                        </td>
-                        <td class="email_td">邮箱：</td>
-                        <td>
-                            <input type="text" name="email" class="input_2"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="interval"></td>
-                    </tr>
-                    <tr>
-                        <td>留言框：</td>
-                        <td colspan="4">
-                            <textarea cols="30" rows="10"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="interval"></td>
-                    </tr>
-                    <tr>
-                        <td>验证码：</td>
-                        <td class="vcode_td">
-                            <input type="text" name="email" class="vcode"/>
-                        </td>
-                        <td colspan="3"><img src="img/co_us_vcode.png" alt="co_us_vcode" /></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="interval"></td>
-                    </tr>
-                    <tr class="button">
-                        <td colspan="5">
-                            <input type="submit" value="提交" />
-                            <input type="reset" />
-                        </td>
-                    </tr>
-                </table>
-
-
+                <ul>
+                    <li>
+                        <span>姓名：</span>
+                        <input type="text" name="username"/>
+                    </li>
+                    <li>
+                        <span>QQ：</span>
+                        <input type="text" name="qq" />
+                    </li>
+                    <li>
+                        <span>电话：</span>
+                        <input type="text" name="call" />
+                    </li>
+                    <li>
+                        <span>邮箱：</span>
+                        <input type="text" name="email"/>
+                    </li>
+                    <li>
+                        <span>留言框：</span>
+                        <input type="text" name="leaving"/>
+                    </li>
+                    <li>
+                        <span>验证码：</span>
+                        <input type="text" name="vc_code"/>
+                        <img src="img/co_us_vcode.png" alt="co_us_vcode.png">
+                    </li>
+                    <li>
+                        <input type="submit" value="提 &nbsp;交" class="sub">
+                        <input type="reset" value="重 &nbsp;置" class="res">
+                    </li>
+                </ul>
             </form>
         </div>
     </div>
@@ -134,17 +111,16 @@
                     地址：广东省深圳市宝安区
                     沙井街道办沙井中心客运站弗瑞登箱包有限公司
                 </p>
-                <div class="qr">
-                    <img src="img/QR.png" alt="QR">
-                    扫一扫<br>
-                    关注微博公众号
+                <div class="two_dimension_code">
+                    <img src="img/two_dimension_code.png" alt="two_dimension_code.png">
+                    <span>扫一扫</span>
+                    <span>关注微博公众号</span>
                 </div>
             </div>
-            <div class="footer_bottom clear">
-                <span>opyright 2018 &copy; freedom bags company<u>弗瑞登箱包有限公司</u>版权所有</span>
-            </div>
+            <div class="copy clear">opyright 2018 &copy; freedom bags company<span>弗瑞登箱包有限公司</span>版权所有</div>
         </div>
     </div>
 </body>
 </html>
 <script src="js/map.js"></script>
+<script src="js/contact_us.js"></script>

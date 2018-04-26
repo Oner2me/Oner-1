@@ -35,56 +35,45 @@
   color: #4a699e;
 }
 .main .menu .content ul {
-  margin: 36px auto 0 auto;
+  margin: 36px auto 0;
 }
 .main .menu .content ul li {
-  width: 90px;
-  line-height: 37px;
-  position: relative;
-  margin: 0 auto 18px auto;
-  font-size: 14px;
-  text-align: right;
-  padding-right: 10px;
-  font-weight: bold;
-  color: #263f75;
+  width: 107px;
+  margin: 0 auto 18px;
+  border-bottom: 1px solid #e0e4ed;
 }
-.main .menu .content ul li div {
+.main .menu .content ul li a {
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  color: #3f5685;
+  border-radius: 10px 10px 0 0;
+  behavior: url('PIE/PIE.htc');
+}
+.main .menu .content ul li a span {
+  display: block;
+  padding: 12px 0 10px 30px;
+}
+.main .menu .content ul li a div {
   width: 7px;
-  height: 7px;
-  border-radius: 50%;
+  height: 6px;
   border-top: none;
   position: absolute;
   left: 12px;
-  top: 16px;
-  background: #4c699d;
-}
-.main .menu .content ul li:hover,
-.main .menu .content ul li.current {
-  background: #4c699d;
-  border-radius: 10px 10px 0 0;
+  top: 19px;
+  background: url('../img/sprite.png') 85px 47px;
 }
 .main .menu .content ul li:hover a,
 .main .menu .content ul li.current a {
-  color: #fff;
+  background: #4c699d;
+  color: #c9d0df;
 }
 .main .menu .content ul li:hover div,
 .main .menu .content ul li.current div {
-  background: #fff;
-}
-.main .menu .content ul li:after,
-.main .menu .content ul li:before {
-  content: '';
-  width: 54px;
-  height: 0;
-  border-top: 1px solid #e0e4ed;
-  position: absolute;
-  bottom: -1px;
-}
-.main .menu .content ul li:after {
-  left: 50%;
-}
-.main .menu .content ul li:before {
-  right: 50%;
+  background: url('../img/sprite.png') 85px 41px;
 }
 .main .detail {
   float: right;
@@ -93,29 +82,31 @@
 .main .detail > p {
   width: 994px;
   color: #7a7d82;
-  font-size: 14px;
-  padding-right: 7px;
+  font: 14px/30px '微软雅黑 Regular';
+  padding-right: 12px;
   text-align: right;
-  line-height: 30px;
   background: #dde1eb;
 }
-.main .detail > p a:hover {
+.main .detail > p a {
+  color: #7a7d82;
+}
+.main .detail > p a:hover,
+.main .detail > p .current {
   color: #4a699e;
 }
 .main .detail div {
   text-align: center;
   margin-top: 30px;
 }
-.main .detail div h3 {
+.main .detail div h1 {
   font-size: 16px;
-  display: inline-block;
 }
-.main .detail div h4 {
+.main .detail div h2 {
   font-size: 14px;
   color: #9c9c9f;
   margin: 10px 0 11px 0;
 }
-.main .detail div h4 span {
+.main .detail div h2 span {
   display: inline-block;
   width: 10px;
 }

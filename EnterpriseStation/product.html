@@ -13,17 +13,17 @@
 </head>
 <body>
     <div class="header clearfix">
-        <a class="logo" href="index.html">
-            <img src="img/logo.png" alt="logo">
-        </a>
-        <ul class="clearfix">
-            <li><a href="index.html">公司首页</a><div></div></li>
-            <li><a href="about_us.html">关于我们</a><div></div></li>
-            <li><a href="news_center.html">新闻中心</a><div></div></li>
-            <li class="current"><a href="product.html">产品中心</a><div></div></li>
-            <li><a href="contact_us.html">联系我们</a><div></div></li>
-        </ul>
-    </div>
+    <a class="logo" href="index.html">
+        <img src="img/logo.png" alt="logo">
+    </a>
+    <ul class="clearfix">
+        <li><a href="index.html">公司首页</a></li>
+        <li><a href="about_us.html">关于我们</a></li>
+        <li><a href="news_center.html">新闻中心</a></li>
+        <li class="current"><a href="product.html">产品中心</a></li>
+        <li><a href="contact_us.html">联系我们</a></li>
+    </ul>
+</div>
     <div class="banner">
         <img src="img/product_banner.png" alt="product_banner" />
     </div>
@@ -60,7 +60,7 @@
         <div class="product">
             <p>
                 <a href="#">当前位置</a>&lt;
-                <a href="#">产品中心</a>&lt;
+                <a href="product.html">产品中心</a>&lt;
                 <a href="#" class="current">超轻系列</a>
             </p>
             <ul class="clearfix">
@@ -117,7 +117,7 @@
                 <a href="#">首页</a>
                 <a href="#">上一页</a>
                 <ol class="clearfix">
-                    <li class="selected"><a href="#">1</a></li>
+                    <li><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
@@ -174,13 +174,4 @@
     </div>
 </body>
 </html>
-<script>
-    //产品里面的样式
-    var lis =  $('.main .product ul li a');
-    $.each(lis,function(){
-        $(this).find('img:eq(0)').css({'width':'300px','height':'370px'});
-        $(this).find('span:eq(0)').css({'font-size':'18px','margin':'10px 0 6px'});
-        $(this).find('span:eq(1)').css({'font-size':'14px','margin-bottom':'18px'});
-    });
-    $('.main .product ul li:nth-child(3n)').css('margin-right',0);
-</script>
+<script src="js/product.js"></script>

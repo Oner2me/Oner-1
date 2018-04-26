@@ -28,7 +28,7 @@
 .main .menu .content > div h2 {
   font-size: 18px;
   color: #1c366d;
-  margin-top: 19px;
+  margin-top: 20px;
 }
 .main .menu .content > div h3 {
   font-size: 12px;
@@ -82,11 +82,13 @@
 .main .product > p {
   width: 994px;
   color: #7a7d82;
-  font-size: 14px;
-  padding-right: 7px;
+  font: 14px/30px '微软雅黑 Regular';
+  padding-right: 12px;
   text-align: right;
-  line-height: 30px;
   background: #dde1eb;
+}
+.main .product > p a {
+  color: #7a7d82;
 }
 .main .product > p a:hover,
 .main .product > p .current {
@@ -145,7 +147,6 @@
   text-align: center;
   margin-left: 4px;
 }
-.main .product .paging ol li.selected,
 .main .product .paging ol li:hover {
   background: #4a699e;
 }

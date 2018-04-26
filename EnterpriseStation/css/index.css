@@ -134,44 +134,55 @@
   width: 1200px;
   margin: 0 auto;
 }
-.product_center .pro_center ul li {
+.product_center .pro_center ul > li {
   float: left;
   margin-right: 26px;
   width: 280px;
   height: 570px;
 }
-.product_center .pro_center ul li:last-child {
-  margin-right: 0;
-}
-.product_center .pro_center ul li img {
+.product_center .pro_center ul > li > a img {
   width: 280px;
   height: 301px;
 }
-.product_center .pro_center ul li div {
+.product_center .pro_center ul > li div {
   border-top: 1px solid transparent;
   padding: 2px 0 26px 18px;
   background: #d7eef9;
 }
-.product_center .pro_center ul li div h2 {
+.product_center .pro_center ul > li div > a {
+  display: block;
   font-size: 18px;
   margin: 24px 0;
 }
-.product_center .pro_center ul li div p {
-  width: 202px;
-  font-size: 16px;
+.product_center .pro_center ul > li div ol {
   height: 168px;
 }
-.product_center .pro_center ul li:hover div {
+.product_center .pro_center ul > li div ol li {
+  font: 16px/22px '微软雅黑 Regular';
+  width: 202px;
+}
+.product_center .pro_center ul > li:hover div {
   background: #6684b0;
 }
-.product_center .pro_center ul li:hover div h2,
-.product_center .pro_center ul li:hover div p {
+.product_center .pro_center ul > li:hover div a,
+.product_center .pro_center ul > li:hover div ol li {
   color: #f7f4f4;
 }
 /*--------新闻中心--.new_center--------*/
 .news_center {
   width: 1200px;
   margin: 95px auto 68px auto;
+}
+.news_center .title {
+  padding: 14px 0 12px;
+  background: url('../img/title_new.png') no-repeat;
+}
+.news_center .title h2 {
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+.news_center .title h3 {
+  line-height: 16px;
 }
 .news_center .news_list {
   margin: 29px 0 56px 0;
@@ -202,6 +213,7 @@
 }
 .news_center .news_list ul li .news_left div {
   width: 53px;
+  height: 0;
   margin: 0 auto;
   border: 1px solid #4a699e;
 }
@@ -218,10 +230,6 @@
   font-size: 16px;
   margin: 24px 0 20px 0;
 }
-.news_center .news_list ul li:hover,
-.news_center .news_list ul li.current {
+.news_center .news_list ul li:hover {
   border-color: #75829d;
-}
-.news_center .news_list ul .li_r {
-  margin-right: 0;
 }

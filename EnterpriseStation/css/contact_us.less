@@ -6,50 +6,41 @@
   width:1200px;margin:110px auto 0;
   .left{
     width:343px;height:275px;border:1px dashed #080103;
-    border-radius:10px;float:left;
+    border-radius:10px;float:left;behavior:url('PIE/PIE.htc');
     ul{
       font-size:14px;margin:36px 0 0 28px;
       li{
-        line-height:30px;
+        line-height:30px;border-radius:10px;
       }
     }
   }
   .right{
-    float:right;width:781px;margin:12px 28px 30px 0;
+    float:right;width:786px;margin-right:30px;padding-top:17px;
     form{
-      table{
-        input[type="submit"]{
-          width:96px;height:42px;background:#4a699e;
-          border:none;color:#fff;margin-right:52px;
+        ul{
+          li{
+            font-size:16px;float:left;margin-bottom:34px;position:relative;
+            span{position:absolute;top:14px;}
+            input{
+              width:306px;height:50px;border:1px dashed #080103;
+              border-radius:10px;behavior:url('PIE/PIE.htc');
+              margin-left:54px;padding-left:4px;line-height:50px;
+            }
+            img{
+              position:absolute;right:0;top:0;
+            }
+            .sub{
+              width:96px;height:42px;background:#4a699e;
+              font:18px/42px '微软雅黑 Regular';
+              border:none;color:#fff;margin: 0 50px 0 280px;
+            }
+            .res{
+              font:18px/42px '微软雅黑 Regular';
+              width:96px;height:42px;background:#bfbfbf;
+              border:none;
+            }
+          }
         }
-        input[type="reset"]{
-          width:96px;height:42px;background:#bfbfbf;
-          border:none;
-        }
-        .input_1{
-          width:307px;height:49px;border:1px dashed #080103;
-          border-radius:10px;margin-right:39px;
-        }
-        .input_2{
-          width:301px;height:49px;border:1px dashed #080103;
-          border-radius:10px;
-        }
-        textarea{
-          width:666px;height:90px;border:1px dashed #080103;
-          border-radius:10px;overflow:hidden;
-        }
-        .interval{
-          height:34px;
-        }
-        .vcode{
-          width:280px;height:49px;border:1px dashed #080103;
-          border-radius:10px 0 0 10px;border-right:none;
-        }
-        .vcode_td{width:280px;}
-        .text_right{text-align:right;}
-        .email_td{width:50px;}
-        .button{text-align:center;}
-      }
     }
   }
 }

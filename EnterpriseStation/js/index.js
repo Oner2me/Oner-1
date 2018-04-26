@@ -14,6 +14,19 @@ $('.about_us .content .about_left ul li').eq(3).css('background','url("img/sprit
 
 //关于我们样式
 
+//产品中心
+
+$('.product_center .pro_center ul li:last-child').css('margin-right','0');
+
+//产品中心
+
+//新闻中心样式
+
+$('.news_center .news_list ul li:nth-child(2n)').css('margin-right','0');
+
+//新闻中心样式
+
+
 var i=0;
 var ul = $('.banner ul');
 var ol_li = $('.banner ol li');
@@ -65,9 +78,9 @@ function stop(){
     clearInterval(Timer);
 }
 //鼠标移上停止轮播，移开开始轮播
-//$('.banner').hover(stop,play);
+$('.banner').hover(stop,play);
 
-//play();
+play();
 
 //鼠标移上轮播图的左右按钮，按钮的图片更换
 $('.banner .left').mouseover(function(){
