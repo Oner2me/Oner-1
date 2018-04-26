@@ -91,10 +91,10 @@
   width: 994px;
 }
 .main .introduce > p {
-  width: 994px;
+  width: 987px;
   color: #7a7d82;
   font: 14px/30px '微软雅黑 Regular';
-  padding-right: 12px;
+  padding-right: 7px;
   text-align: right;
   background: #dde1eb;
   margin-bottom: 14px;
@@ -105,6 +105,9 @@
 .main .introduce > p a:hover,
 .main .introduce > p .current {
   color: #4a699e;
+}
+.main .introduce img {
+  width: 100%;
 }
 .main .introduce .content {
   width: 100%;
