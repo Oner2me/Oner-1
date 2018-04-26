@@ -88,19 +88,22 @@
 }
 .main .introduce {
   float: right;
-  width: 996px;
+  width: 994px;
 }
 .main .introduce > p {
-  width: 989px;
+  width: 994px;
   color: #7a7d82;
-  font-size: 14px;
-  padding-right: 7px;
+  font: 14px/30px '微软雅黑 Regular';
+  padding-right: 12px;
   text-align: right;
-  line-height: 30px;
   background: #dde1eb;
   margin-bottom: 14px;
 }
-.main .introduce > p a:hover {
+.main .introduce > p a {
+  color: #7a7d82;
+}
+.main .introduce > p a:hover,
+.main .introduce > p .current {
   color: #4a699e;
 }
 .main .introduce .content {
