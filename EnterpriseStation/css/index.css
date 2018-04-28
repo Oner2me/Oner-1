@@ -34,21 +34,24 @@
 }
 .banner span {
   position: absolute;
-  display: block;
-  width: 56px;
+  width: 53px;
   height: 66px;
   top: 200px;
   cursor: pointer;
 }
 .banner span.left {
-  background: url('../img/sprite.png') 219px 197px;
+  background: url('../img/sprite.png') 0 0;
   left: 55px;
-  display: none;
+}
+.banner span.left:hover {
+  background: url('../img/sprite.png') 73px 0;
 }
 .banner span.right {
-  background: url('../img/sprite.png') 108px 123px;
+  background: url('../img/sprite.png') 73px 66px;
   right: 55px;
-  display: none;
+}
+.banner span.right:hover {
+  background: url('../img/sprite.png') 0 66px;
 }
 .banner ol {
   position: absolute;
@@ -62,10 +65,10 @@
   height: 18px;
   margin: 0 15px;
   cursor: pointer;
-  background: url('../img/sprite.png') 108px 29px;
+  background: url('../img/sprite.png') 18px -18px;
 }
 .banner ol li.on {
-  background: url('../img/sprite.png') 108px 47px;
+  background: url('../img/sprite.png') 18px 0;
 }
 /*--------关于我们--.about_us--------*/
 .about_us {
@@ -77,53 +80,45 @@
 }
 .about_us .content {
   margin: 36px 0 90px;
+  padding-left: 16px;
 }
 .about_us .content .about_left {
   float: left;
+  width: 558px;
+  padding-top: 32px;
 }
 .about_us .content .about_left p {
   font: 14px/28px '微软雅黑 Regular';
   width: 558px;
-  margin: 0 15px;
   text-indent: 2em;
 }
 .about_us .content .about_left ul {
-  margin-left: 21px;
+  margin: 50px 0 0 44px;
 }
 .about_us .content .about_left ul li {
   float: left;
   width: 48px;
   height: 50px;
-  margin: 0 48px;
+  margin-right: 86px;
 }
-.about_us .content .about_left ul li.icon1 {
-  background: url('../img/sprite.png') 0 0;
-}
-.about_us .content .about_left ul li.icon2 {
-  background: url('../img/sprite.png') 0 -50px;
-}
-.about_us .content .about_left ul li.icon3 {
-  background: url('../img/sprite.png') 0 -98px;
-}
-.about_us .content .about_left ul li.icon4 {
-  background: url('../img/sprite.png') 0 -147px;
-}
-.about_us .content img {
+.about_us .content > img {
+  width: 576px;
+  height: 360px;
   float: right;
 }
 /*--------产品中心--.product_center--------*/
 .product_center {
   background: #f2f2f2;
-  padding-bottom: 29px;
+  padding-bottom: 30px;
   border-top: 1px solid #f2f2f2;
 }
 .product_center .title {
   margin: 14px auto 32px;
-  width: 189px;
+  width: 184px;
   background: url('../img/title_product.png') no-repeat;
 }
 .product_center .title span {
-  margin-left: 15px;
+  margin-left: 16px;
 }
 .product_center .pro_center {
   background: url("../img/product_bg.png") center center no-repeat;
@@ -149,7 +144,7 @@
   padding: 2px 0 26px 18px;
   background: #d7eef9;
 }
-.product_center .pro_center ul > li div > a {
+.product_center .pro_center ul > li div > h2 a {
   display: block;
   font-size: 18px;
   margin: 24px 0;
@@ -184,52 +179,58 @@
 .news_center .title h3 {
   line-height: 16px;
 }
-.news_center .news_list {
-  margin: 29px 0 56px 0;
+.news_center ul {
+  margin: 30px 0 56px 0;
 }
-.news_center .news_list ul li {
+.news_center ul li {
   float: left;
-  width: 567px;
-  height: 131px;
+  width: 568px;
   position: relative;
   border: 6px solid transparent;
-  margin: 0 42px 34px 0;
+  margin: 0 40px 34px 0;
 }
-.news_center .news_list ul li img {
+.news_center ul li img {
   position: absolute;
   right: -6px;
   bottom: -6px;
 }
-.news_center .news_list ul li .news_left {
+.news_center ul li .news_left {
   float: left;
-  margin: 0 23px;
+  margin: 0 24px;
   width: 70px;
   text-align: center;
 }
-.news_center .news_list ul li .news_left h2 {
-  font: 64px/70px '微软正黑体';
-  display: inline-block;
+.news_center ul li .news_left h2 {
+  font: 64px/70px '微軟正黑體 Regular';
   margin-top: 32px;
+  position: relative;
 }
-.news_center .news_list ul li .news_left div {
-  width: 53px;
-  height: 0;
-  margin: 0 auto;
-  border: 1px solid #4a699e;
+.news_center ul li .news_left h2:after {
+  content: '';
+  width: 54px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background: #4a699e;
+  bottom: -2px;
+  left: 8px;
 }
-.news_center .news_list ul li .news_left h3 {
+.news_center ul li .news_left h3 {
   font-size: 14px;
+  margin: 2px 0 8px;
 }
-.news_center .news_list ul li .news_right {
+.news_center ul li .news_right {
   float: left;
   width: 426px;
-  font-size: 14px;
-  line-height: 22px;
 }
-.news_center .news_list ul li .news_right p {
+.news_center ul li .news_right h2 a {
+  display: block;
   font-size: 16px;
   margin: 24px 0 20px 0;
 }
-.news_center .news_list ul li:hover {
+.news_center ul li .news_right p {
+  font: 14px/22px '微软雅黑 Regular';
+}
+.news_center ul li:hover {
   border-color: #75829d;
 }

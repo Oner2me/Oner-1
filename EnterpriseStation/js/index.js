@@ -5,24 +5,18 @@ $('.banner').hover(function(){
     $('.banner span').hide();
 });
 //关于我们样式
-$('.about_us .content .about_left p').eq(0).css('margin-top','32px');
-$('.about_us .content .about_left p').eq(1).css('margin-bottom','50px');
-$('.about_us .content .about_left ul li').eq(0).css('background','url("img/sprite.png") 0 0');
-$('.about_us .content .about_left ul li').eq(1).css('background','url("img/sprite.png") 0 -50px');
-$('.about_us .content .about_left ul li').eq(2).css('background','url("img/sprite.png") 0 -98px');
-$('.about_us .content .about_left ul li').eq(3).css('background','url("img/sprite.png") 0 -147px');
-
+$('.about_us .content .about_left ul li:last-child').css('margin-right',0);
 //关于我们样式
 
 //产品中心
 
-$('.product_center .pro_center ul li:last-child').css('margin-right','0');
+$('.product_center .pro_center ul>li:last-child').css('margin-right','0');
 
 //产品中心
 
 //新闻中心样式
 
-$('.news_center .news_list ul li:nth-child(2n)').css('margin-right','0');
+$('.news_center ul li:nth-child(2n)').css('margin-right','0');
 
 //新闻中心样式
 
@@ -81,18 +75,3 @@ function stop(){
 $('.banner').hover(stop,play);
 
 play();
-
-//鼠标移上轮播图的左右按钮，按钮的图片更换
-$('.banner .left').mouseover(function(){
-    $(this).css('background','url("img/sprite.png") 276px 197px');
-});
-$('.banner .left').mouseout(function(){
-    $(this).css('background','url("img/sprite.png") 219px 197px');
-});
-$('.banner .right').mouseover(function(){
-    $(this).css('background','url("img/sprite.png") 54px 123px');
-});
-$('.banner .right').mouseout(function(){
-    $(this).css('background','url("img/sprite.png") 108px 123px');
-});
-

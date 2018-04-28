@@ -1,0 +1,10 @@
+.mulit_line {
+  line-height: 150px;
+  border: 1px dashed #cccccc;
+  padding-left: 5px;
+}
+.mulit_line span {
+  display: inline-block;
+  line-height: 1.4em;
+  vertical-align: middle;
+}

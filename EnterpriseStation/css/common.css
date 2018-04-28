@@ -95,6 +95,7 @@ textarea {
 }
 .footer .footer_list .footer_left {
   float: left;
+  width: 730px;
 }
 .footer .footer_list .footer_left dl {
   margin: 30px 92px 0 0;

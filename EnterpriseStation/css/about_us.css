@@ -88,22 +88,22 @@
 }
 .main .introduce {
   float: right;
-  width: 994px;
+  width: 998px;
 }
-.main .introduce > p {
-  width: 987px;
+.main .introduce > h2 {
+  width: 990px;
   color: #7a7d82;
   font: 14px/30px '微软雅黑 Regular';
-  padding-right: 7px;
+  padding-right: 8px;
   text-align: right;
   background: #dde1eb;
   margin-bottom: 14px;
 }
-.main .introduce > p a {
+.main .introduce > h2 a {
   color: #7a7d82;
 }
-.main .introduce > p a:hover,
-.main .introduce > p .current {
+.main .introduce > h2 a:hover,
+.main .introduce > h2 .current {
   color: #4a699e;
 }
 .main .introduce img {
@@ -119,26 +119,15 @@
   margin-bottom: 15px;
 }
 .main .introduce ul {
-  margin-top: 58px;
+  margin: 58px auto 0;
+  width: 900px;
 }
 .main .introduce ul li {
   float: left;
   width: 48px;
   height: 50px;
+  margin-left: 236px;
 }
-.main .introduce ul li.icon1 {
-  background: url('../img/sprite.png') 0 0;
-  margin-left: 48px;
-}
-.main .introduce ul li.icon2 {
-  background: url('../img/sprite.png') 0 -50px;
-  margin-left: 210px;
-}
-.main .introduce ul li.icon3 {
-  background: url('../img/sprite.png') 0 -98px;
-  margin-left: 217px;
-}
-.main .introduce ul li.icon4 {
-  background: url('../img/sprite.png') 0 -147px;
-  margin-left: 260px;
+.main .introduce ul li:first-child {
+  margin-left: 0;
 }
