@@ -28,47 +28,45 @@
         <img src="img/product_banner.png" alt="product_banner" />
     </div>
     <div class="main clearfix">
-        <div class="menu">
-            <img src="img/ab_us_menu.png" alt="ab_us_menu" />
-            <div class="content">
-                <div>
-                    <h2>产品中心</h2>
-                    <h3>PRODUCT CENTER</h3>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <div></div>
-                            <span>防水系列</span>
-                        </a>
-                    </li>
-                    <li class="current">
-                        <a href="#">
-                            <div></div>
-                            <span>超轻系列</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div></div>
-                            <span>休闲系列</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="sidebar">
+            <dl>
+                <dt>
+                <h2>产品中心</h2>
+                <h3>PRODUCT<span>CENTER</span></h3>
+                </dt>
+                <dd>
+                    <a href="#">
+                        <div></div>
+                        <span>防水系列</span>
+                    </a>
+                </dd>
+                <dd  class="current">
+                    <a href="#">
+                        <div></div>
+                        <span>超轻系列</span>
+                    </a>
+                </dd>
+                <dd>
+                    <a href="#">
+                        <div></div>
+                        <span>休闲系列</span>
+                    </a>
+                </dd>
+            </dl>
+            <img src="img/ab_us_sidebar.png" alt="ab_us_sidebar.png">
         </div>
         <div class="product">
-            <p>
-                <a href="#">当前位置</a>&lt;
+            <h2>
+                <span>当前位置</span>&lt;
                 <a href="product.html">产品中心</a>&lt;
-                <a href="#" class="current">超轻系列</a>
-            </p>
+                <span class="current">超轻系列</span>
+            </h2>
             <ul class="clearfix">
                 <li>
                     <a href="pro_details.html">
                         <img src="img/pro_1.png" alt="pro_1" />
                         <span>天霸登山包</span>
-                        <span>防泼水轻质耐磨尼龙布</span>
+                        <i>防泼水轻质耐磨尼龙布</i>
                         <img src="img/pro_tans.png" alt="pro_tans.png" class="mask">
                     </a>
                 </li>
@@ -76,7 +74,7 @@
                     <a href="pro_details.html">
                         <img src="img/pro_2.png" alt="pro_2" />
                         <span>战神式登山包</span>
-                        <span>40L超大容量出游虚伴侣</span>
+                        <i>40L超大容量出游虚伴侣</i>
                         <img src="img/pro_tans.png" alt="pro_tans.png" class="mask">
                     </a>
                 </li>
@@ -84,7 +82,7 @@
                     <a href="pro_details.html">
                         <img src="img/pro_3.png" alt="pro_3" />
                         <span>天蓝霸气户外背包</span>
-                        <span>悬浮背负 透气减震</span>
+                        <i>悬浮背负 透气减震</i>
                         <img src="img/pro_tans.png" alt="pro_tans.png" class="mask">
                     </a>
                 </li>
@@ -92,7 +90,7 @@
                     <a href="pro_details.html">
                         <img src="img/pro_4.png" alt="pro_4" />
                         <span>萌动户外登山包</span>
-                        <span>耐寒冷低温SBS网具</span>
+                        <i>耐寒冷低温SBS网具</i>
                         <img src="img/pro_tans.png" alt="pro_tans.png" class="mask">
                     </a>
                 </li>
@@ -100,7 +98,7 @@
                     <a href="pro_details.html">
                         <img src="img/pro_5.png" alt="pro_5" />
                         <span>大蜂巢户外背包</span>
-                        <span>CR背负系统 3D透气网格</span>
+                        <i>CR背负系统 3D透气网格</i>
                         <img src="img/pro_tans.png" alt="pro_tans.png" class="mask">
                     </a>
                 </li>
@@ -108,7 +106,7 @@
                     <a href="pro_details.html">
                         <img src="img/pro_6.png" alt="pro_6" />
                         <span>60+10大容量背包</span>
-                        <span>防撕裂功能，野外耐用</span>
+                        <i>防撕裂功能，野外耐用</i>
                         <img src="img/pro_tans.png" alt="pro_tans.png" class="mask">
                     </a>
                 </li>
@@ -174,4 +172,6 @@
     </div>
 </body>
 </html>
-<script src="js/product.js"></script>
+<script>
+    $('.main .product ul li:nth-child(3n)').css('margin-right',0);
+</script>

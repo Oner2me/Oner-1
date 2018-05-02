@@ -3,42 +3,48 @@
   img{width:100%;}
 }
 .main{
-  width:1200px;margin:84px auto 92px auto;
-  .menu{
-    width:175px;height:358px;position:relative;float:left;
-    .content{
-      position:absolute;top:18px;left:14px;background:#c3ccdc;
-      div{
-        width:146px;height:76px;text-align:center;
-        border-top:1px solid #abb8d0;background:#abb8d0;
-        h2{font-size:18px;color:#1c366d;margin-top:19px;}
-        h3{font-size:12px;color:#4a699e;}
-      }
-      ul{
-        margin:36px auto 0 auto;
-        li{
-          width:90px;line-height:37px;position:relative;
-          margin:0 auto 18px auto;font-size:14px;text-align:right;
-          padding-right:10px;font-weight:bold;color:#263f75;
-          div{
-            width:7px;height:7px;border-radius:50%;
-            border-top:none;
-            position:absolute;left:12px;top:16px;
-            background:#4c699d;
+  width:1200px;margin:84px auto 92px;
+  .sidebar{
+    float:left;width:174px;position:relative;
+    background:#dce1eb;padding:18px 0 10px;border-radius:10px;behavior:url('PIE/PIE.htc');
+    dl{
+      width:146px;margin:0 auto;background:#c3ccdc;padding-bottom:14px;
+      dt{
+        width:100%;padding:22px 0 14px;text-align:center;
+        background:#abb8d0;margin-bottom:36px;
+        h2{
+          font:18px/18px '微软雅黑 Regular';color:#1c366d;
+        }
+        h3{
+          font:12px/22px '微软雅黑 Regular';color:#4a699e;
+          span{
+            margin-left:8px;
           }
-          &:hover,&.current{
-            background:#4c699d;border-radius:10px 10px 0 0;
-            a{color:#fff;}
-            div{background:#fff;}
-          }
-          &:after,&:before{
-            content:'';width:54px;height:0;border-top:1px solid #e0e4ed;
-            position:absolute;bottom:-1px;
-          }
-          &:after{left:50%;}
-          &:before{right:50%}
         }
       }
+      dd{
+        width:108px;margin:0 auto 18px;border-bottom:1px solid #e0e4ed;
+        position:relative;
+        a{
+          width:100px;display:block;margin:0 auto;position:relative;
+          font:14px/38px '微软雅黑 Regular';text-align:right;
+          border-radius:10px 10px 0  0;behavior:url('PIE/PIE.htc');
+          font-weight:bold;color:#263f75;
+          span{margin-right:10px;}
+          div{
+            width:7px;height:6px;position:absolute;left:16px;
+            top:50%;margin-top:-3px;
+            background:url('../img/sprite.png') 13px -36px;
+          }
+        }
+        &.current,&:hover{
+          a{background:#4c699d;color:#d9dee8;}
+          div{background:url('../img/sprite.png') 13px -42px;}
+        }
+      }
+    }
+    img{
+      position:absolute;bottom:-32px;left:4px;width:166px;height:34px;
     }
   }
   .introduce{
@@ -56,8 +62,8 @@
     .content{
       width:100%;margin-top:22px;
       p{
-        text-indent:2em;line-height:25px;
-        margin-bottom:15px;
+        text-indent:2em;line-height:26px;
+        margin-bottom:14px;
       }
     }
     ul{

@@ -4,87 +4,86 @@
 }
 .main {
   width: 1200px;
-  margin: 84px auto 92px auto;
+  margin: 84px auto 92px;
 }
-.main .menu {
-  width: 175px;
-  height: 358px;
-  position: relative;
+.main .sidebar {
   float: left;
+  width: 174px;
+  position: relative;
+  background: #dce1eb;
+  padding: 18px 0 10px;
+  border-radius: 10px;
+  behavior: url('PIE/PIE.htc');
 }
-.main .menu .content {
-  position: absolute;
-  top: 18px;
-  left: 14px;
-  background: #c3ccdc;
-}
-.main .menu .content div {
+.main .sidebar dl {
   width: 146px;
-  height: 76px;
+  margin: 0 auto;
+  background: #c3ccdc;
+  padding-bottom: 14px;
+}
+.main .sidebar dl dt {
+  width: 100%;
+  padding: 22px 0 14px;
   text-align: center;
-  border-top: 1px solid #abb8d0;
   background: #abb8d0;
+  margin-bottom: 36px;
 }
-.main .menu .content div h2 {
-  font-size: 18px;
+.main .sidebar dl dt h2 {
+  font: 18px/18px '微软雅黑 Regular';
   color: #1c366d;
-  margin-top: 19px;
 }
-.main .menu .content div h3 {
-  font-size: 12px;
+.main .sidebar dl dt h3 {
+  font: 12px/22px '微软雅黑 Regular';
   color: #4a699e;
 }
-.main .menu .content ul {
-  margin: 36px auto 0 auto;
+.main .sidebar dl dt h3 span {
+  margin-left: 8px;
 }
-.main .menu .content ul li {
-  width: 90px;
-  line-height: 37px;
+.main .sidebar dl dd {
+  width: 108px;
+  margin: 0 auto 18px;
+  border-bottom: 1px solid #e0e4ed;
   position: relative;
-  margin: 0 auto 18px auto;
-  font-size: 14px;
+}
+.main .sidebar dl dd a {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  font: 14px/38px '微软雅黑 Regular';
   text-align: right;
-  padding-right: 10px;
+  border-radius: 10px 10px 0  0;
+  behavior: url('PIE/PIE.htc');
   font-weight: bold;
   color: #263f75;
 }
-.main .menu .content ul li div {
+.main .sidebar dl dd a span {
+  margin-right: 10px;
+}
+.main .sidebar dl dd a div {
   width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  border-top: none;
+  height: 6px;
   position: absolute;
-  left: 12px;
-  top: 16px;
+  left: 16px;
+  top: 50%;
+  margin-top: -3px;
+  background: url('../img/sprite.png') 13px -36px;
+}
+.main .sidebar dl dd.current a,
+.main .sidebar dl dd:hover a {
   background: #4c699d;
+  color: #d9dee8;
 }
-.main .menu .content ul li:hover,
-.main .menu .content ul li.current {
-  background: #4c699d;
-  border-radius: 10px 10px 0 0;
+.main .sidebar dl dd.current div,
+.main .sidebar dl dd:hover div {
+  background: url('../img/sprite.png') 13px -42px;
 }
-.main .menu .content ul li:hover a,
-.main .menu .content ul li.current a {
-  color: #fff;
-}
-.main .menu .content ul li:hover div,
-.main .menu .content ul li.current div {
-  background: #fff;
-}
-.main .menu .content ul li:after,
-.main .menu .content ul li:before {
-  content: '';
-  width: 54px;
-  height: 0;
-  border-top: 1px solid #e0e4ed;
+.main .sidebar img {
   position: absolute;
-  bottom: -1px;
-}
-.main .menu .content ul li:after {
-  left: 50%;
-}
-.main .menu .content ul li:before {
-  right: 50%;
+  bottom: -32px;
+  left: 4px;
+  width: 166px;
+  height: 34px;
 }
 .main .introduce {
   float: right;
@@ -115,8 +114,8 @@
 }
 .main .introduce .content p {
   text-indent: 2em;
-  line-height: 25px;
-  margin-bottom: 15px;
+  line-height: 26px;
+  margin-bottom: 14px;
 }
 .main .introduce ul {
   margin: 58px auto 0;

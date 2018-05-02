@@ -1,9 +1,3 @@
-//鼠标移上banner两边按钮显示，移出时隐藏
-$('.banner').hover(function(){
-    $('.banner span').show();
-},function(){
-    $('.banner span').hide();
-});
 //关于我们样式
 $('.about_us .content .about_left ul li:last-child').css('margin-right',0);
 //关于我们样式
@@ -27,13 +21,13 @@ var ol_li = $('.banner ol li');
 var lis = $('.banner ul li');
 var li_width = lis.width();
 var Timer=null;
-var Interval=2000;
+var Interval=2500;
 //克隆第一张图片添加到ul的子集后面
 ul.append(lis.first().clone());
 //给ol下的li添加点击事件
 $('.banner ol li').click(function(){
     i = $(this).index();
-    ul.animate({'left':-i*li_width},300);
+    ul.animate({'left':-i*li_width},800);
     $(this).addClass('on').siblings().removeClass('on');
 });
 //下一页
@@ -44,7 +38,7 @@ $('.banner .right').click(function(){
         i=1;
         ul.css('left',0);
     }
-    ul.animate({'left':-i*li_width},300);
+    ul.animate({'left':-i*li_width},800);
     if(i==lis_length-1){
         ol_li.eq(0).addClass('on').siblings().removeClass('on');
     }else{
@@ -59,7 +53,7 @@ $('.banner .left').click(function(){
     }
     i--;
 
-    ul.animate({'left':-i*li_width},300);
+    ul.animate({'left':-i*li_width},800);
     ol_li.eq(i).addClass('on').siblings().removeClass('on');
 });
 //定时器
@@ -72,6 +66,12 @@ function stop(){
     clearInterval(Timer);
 }
 //鼠标移上停止轮播，移开开始轮播
-$('.banner').hover(stop,play);
+$('.banner').hover(function(){
+    stop();
+    $('.banner span').show();
+},function(){
+    play();
+    $('.banner span').hide();
+});
 
 play();

@@ -4,81 +4,60 @@
 }
 .main {
   width: 1200px;
-  margin: 84px auto 92px auto;
-  .menu {
-    width: 175px;
-    height: 358px;
-    position: relative;
-    float: left;
-    .content {
-      position: absolute;
-      top: 18px;
-      left: 14px;
-      background: #abb6cd;
-      div {
-        width: 146px;
-        height: 76px;
-        text-align: center;
-        border-top: 1px solid #abb8d0;
-        background: #90a1c0;
-        h2 {
-          font-size: 18px;
-          color: #1c366d;
-          margin-top: 19px;
+  margin: 84px auto 92px;
+  .sidebar{
+    float:left;width:174px;position:relative;
+    background:#cad2e1;padding:18px 0 10px;border-radius:10px;behavior:url('PIE/PIE.htc');
+    dl{
+      width:146px;margin:0 auto;background:#abb6cd;padding-bottom:14px;
+      dt{
+        width:100%;padding:22px 0 14px;text-align:center;
+        background:#90a1c0;margin-bottom:36px;
+        h2{
+          font:18px/18px '微软雅黑 Regular';color:#1c366d;
         }
-        h3 {
-          font-size: 12px;
-          color: #4a699e;
+        h3{
+          font:12px/22px '微软雅黑 Regular';color:#4a699e;
+          span{
+            margin-left:4px;
+          }
         }
       }
-      ul {
-        margin: 36px auto 0;
-        li {
-          width: 107px;margin:0 auto 18px;
-          border-bottom:1px solid #e0e4ed;
-          a{
-            width:100px;font-size: 14px;
-            font-weight: bold;position:relative;
-            display:block;margin:0 auto;
-            color:#3f5685;
-            border-radius: 10px 10px 0 0;
-            behavior:url('PIE/PIE.htc');
-            span{
-              display:block;
-              padding:12px 0 10px 30px;
-            }
-            div {
-              width: 7px;
-              height: 6px;
-              border-top: none;
-              position: absolute;
-              left: 12px;
-              top: 19px;
-              background: url('../img/sprite.png') 85px 47px;
-            }
+      dd{
+        width:108px;margin:0 auto 18px;border-bottom:1px solid #e0e4ed;
+        position:relative;
+        a{
+          width:100px;display:block;margin:0 auto;
+          font:14px/38px '微软雅黑 Regular';text-align:right;
+          border-radius:10px 10px 0 0;font-weight:bold;color:#263f75;
+          behavior:url('PIE/PIE.htc');position:relative;
+          span{margin-right:10px;}
+          div{
+            width:7px;height:6px;position:absolute;left:16px;
+            top:50%;margin-top:-3px;
+            background:url('../img/sprite.png') 13px -36px;
           }
-          &:hover, &.current {
-            a {
-              background: #4c699d;
-              color: #c9d0df;
-            }
-            div {
-              background: url('../img/sprite.png') 85px 41px;
-            }
-          }
+        }
+        &.current,&:hover{
+          a{background:#4c699d;color:#d9dee8;}
+          div{background:url('../img/sprite.png') 13px -42px;}
         }
       }
     }
+    img{
+      position:absolute;bottom:-32px;left:4px;width:166px;height:34px;
+    }
   }
   .news{
-    float:right;width:994px;
-    &>p{
-      width:994px;color:#7a7d82;
+    float:right;width:998px;
+    &>h2{
+      width:990px;color:#7a7d82;
       font:14px/30px '微软雅黑 Regular';
-      padding-right:12px;text-align:right;
+      padding-right:8px;text-align:right;
       background:#dde1eb;
       a{color:#7a7d82;}
       a:hover,.current{color:#4a699e;}
+      margin-bottom:14px;
     }
     ul{
       li{
@@ -90,7 +69,7 @@
         }
         h2{
           margin-bottom:14px;color:#8f8f90;
-          span{display:inline-block;width:20px;}
+          span{margin-left:20px;}
         }
         p{
           font:14px/24px '微软雅黑 Regular';
@@ -102,9 +81,9 @@
       }
     }
     .paging{
-      width:419px;margin:20px auto 0 auto;
-      line-height:20px;height:20px;border-top:1px solid transparent;
-      &>a{display:block;margin:0 9px;float:left;}
+      width:420px;margin:20px auto 0;
+      line-height:20px;border-top:1px solid transparent;
+      &>a{display:block;margin:0 10px;float:left;}
       ol{
         float:left;
         li{
