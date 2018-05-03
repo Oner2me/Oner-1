@@ -1,11 +1,3 @@
-//关于我们样式
-$('.about_us .content .about_left ul li:last-child').css('margin-right',0);
-//关于我们样式
-
-//产品中心
-$('.product_center .pro_center ul>li:last-child').css('margin-right','0');
-//产品中心
-
 //新闻中心样式
 $('.news_center ul li:nth-child(2n)').css('margin-right','0');
 //新闻中心样式

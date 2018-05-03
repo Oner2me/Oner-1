@@ -100,7 +100,10 @@
   float: left;
   width: 48px;
   height: 50px;
-  margin-right: 86px;
+  margin-left: 86px;
+}
+.about_us .content .about_left ul li:first-child {
+  margin-left: 0;
 }
 .about_us .content > img {
   width: 576px;
@@ -132,8 +135,11 @@
 }
 .product_center .pro_center ul > li {
   float: left;
-  margin-right: 26px;
+  margin-left: 26px;
   width: 280px;
+}
+.product_center .pro_center ul > li:first-child {
+  margin-left: 0;
 }
 .product_center .pro_center ul > li > a img {
   width: 280px;
