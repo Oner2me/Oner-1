@@ -32,15 +32,15 @@
           border-radius:10px 10px 0 0;font-weight:bold;color:#263f75;
           behavior:url('PIE/PIE.htc');position:relative;
           span{margin-right:10px;}
-          div{
-            width:7px;height:6px;position:absolute;left:16px;
-            top:50%;margin-top:-3px;
+          i{
+            width:8px;height:6px;position:absolute;left:16px;
+            top:50%;margin-top:-3px;display:block;
             background:url('../img/sprite.png') 13px -36px;
           }
         }
         &.current,&:hover{
           a{background:#4c699d;color:#d9dee8;}
-          div{background:url('../img/sprite.png') 13px -42px;}
+          i{background:url('../img/sprite.png') 13px -42px;}
         }
       }
     }
@@ -97,7 +97,7 @@
         li{
           float:left;width:20px;line-height:20px;text-align:center;
           margin-left:4px;
-          &:hover{
+          &:hover,&.current{
             background:#4a699e;
           }
         }
