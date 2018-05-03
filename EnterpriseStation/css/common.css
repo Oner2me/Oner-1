@@ -65,7 +65,7 @@ textarea {
 }
 .header ul {
   float: right;
-  margin: 30px 0 24px 0;
+  margin: 30px 0 24px;
 }
 .header ul li {
   float: left;
@@ -135,13 +135,11 @@ textarea {
   font: 14px/22px '微软雅黑 Regular';
 }
 .footer .footer_list .copy {
-  line-height: 56px;
-  font-size: 14px;
+  font: 14px/56px '微软雅黑 Regular';
   text-align: center;
   color: #fff;
 }
 .footer .footer_list .copy span {
   display: inline-block;
   margin: 0 14px 0 34px;
-  color: #fff;
 }
