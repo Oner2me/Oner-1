@@ -61,7 +61,13 @@ textarea {
 }
 .header a.logo {
   float: left;
+  display: block;
+  width: 62px;
+  height: 62px;
   margin-top: 18px;
+}
+.header a.logo img {
+  width: 100%;
 }
 .header ul {
   float: right;
@@ -97,9 +103,11 @@ textarea {
 .footer .footer_list .footer_left {
   float: left;
   width: 730px;
+  padding-top: 30px;
 }
 .footer .footer_list .footer_left dl {
-  margin: 30px 92px 0 0;
+  width: 154px;
+  text-align: left;
   float: left;
   color: #fff;
 }
@@ -113,6 +121,9 @@ textarea {
 .footer .footer_list .footer_left dl dd {
   margin-bottom: 14px;
   font-size: 14px;
+}
+.footer .footer_list .footer_left dl.con_us {
+  width: 180px;
 }
 .footer .footer_list .footer_right {
   margin-top: 30px;

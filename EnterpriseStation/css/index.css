@@ -146,8 +146,7 @@
   height: 302px;
 }
 .product_center .pro_center ul > li div {
-  border-top: 1px solid transparent;
-  padding: 2px 0 26px 18px;
+  padding: 1px 0 26px 18px;
   background: #d7eef9;
 }
 .product_center .pro_center ul > li div > h2 a {
@@ -156,7 +155,7 @@
   margin: 24px 0;
 }
 .product_center .pro_center ul > li div ol {
-  height: 168px;
+  height: 176px;
 }
 .product_center .pro_center ul > li div ol li {
   font: 16px/22px '微软雅黑 Regular';

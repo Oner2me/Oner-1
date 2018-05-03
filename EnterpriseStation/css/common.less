@@ -12,8 +12,9 @@ textarea{resize:none;}
 .header{
   width:1200px;margin:0 auto;
   a.logo{
-    float:left;
+    float:left;display:block;width:62px;height:62px;
     margin-top:18px;
+    img{width:100%;}
   }
   ul{
     float:right;width:890px;
@@ -42,12 +43,13 @@ textarea{resize:none;}
   .footer_list{
     width:1200px;margin:0 auto;
     .footer_left{
-      float:left;width:730px;
+      float:left;width:730px;padding-top:30px;
       dl{
-        margin:30px 92px 0 0;
+        width:154px;text-align:left;
         float:left;color:#fff;a{color:#fff;}
         dt{margin-bottom:38px;font-size:16px;}
         dd{margin-bottom:14px;font-size:14px;}
+        &.con_us{width:180px;}
       }
     }
     .footer_right{

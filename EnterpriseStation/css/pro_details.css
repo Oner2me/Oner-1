@@ -111,6 +111,8 @@
 }
 .main .product_detail .detail img {
   float: left;
+  width: 444px;
+  height: 480px;
 }
 .main .product_detail .detail .text {
   float: left;
