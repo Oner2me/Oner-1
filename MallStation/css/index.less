@@ -1,0 +1,40 @@
+//轮播图
+.banner{
+  position:relative;
+  overflow:hidden;
+  ul{
+    width:1000%;position:relative;
+    li{
+      width:10%;float:left;
+      img{
+        width:100%;
+      }
+    }
+  }
+  span{
+    width:82px;height:154px;cursor:pointer;display:none;
+    position:absolute;top:50%;margin-top:-77px;
+    &.left{
+      left:40px;
+      background:url('../img/banner_left_icon.png');
+    }
+    &.right{
+      right:40px;
+      background:url('../img/banner_right_icon.png');
+    }
+  }
+  ol{
+    width:168px;position:absolute;left:50%;margin-left:-84px;bottom:30px;
+    li{
+      width:12px;height:12px;border-radius:50%;cursor:pointer;
+      background: #5c5b5b;float:left;margin:0 22px;
+      &.on{
+        background: #dfa973;
+      }
+    }
+  }
+}
+//主体部分
+section{
+  //width:1200px;height:500px;background:aqua;margin:0 auto;
+}

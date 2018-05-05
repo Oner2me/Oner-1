@@ -1,0 +1,395 @@
+/*--------公共样式--------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: '微软雅黑 Regular';
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+i,
+em {
+  font: normal 14px '微软雅黑 Regular';
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  display: block;
+  border: none;
+}
+input,
+select,
+textarea,
+button,
+a {
+  outline: none;
+}
+textarea {
+  resize: none;
+}
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+/*--------网页头部样式--------*/
+header .top {
+  background: #f7d2cf;
+}
+header .top .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .top .container ol {
+  float: left;
+  width: 400px;
+}
+header .top .container ol li {
+  float: left;
+  width: 200px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 32px;
+}
+header .top .container ol li > a {
+  color: #f90202;
+}
+header .top .container ol li > a.login {
+  margin: 0 38px 0 14px;
+  color: #000;
+}
+header .top .container ul {
+  float: right;
+  width: 600px;
+}
+header .top .container ul li {
+  float: left;
+  width: 200px;
+  line-height: 32px;
+  font-size: 12px;
+}
+header .top .container ul li:first-child a {
+  float: left;
+  width: 62px;
+  position: relative;
+  margin-left: 82px;
+}
+header .top .container ul li:first-child a img {
+  position: absolute;
+  top: 4px;
+}
+header .top .container ul li:first-child a span {
+  margin-left: 26px;
+}
+header .top .container ul li:first-child div {
+  float: left;
+  position: relative;
+}
+header .top .container ul li:first-child div span {
+  margin-left: 24px;
+  color: #df1717;
+}
+header .top .container ul li:first-child div img {
+  position: absolute;
+  top: 14px;
+  right: -10px;
+}
+header .top .container ul li:first-child + li a {
+  position: relative;
+  display: inline-block;
+}
+header .top .container ul li:first-child + li a img {
+  position: absolute;
+  top: 15px;
+  right: -10px;
+}
+header .top .container ul li .my_order {
+  margin: 0 38px 0 40px;
+}
+header .top .container ul li .after_service {
+  margin: 0 42px 0 50px;
+}
+header .middle {
+  background: #fbf2f1;
+}
+header .middle .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .middle .container a.logo {
+  display: block;
+  float: left;
+  width: 200px;
+  padding: 24px 0 14px;
+}
+header .middle .container a.logo img {
+  width: 140px;
+  height: 140px;
+  margin-left: 32px;
+}
+header .middle .container ul {
+  float: left;
+  width: 1000px;
+  padding-top: 74px;
+}
+header .middle .container ul > li {
+  float: left;
+}
+header .middle .container ul > li:first-child {
+  width: 400px;
+  font-size: 18px;
+}
+header .middle .container ul > li:first-child span:first-child {
+  letter-spacing: 2px;
+  margin: 0 68px 0 48px;
+}
+header .middle .container ul > li.search {
+  width: 600px;
+}
+header .middle .container ul > li.search form {
+  position: relative;
+  float: left;
+  width: 450px;
+  margin: 0 12px 0 64px;
+}
+header .middle .container ul > li.search form input {
+  width: 402px;
+  line-height: 30px;
+  border: none;
+  padding: 0 34px 0 14px;
+}
+header .middle .container ul > li.search form label .sub {
+  display: none;
+}
+header .middle .container ul > li.search form label img {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  cursor: pointer;
+}
+header .middle .container ul > li.search > a {
+  display: block;
+  width: 72px;
+  line-height: 30px;
+  float: left;
+  text-align: center;
+  color: #9b9595;
+  background: #fff;
+}
+header .middle .container ul > li.search ol {
+  font-size: 12px;
+  margin: 12px 0 0 84px;
+  float: left;
+  width: 408px;
+}
+header .middle .container ul > li.search ol li {
+  float: left;
+  margin-left: 26px;
+}
+header .middle .container ul > li.search ol li:first-child {
+  margin-left: 0;
+}
+header .middle .container ul > li.search ol li:first-child a {
+  color: #ff0000;
+}
+header .bottom {
+  background: #838280;
+}
+header .bottom .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .bottom .container dl {
+  float: left;
+  width: 228px;
+  text-align: center;
+  position: relative;
+}
+header .bottom .container dl dt {
+  line-height: 44px;
+  background: #ff9b94;
+  position: relative;
+  cursor: pointer;
+}
+header .bottom .container dl dt img {
+  position: absolute;
+  left: 26px;
+  top: 14px;
+}
+header .bottom .container dl dd {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background: rgba(228, 176, 168, 0.7);
+  top: 44px;
+}
+header .bottom .container dl dd ol > li {
+  border-top: 1px solid #fff;
+  height: 120px;
+}
+header .bottom .container dl dd ol > li:first-child {
+  border-top: none;
+}
+header .bottom .container dl dd ol > li h2 {
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  padding: 14px 20px 0 14px;
+  margin-bottom: 14px;
+}
+header .bottom .container dl dd ol > li h2 a {
+  color: #fffefe;
+}
+header .bottom .container dl dd ol > li ul {
+  padding: 0 20px 0 14px;
+}
+header .bottom .container dl dd ol > li ul li {
+  float: left;
+  font-size: 14px;
+  margin: 0 6px 10px 0;
+  line-height: 18px;
+}
+header .bottom .container dl dd ol > li ul li a {
+  display: block;
+  border-bottom: 1px solid transparent;
+  color: #fffefe;
+}
+header .bottom .container dl dd ol > li ul li:hover a {
+  border-color: #ff9b94;
+  color: #ff9b94;
+}
+header .bottom .container > ul {
+  float: left;
+  width: 876px;
+  margin: 0 48px;
+  text-align: center;
+}
+header .bottom .container > ul li {
+  float: left;
+  line-height: 44px;
+  width: 146px;
+}
+header .bottom .container > ul li a {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+header .bottom .container > ul li:hover a {
+  color: #000;
+  background: #ff9b94;
+}
+/*--------网页尾部部样式--------*/
+footer {
+  background: #f2f1f1;
+}
+footer .container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 46px;
+}
+footer .container ul li {
+  width: 160px;
+  margin-left: 48px;
+  text-align: right;
+  position: relative;
+  float: left;
+}
+footer .container ul li:first-child {
+  margin-left: 0;
+}
+footer .container ul li img,
+footer .container ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .container ul li img {
+  margin-right: 8px;
+}
+footer .container ul li span {
+  margin-right: 4px;
+}
+footer .container .list .logo {
+  display: block;
+  float: left;
+  width: 152px;
+  margin: 50px 30px 0 0;
+}
+footer .container .list .logo img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+footer .container .list dl {
+  float: left;
+  width: 158px;
+  margin-top: 88px;
+}
+footer .container .list dl dt {
+  margin-bottom: 40px;
+}
+footer .container .list dl dt a {
+  font-size: 18px;
+  color: #333131;
+  font-weight: bold;
+}
+footer .container .list dl dd {
+  margin-bottom: 6px;
+}
+footer .container .list dl dd a {
+  font-size: 14px;
+  color: #706a6a;
+  font-weight: bold;
+}
+footer .container .list dl dd:hover a {
+  color: #eb1a1a;
+}
+footer .container .list .code {
+  float: left;
+  width: 222px;
+  height: 118px;
+  margin-top: 90px;
+}
+footer .container .list .code .microblogs {
+  margin: 0 82px 0 38px;
+}
+footer .container .list .code img {
+  margin-bottom: 6px;
+}
+footer .container .contact {
+  width: 644px;
+  height: 94px;
+  border: 1px solid #a0a0a0;
+  margin: 30px auto 58px;
+}
+footer .container .contact .border_1 {
+  width: 638px;
+  height: 88px;
+  margin: 1px auto;
+  border-top: 2px solid #c6c6c6;
+  border-bottom: 2px solid #c6c6c6;
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #a0a0a0;
+}
+footer .container .contact .border_1 .border_2 {
+  width: 616px;
+  height: 72px;
+  border: 2px solid #a0a0a0;
+  margin: 6px auto;
+}
