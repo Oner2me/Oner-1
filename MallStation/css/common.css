@@ -302,27 +302,27 @@ footer {
 footer .container {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 46px;
+  padding: 46px 0 24px;
 }
-footer .container ul li {
+footer .container > ul > li {
   width: 160px;
   margin-left: 48px;
   text-align: right;
   position: relative;
   float: left;
 }
-footer .container ul li:first-child {
+footer .container > ul > li:first-child {
   margin-left: 0;
 }
-footer .container ul li img,
-footer .container ul li span {
+footer .container > ul > li img,
+footer .container > ul > li span {
   display: inline-block;
   vertical-align: middle;
 }
-footer .container ul li img {
+footer .container > ul > li img {
   margin-right: 8px;
 }
-footer .container ul li span {
+footer .container > ul > li span {
   margin-right: 4px;
 }
 footer .container .list .logo {
@@ -357,7 +357,7 @@ footer .container .list dl dd a {
   color: #706a6a;
   font-weight: bold;
 }
-footer .container .list dl dd:hover a {
+footer .container .list dl dd a:hover {
   color: #eb1a1a;
 }
 footer .container .list .code {
@@ -377,19 +377,118 @@ footer .container .contact {
   height: 94px;
   border: 1px solid #a0a0a0;
   margin: 30px auto 58px;
+  position: relative;
 }
-footer .container .contact .border_1 {
+footer .container .contact img {
+  float: left;
+  margin: 26px 40px 0 44px;
+  width: 30px;
+  height: 32px;
+}
+footer .container .contact div {
+  float: left;
+  width: 200px;
+}
+footer .container .contact div span {
+  display: inline-block;
+}
+footer .container .contact div span:first-child {
+  font-size: 18px;
+  margin: 22px 0 8px;
+  letter-spacing: 6px;
+}
+footer .container .contact div span:first-child + span {
+  font-size: 12px;
+}
+footer .container .contact div span:first-child + span i {
+  margin-left: 12px;
+  letter-spacing: 4px;
+}
+footer .container .contact a {
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 26px 0 0 42px;
+  width: 222px;
+  line-height: 40px;
+  background: #ee908a;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+footer .container .contact:before {
+  content: '';
+  display: block;
   width: 638px;
   height: 88px;
-  margin: 1px auto;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  z-index: 1;
   border-top: 2px solid #c6c6c6;
   border-bottom: 2px solid #c6c6c6;
   border-left: 1px solid #a0a0a0;
   border-right: 1px solid #a0a0a0;
 }
-footer .container .contact .border_1 .border_2 {
+footer .container .contact:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  z-index: 1;
   width: 616px;
   height: 72px;
   border: 2px solid #a0a0a0;
-  margin: 6px auto;
+}
+footer .container ol {
+  margin-left: 122px;
+}
+footer .container ol > li {
+  float: left;
+  padding: 0 22px;
+  border-left: 2px solid #787776;
+  color: #6d6c6a;
+  font-weight: bold;
+}
+footer .container ol > li a {
+  color: #6d6c6a;
+}
+footer .container ol > li:first-child {
+  border-left: 0;
+}
+footer .container ol > li:hover a {
+  color: #e21a1a;
+}
+footer .container .friend {
+  width: 1060px;
+  text-align: center;
+  margin: 34px 0 0 90px;
+}
+footer .container .friend span {
+  font-weight: bold;
+  color: #6d6c6a;
+  font-size: 14px;
+}
+footer .container .friend span i {
+  font-weight: bold;
+  margin-right: 22px;
+}
+footer .container .friend ul {
+  margin-top: 12px;
+}
+footer .container .friend ul > li {
+  float: left;
+  padding: 0 26px;
+  border-left: 2px solid #787776;
+  font-weight: bold;
+}
+footer .container .friend ul > li a {
+  color: #6d6c6a;
+}
+footer .container .friend ul > li:first-child {
+  border-left: 0;
+}
+footer .container .friend ul > li:hover a {
+  color: #e21a1a;
 }

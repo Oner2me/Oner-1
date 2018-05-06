@@ -199,9 +199,9 @@ header{
 footer{
   background:#f2f1f1;
   .container{
-    width:1200px;margin:0 auto;padding-top:46px;
-    ul{
-      li{
+    width:1200px;margin:0 auto;padding:46px 0 24px;
+    &>ul{
+      &>li{
         width:160px;margin-left:48px;
         text-align:right;position:relative;float:left;
         &:first-child{
@@ -229,9 +229,11 @@ footer{
         }
         dd{
           margin-bottom:6px;
-          a{font-size:14px;color:#706a6a;font-weight:bold;}
-          &:hover{
-            a{color:#eb1a1a;}
+          a{
+            font-size:14px;color:#706a6a;font-weight:bold;
+            &:hover{
+              color:#eb1a1a;
+            }
           }
         }
       }
@@ -243,12 +245,64 @@ footer{
     }
     .contact{
       width:644px;height:94px;border:1px solid #a0a0a0;margin:30px auto 58px;
-      .border_1{
-        width:638px;height:88px;margin:1px auto;
+      position:relative;
+      img{
+        float:left;margin:26px 40px 0 44px;width:30px;height:32px;
+      }
+      div{
+        float:left;width:200px;
+        span{
+          display:inline-block;
+          &:first-child{ font-size:18px;margin:22px 0 8px;letter-spacing: 6px;}
+          &:first-child+span{
+            font-size:12px;
+            i{margin-left:12px;letter-spacing: 4px;}
+          }
+        }
+      }
+      a{
+        display:block;float:left;text-align:center;
+        margin:26px 0 0 42px;width:222px;line-height:40px;
+        background: #ee908a;color:#fff;position:relative;z-index:2;
+      }
+      &:before{
+        content:'';display:block;width:638px;height:88px;position:absolute;
+        top:1px;left:2px;z-index:1;
         border-top:2px solid #c6c6c6;border-bottom:2px solid #c6c6c6;
         border-left:1px solid #a0a0a0;border-right:1px solid #a0a0a0;
-        .border_2{
-          width:616px;height:72px;border:2px solid #a0a0a0;margin:6px auto;
+      }
+      &:after{
+        content:'';display:block;position:absolute;
+        top:9px;left:12px;z-index:1;
+        width:616px;height:72px;border:2px solid #a0a0a0;
+      }
+    }
+    ol{
+      margin-left:122px;
+      &>li{
+        float:left;padding:0 22px;border-left:2px solid #787776;
+        color:#6d6c6a;a{ color:#6d6c6a;}font-weight:bold;
+        &:first-child{border-left:0;}
+        &:hover{
+          a{color:#e21a1a;}
+        }
+      }
+    }
+    .friend{
+      width:1060px;text-align:center;margin:34px 0 0 90px;
+      span{
+        font-weight:bold;color:#6d6c6a;font-size:14px;
+        i{ font-weight:bold;margin-right:22px;}
+      }
+      ul{
+        margin-top:12px;
+        &>li{
+          float:left;padding:0 26px;border-left:2px solid #787776;
+          font-weight:bold;a{ color:#6d6c6a;}
+          &:first-child{border-left:0;}
+          &:hover{
+            a{color:#e21a1a;}
+          }
         }
       }
     }
