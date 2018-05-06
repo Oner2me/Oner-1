@@ -20,9 +20,9 @@ header{
           float:left;width:200px;text-align:left;font-size:12px;
           line-height:32px;
           &>a{
-            color:#f90202;
+            color:#f90202;font-weight:bold;
             &.login{
-              margin:0 38px 0 14px;color:#000;
+              margin:0 38px 0 14px;color:#000;font-weight:normal;
             }
           }
         }
@@ -30,7 +30,7 @@ header{
       ul{
         float:right;width:600px;
         li{
-          float:left;width:200px;line-height:32px;font-size:12px;
+          float:left;width:200px;line-height:32px;font-size:12px;font-weight:500;
           &:first-child{
             a{
               float:left;width:62px;
@@ -120,6 +120,7 @@ header{
               font-size:12px;margin:12px 0 0 84px;float:left;width:408px;
               li{
                 float:left;margin-left:26px;
+                a{color:#616161;}
                 &:first-child{
                   a{
                     color:#ff0000;
@@ -142,7 +143,7 @@ header{
         text-align:center;position:relative;
         dt{
           line-height:44px;background:#ff9b94;position:relative;
-          cursor:pointer;
+          cursor:pointer;font-size:18px;
           img{position:absolute;left:26px;top:14px;}
         }
         dd{
@@ -185,7 +186,7 @@ header{
       &>ul{
         float:left;width:876px;margin:0 48px;text-align:center;
         li{
-          float:left;line-height:44px;width:146px;
+          float:left;line-height:44px;width:146px;font-size:14px;
           a{width:100%;color:#fff;display:block;}
           &:hover{
             a{color:#000;background:#ff9b94;}
@@ -202,7 +203,7 @@ footer{
     width:1200px;margin:0 auto;padding:46px 0 24px;
     &>ul{
       &>li{
-        width:160px;margin-left:48px;
+        width:160px;margin-left:48px;font-weight:bold;color:#6e6a6a;
         text-align:right;position:relative;float:left;
         &:first-child{
           margin-left:0;
@@ -238,7 +239,7 @@ footer{
         }
       }
       .code{
-        float:left;width:222px;height:118px;margin-top:90px;
+        float:left;width:222px;height:118px;margin-top:90px;font-weight:bold;color:#343332;
         .microblogs{margin:0 82px 0 38px;}
         img{margin-bottom:6px;}
       }
@@ -252,11 +253,11 @@ footer{
       div{
         float:left;width:200px;
         span{
-          display:inline-block;
+          display:inline-block;font-weight:bold;color:#343332;
           &:first-child{ font-size:18px;margin:22px 0 8px;letter-spacing: 6px;}
           &:first-child+span{
             font-size:12px;
-            i{margin-left:12px;letter-spacing: 4px;}
+            i{margin-left:12px;letter-spacing: 4px;font-weight:bold;}
           }
         }
       }
@@ -278,10 +279,10 @@ footer{
       }
     }
     ol{
-      margin-left:122px;
+      margin-left:106px;
       &>li{
-        float:left;padding:0 22px;border-left:2px solid #787776;
-        color:#6d6c6a;a{ color:#6d6c6a;}font-weight:bold;
+        float:left;padding:0 30px;border-left:2px solid #787776;
+        color:#6d6c6a;a{ color:#6d6c6a;}font-weight:bold;font-size:14px;line-height:14px;
         &:first-child{border-left:0;}
         &:hover{
           a{color:#e21a1a;}
@@ -297,7 +298,8 @@ footer{
       ul{
         margin-top:12px;
         &>li{
-          float:left;padding:0 26px;border-left:2px solid #787776;
+          float:left;padding:0 26px;border-left:2px solid #787776;font-size:14px;
+          line-height:14px;
           font-weight:bold;a{ color:#6d6c6a;}
           &:first-child{border-left:0;}
           &:hover{

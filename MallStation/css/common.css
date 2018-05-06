@@ -70,10 +70,12 @@ header .top .container ol li {
 }
 header .top .container ol li > a {
   color: #f90202;
+  font-weight: bold;
 }
 header .top .container ol li > a.login {
   margin: 0 38px 0 14px;
   color: #000;
+  font-weight: normal;
 }
 header .top .container ul {
   float: right;
@@ -84,6 +86,7 @@ header .top .container ul li {
   width: 200px;
   line-height: 32px;
   font-size: 12px;
+  font-weight: 500;
 }
 header .top .container ul li:first-child a {
   float: left;
@@ -203,6 +206,9 @@ header .middle .container ul > li.search ol li {
   float: left;
   margin-left: 26px;
 }
+header .middle .container ul > li.search ol li a {
+  color: #616161;
+}
 header .middle .container ul > li.search ol li:first-child {
   margin-left: 0;
 }
@@ -227,6 +233,7 @@ header .bottom .container dl dt {
   background: #ff9b94;
   position: relative;
   cursor: pointer;
+  font-size: 18px;
 }
 header .bottom .container dl dt img {
   position: absolute;
@@ -285,6 +292,7 @@ header .bottom .container > ul li {
   float: left;
   line-height: 44px;
   width: 146px;
+  font-size: 14px;
 }
 header .bottom .container > ul li a {
   width: 100%;
@@ -307,6 +315,8 @@ footer .container {
 footer .container > ul > li {
   width: 160px;
   margin-left: 48px;
+  font-weight: bold;
+  color: #6e6a6a;
   text-align: right;
   position: relative;
   float: left;
@@ -365,6 +375,8 @@ footer .container .list .code {
   width: 222px;
   height: 118px;
   margin-top: 90px;
+  font-weight: bold;
+  color: #343332;
 }
 footer .container .list .code .microblogs {
   margin: 0 82px 0 38px;
@@ -391,6 +403,8 @@ footer .container .contact div {
 }
 footer .container .contact div span {
   display: inline-block;
+  font-weight: bold;
+  color: #343332;
 }
 footer .container .contact div span:first-child {
   font-size: 18px;
@@ -403,6 +417,7 @@ footer .container .contact div span:first-child + span {
 footer .container .contact div span:first-child + span i {
   margin-left: 12px;
   letter-spacing: 4px;
+  font-weight: bold;
 }
 footer .container .contact a {
   display: block;
@@ -442,14 +457,16 @@ footer .container .contact:after {
   border: 2px solid #a0a0a0;
 }
 footer .container ol {
-  margin-left: 122px;
+  margin-left: 106px;
 }
 footer .container ol > li {
   float: left;
-  padding: 0 22px;
+  padding: 0 30px;
   border-left: 2px solid #787776;
   color: #6d6c6a;
   font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
 }
 footer .container ol > li a {
   color: #6d6c6a;
@@ -481,6 +498,8 @@ footer .container .friend ul > li {
   float: left;
   padding: 0 26px;
   border-left: 2px solid #787776;
+  font-size: 14px;
+  line-height: 14px;
   font-weight: bold;
 }
 footer .container .friend ul > li a {
