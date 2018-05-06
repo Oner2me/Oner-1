@@ -51,7 +51,7 @@
   height: 82px;
   line-height: 14px;
   margin-left: 70px;
-  padding-top: 10px;
+  padding: 10px 4px 0 6px;
   overflow: auto;
 }
 .content form label.textarea span {
@@ -73,6 +73,7 @@
   top: 0;
   width: 100px;
   height: 50px;
+  cursor: pointer;
 }
 .content form label span {
   cursor: pointer;

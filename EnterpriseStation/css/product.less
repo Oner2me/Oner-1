@@ -69,17 +69,18 @@
           span,i{
             display: block;text-align: center;position: relative;
           }
-          span{font-size:18px;margin:10px 0 6px;}
+          b{
+            display:none;width:300px;height:448px;position:absolute;top: 0;
+            background:rgba(127,148,184,0.7);
+          }
+          span{
+            font-size:18px;margin:10px 0 6px;
+          }
           i{font-size:14px;margin-bottom:18px;}
-          .mask{
-            width: 300px;position: absolute;top: 0;display: none;
-            z-index: 10;
-          }
         }
+
         &:hover{
-          .mask{
-            display:block;
-          }
+          b{display:block;}
           a{
             span,i{
               z-index: 20;color:#fff;
@@ -97,8 +98,10 @@
         li{
           float:left;width:20px;line-height:20px;text-align:center;
           margin-left:4px;
+          a{display:block;line-height:20px;}
           &:hover,&.current{
             background:#4a699e;
+            a{color:#f9f9ff;}
           }
         }
       }

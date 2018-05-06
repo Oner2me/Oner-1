@@ -158,7 +158,15 @@
   text-align: center;
   margin-left: 4px;
 }
+.main .news .paging ol li a {
+  display: block;
+  line-height: 20px;
+}
 .main .news .paging ol li:hover,
 .main .news .paging ol li.current {
   background: #4a699e;
+}
+.main .news .paging ol li:hover a,
+.main .news .paging ol li.current a {
+  color: #f9f9ff;
 }

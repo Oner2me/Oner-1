@@ -35,3 +35,12 @@ http://github.com/lojjic/PIE/downloads
             这里是第二行，用来测试多行的显示效果。<br />
         </span>
     </p>
+5.css中的rgba() 兼容IE8以下的浏览器
+  2016年12月02日 16:20:23
+  低版本IE下不支持rgba()的方法
+  　　background:rgba(0,0,0,0.5);
+  　　filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7F000000,endcolorstr=#7F000000);
+  红色部分是：alpha*255换成16进制 。
+  常用的rgba和IE下filter数值的转换：
+  rgba透明值：0.1　　0.2　　0.3　　0.4　　0.5　　0.6　　0.7　　0.8　　0.9
+  IE下filter值：19　　 33　　 4c　　 66　　  7f　　 99　　 b2　　 c8　　  e5

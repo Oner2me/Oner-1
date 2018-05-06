@@ -135,3 +135,6 @@
 .main .product_detail .detail .text ul li i {
   margin-left: 6px;
 }
+.main .product_detail .detail .text ul li b {
+  margin-right: 6px;
+}
