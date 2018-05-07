@@ -44,3 +44,5 @@ http://github.com/lojjic/PIE/downloads
   常用的rgba和IE下filter数值的转换：
   rgba透明值：0.1　　0.2　　0.3　　0.4　　0.5　　0.6　　0.7　　0.8　　0.9
   IE下filter值：19　　 33　　 4c　　 66　　  7f　　 99　　 b2　　 c8　　  e5
+
+  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#b27f94b8,endcolorstr=#b27f94b8);

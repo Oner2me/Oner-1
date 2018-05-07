@@ -94,36 +94,33 @@
     background:url("../img/product_bg.png") center center no-repeat ;
     ul{
       position:relative;
-      top:-10px;
+      top:-6px;
       width:1200px;margin:0 auto;
       &>li{
         float:left;margin-left:26px;
-        width:280px;
+        width:280px;padding-bottom:26px;
         &:first-child{margin-left:0;}
         &>a{
           img{width:280px;height:302px;}
         }
         div{
-          padding:1px 0 26px 18px;background:#d7eef9;
+          padding:1px 0 0 18px;background:#d7eef9;height:270px;
           &>h2{
             a{
               display:block;
               font-size:18px;margin:24px 0;
             }
           }
-          ol{
-            height:176px;
-            li{
+          p{
               font:16px/22px '微软雅黑 Regular';
               width:202px;
-              i{margin-left:6px;}
-            }
+              i{margin-left:6px;font-size:16px;}
             }
         }
         &:hover{
           div{
             background:#6684b0;
-            a,ol li,ol li i{
+            a,p,p i{
               color:#f7f4f4;
             }
           }

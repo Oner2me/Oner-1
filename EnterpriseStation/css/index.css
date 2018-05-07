@@ -129,7 +129,7 @@
 }
 .product_center .pro_center ul {
   position: relative;
-  top: -10px;
+  top: -6px;
   width: 1200px;
   margin: 0 auto;
 }
@@ -137,6 +137,7 @@
   float: left;
   margin-left: 26px;
   width: 280px;
+  padding-bottom: 26px;
 }
 .product_center .pro_center ul > li:first-child {
   margin-left: 0;
@@ -146,30 +147,29 @@
   height: 302px;
 }
 .product_center .pro_center ul > li div {
-  padding: 1px 0 26px 18px;
+  padding: 1px 0 0 18px;
   background: #d7eef9;
+  height: 270px;
 }
 .product_center .pro_center ul > li div > h2 a {
   display: block;
   font-size: 18px;
   margin: 24px 0;
 }
-.product_center .pro_center ul > li div ol {
-  height: 176px;
-}
-.product_center .pro_center ul > li div ol li {
+.product_center .pro_center ul > li div p {
   font: 16px/22px '微软雅黑 Regular';
   width: 202px;
 }
-.product_center .pro_center ul > li div ol li i {
+.product_center .pro_center ul > li div p i {
   margin-left: 6px;
+  font-size: 16px;
 }
 .product_center .pro_center ul > li:hover div {
   background: #6684b0;
 }
 .product_center .pro_center ul > li:hover div a,
-.product_center .pro_center ul > li:hover div ol li,
-.product_center .pro_center ul > li:hover div ol li i {
+.product_center .pro_center ul > li:hover div p,
+.product_center .pro_center ul > li:hover div p i {
   color: #f7f4f4;
 }
 /*--------新闻中心--.new_center--------*/

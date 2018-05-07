@@ -138,11 +138,11 @@ textarea {
   width: 188px;
   margin-top: 54px;
 }
-.footer .footer_list .footer_right .two_dimension_code {
+.footer .footer_list .footer_right div {
   float: right;
   text-align: center;
 }
-.footer .footer_list .footer_right .two_dimension_code span {
+.footer .footer_list .footer_right div span {
   display: block;
   font: 14px/22px '微软雅黑 Regular';
 }

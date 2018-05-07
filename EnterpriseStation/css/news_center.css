@@ -140,8 +140,6 @@
 .main .news .paging {
   width: 420px;
   margin: 20px auto 0;
-  line-height: 20px;
-  border-top: 1px solid transparent;
 }
 .main .news .paging > a {
   display: block;
@@ -154,13 +152,14 @@
 .main .news .paging ol li {
   float: left;
   width: 20px;
-  line-height: 20px;
   text-align: center;
   margin-left: 4px;
 }
 .main .news .paging ol li a {
   display: block;
-  line-height: 20px;
+  font-size: 14px;
+  padding: 3px 0;
+  line-height: 14px;
 }
 .main .news .paging ol li:hover,
 .main .news .paging ol li.current {

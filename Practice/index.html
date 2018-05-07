@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件拖拽</title>
+    <style>
+        p{font-size:18px;font-weight:bold;color:aqua;}
+        #div1{width:178px;height:46px;padding:20px 10px;border:2px dashed #eb1a1a;}
+    </style>
+</head>
+<body>
+    <p>实现图片的拖拽</p>
+    <!--
+        1.ondragover 事件规定在何处放置被拖动的数据。
+        默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。
+        这要通过调用 ondragover 事件的 event.preventDefault() 方法
+        2.ondrop 当放置被拖数据时，会发生 drop 事件
+        调用 preventDefault() 来避免浏览器对数据的默认处理（drop 事件的默认行为是以链接形式打开）
+        通过 dataTransfer.getData("Text") 方法获得被拖的数据。该方法将返回在 setData() 方法中设置为相同类型的任何数据。
+        被拖数据是被拖元素的 id ("drag1")
+        把被拖元素追加到放置元素（目标元素）中
+    -->
+    <div id="div1" ondragover="allowdrag(event)" ondrop="drop(event)"></div>
+    <!--
+        1.img的draggable属性的目的，时让图片拥有拖拽的功能
+        2.ondragstart属性，讲图片的信息绑定到事件上，打上标记，方便找到
+        dataTransfer.setData() 方法设置被拖数据的数据类型和值
+    -->
+    <img src="img/w3school.gif" alt="w3school.gif" draggable="true" ondragstart="drag(event)" id="img1">
+</body>
+</html>
+    <script>
+        function drag(ev){
+            ev.dataTransfer.setData('Text',ev.target.id);
+        }
+        function allowdrag(ev){
+            ev.preventDefault();
+        }
+        function drop(ev){
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData('Text');
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
