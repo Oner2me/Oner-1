@@ -64,3 +64,11 @@ play();
 $('header .bottom dl dt').click(function(){
     $(this).next().slideToggle(1000);
 });
+
+
+//HOT BRAND
+$('.hotBrand>div>div ol li').hover(function(){
+    $(this).addClass('current').siblings().addClass('change');
+},function(){
+    $(this).removeClass('current').siblings().removeClass('change');
+});
