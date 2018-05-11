@@ -1,0 +1,174 @@
+section {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+section h1 {
+  font: 24px/30px '微软雅黑 Regular';
+  color: #121212;
+  margin-bottom: 34px;
+  padding-left: 56px;
+}
+section table {
+  width: 100%;
+  text-align: center;
+}
+section table .col_width_1 {
+  width: 30px;
+}
+section table .col_width_1 div {
+  float: right;
+  position: relative;
+  cursor: pointer;
+}
+section table .col_width_1 div .mark {
+  width: 8px;
+  height: 12px;
+  display: none;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+section table .col_width_2 {
+  width: 88px;
+}
+section table .col_width_2 a {
+  display: inline-block;
+}
+section table .col_width_2 a img {
+  width: 70px;
+  height: 70px;
+}
+section table .col_width_3 {
+  width: 298px;
+}
+section table .col_width_3 span {
+  display: block;
+  font: 12px/20px '微软雅黑 Regular';
+}
+section table .col_width_4 {
+  width: 185px;
+}
+section table .col_width_5 {
+  width: 164px;
+}
+section table .col_width_6 {
+  width: 86px;
+}
+section table .col_width_6 i {
+  display: block;
+  font: 12px/20px '微软雅黑 Regular';
+}
+section table .col_width_6 i:first-child {
+  margin-bottom: 16px;
+}
+section table .col_width_7 {
+  width: 98px;
+}
+section table .col_width_7 input {
+  width: 54px;
+  line-height: 20px;
+  float: left;
+  text-align: center;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+section table .col_width_7 button {
+  float: left;
+  width: 20px;
+  line-height: 20px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+section table .col_width_7 button.minus {
+  background: #eeeeee;
+}
+section table .col_width_7 button.add {
+  background: #ffffff;
+}
+section table .col_width_8 {
+  width: 198px;
+  font-size: 12px;
+}
+section table .col_width_8 span i {
+  font-size: 12px;
+}
+section table .col_width_9 {
+  width: 54px;
+}
+section table .col_width_9 span {
+  color: #a7a4a4;
+}
+section table .col_width_3,
+section table .col_width_4,
+section table .col_width_5 {
+  text-align: left;
+}
+section table thead tr th {
+  height: 32px;
+  border-bottom: 1px solid #000;
+  font-size: 14px;
+}
+section table tbody tr {
+  height: 134px;
+}
+section table tbody tr td {
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 12px;
+}
+section .settlement {
+  padding: 54px 0 34px;
+}
+section .settlement ul {
+  width: 1030px;
+  margin-left: 118px;
+  font-size: 14px;
+}
+section .settlement ul li {
+  float: left;
+  font-size: 14px;
+}
+section .settlement ul li:first-child {
+  margin-top: 16px;
+}
+section .settlement ul li:first-child a {
+  margin-left: 62px;
+  font-size: 14px;
+}
+section .settlement ul li i,
+section .settlement ul li b {
+  font-size: 14px;
+}
+section .settlement ul li.totals {
+  float: left;
+  margin-left: 470px;
+  margin-top: 16px;
+}
+section .settlement ul li.totals span {
+  margin-left: 24px;
+}
+section .settlement ul li.payable {
+  float: right;
+}
+section .settlement ul li.payable i {
+  position: relative;
+  top: -2px;
+}
+section .settlement ul li.payable span {
+  font-size: 30px;
+  color: #ffa29b;
+  margin-left: 14px;
+}
+section .settlement ul li.payable span b {
+  font-size: 30px;
+}
+section .settlement > a {
+  float: right;
+  margin-top: 30px;
+  width: 198px;
+  line-height: 44px;
+  text-align: center;
+  color: #fff;
+  background: #ffa29b;
+}

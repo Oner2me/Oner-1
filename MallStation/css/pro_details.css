@@ -1,0 +1,109 @@
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+section article .parameter {
+  padding-top: 20px;
+  width: 952px;
+  float: left;
+}
+section article .parameter h2 {
+  font-size: 14px;
+  color: #000;
+  line-height: 20px;
+  margin-bottom: 74px;
+}
+section article .parameter h2 a {
+  font-size: 14px;
+}
+section article .parameter .picture {
+  float: left;
+  position: relative;
+}
+section article .parameter .picture .magnifier {
+  width: 464px;
+  height: 424px;
+  border: 1px solid #b5b5b5;
+  position: relative;
+}
+section article .parameter .picture .magnifier img {
+  width: 100%;
+}
+section article .parameter .picture .magnifier span {
+  display: none;
+  width: 232px;
+  height: 212px;
+  background: rgba(252, 238, 7, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section article .parameter .picture .list {
+  margin: 16px 0;
+  position: relative;
+}
+section article .parameter .picture .list .carousel {
+  width: 376px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+section article .parameter .picture .list .carousel ul {
+  width: 752px;
+  position: relative;
+}
+section article .parameter .picture .list .carousel ul li {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #a0a0a0;
+  float: left;
+  margin: 0 6px;
+}
+section article .parameter .picture .list .carousel ul li img {
+  width: 100%;
+}
+section article .parameter .picture .list .carousel ul li.current,
+section article .parameter .picture .list .carousel ul li:hover {
+  border-color: #e26f7c;
+}
+section article .parameter .picture .list span {
+  display: block;
+  width: 18px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+}
+section article .parameter .picture .list span.left {
+  left: 10px;
+  background: url('../img/pro_details_left_icon.png') no-repeat;
+}
+section article .parameter .picture .list span.right {
+  right: 10px;
+  background: url('../img/pro_details_right_icon.png') no-repeat;
+}
+section article .parameter .picture .big {
+  position: absolute;
+  width: 464px;
+  border: 1px solid #b5b5b5;
+  display: none;
+  height: 424px;
+  right: -476px;
+  top: 0;
+  overflow: hidden;
+}
+section article .parameter .picture .big img {
+  width: 928px;
+  height: 848px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+section article .parameter .data {
+  float: right;
+  width: 394px;
+}
+section article .recommend {
+  float: left;
+  width: 160px;
+}

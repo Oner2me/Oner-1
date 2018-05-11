@@ -1,0 +1,115 @@
+section{
+  width:1200px;margin:0 auto;padding-top:24px;
+  h1{
+    font:24px/30px '微软雅黑 Regular';color:#121212;
+    margin-bottom:34px;padding-left:56px;
+  }
+  table{
+    width:100%;text-align:center;
+    .col_width_1{
+      width:30px;
+      div{
+        float:right;position:relative;cursor:pointer;
+        .mark{
+          width:8px;height:12px;display:none;
+          position:absolute;top:4px;left:4px;
+        }
+      }
+    }
+    .col_width_2{
+      width:88px;
+      a{
+        display:inline-block;
+        img{width:70px;height:70px;}
+      }
+    }
+    .col_width_3{
+      width:298px;
+      span{display:block;font:12px/20px '微软雅黑 Regular';}
+    }
+    .col_width_4{width:185px;}
+    .col_width_5{width:164px;}
+    .col_width_6{
+      width:86px;
+      i{
+        display:block;font:12px/20px '微软雅黑 Regular';
+        &:first-child{margin-bottom:16px;}
+      }
+    }
+    .col_width_7{
+      width:98px;
+      input{
+        width:54px;line-height:20px;float:left;text-align:center;
+        border:none;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;
+      }
+      button{
+        float:left;width:20px;line-height: 20px;border:1px solid #e0e0e0;
+        cursor:pointer;
+        &.minus{
+          background:#eeeeee;
+        }
+        &.add{
+          background:#ffffff;
+        }
+      }
+    }
+    .col_width_8{
+      width:198px;font-size:12px;
+      span{
+        i{font-size:12px;}
+      }
+    }
+    .col_width_9{
+      width:54px;
+      span{color:#a7a4a4;}
+    }
+    .col_width_3,.col_width_4,.col_width_5{
+      text-align:left;
+    }
+      thead{
+        tr{
+          th{
+            height:32px;border-bottom:1px solid #000;font-size:14px;
+          }
+        }
+      }
+    tbody{
+      tr{
+        height:134px;
+        td{
+            border-bottom:1px solid #e4e4e4;font-size:12px;
+        }
+      }
+    }
+  }
+  .settlement{
+    padding:54px 0 34px;
+    ul{
+      width:1030px;margin-left:118px;font-size:14px;
+      li{
+        float:left;font-size:14px;
+        &:first-child{
+          margin-top:16px;
+          a{margin-left:62px;font-size:14px;}
+        }
+        i,b{font-size:14px;}
+        &.totals{
+          float:left;margin-left:470px;margin-top:16px;
+          span{margin-left:24px;}
+        }
+        &.payable{
+          float:right;
+          i{position:relative;top:-2px;}
+          span{
+            font-size:30px;color:#ffa29b;margin-left:14px;
+            b{font-size:30px;}
+          }
+        }
+      }
+    }
+    &>a{
+      float:right;margin-top:30px;
+      width:198px;line-height:44px;text-align:center;color:#fff;background:#ffa29b;
+    }
+  }
+}
