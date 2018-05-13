@@ -133,6 +133,9 @@ section .settlement ul li {
 section .settlement ul li:first-child {
   margin-top: 16px;
 }
+section .settlement ul li:first-child span {
+  cursor: pointer;
+}
 section .settlement ul li:first-child a {
   margin-left: 62px;
   font-size: 14px;
