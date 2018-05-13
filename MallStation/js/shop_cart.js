@@ -36,6 +36,7 @@ $('tbody .col_width_7 div .minus').click(function(){
         n=1;
     }
     $(this).siblings('input').val(n);
+    pricing();
 });
 //手动改变input框中的数据
 $('tbody .col_width_7 div input').change(function(){
@@ -95,6 +96,9 @@ $('section .settlement ul li:first-child span').click(function(){
         $('thead .col_width_1 div .mark').css('display','none');
         $('section .settlement ul .payable b').text('0');
         $('section .settlement ul .totals b').text('0');
+        $('.right_nav').css('display','none');
+        $("html,body").animate({scrollTop:0}, 300);
+
     }else{
         return false;
     }
@@ -114,3 +118,19 @@ $('section .settlement a').click(function(){
         return false;
     }
 });
+
+//右导航随着页面下拉，跟着下拉同样的高度，看着就像固定在屏幕一样
+$(document).scroll(function () {
+    var top = $(document).scrollTop();
+    //元素距离文档顶部的距离
+    var off_top = $('.right_nav').offset().top;
+    console.log(off_top);
+    if(top>464 ){
+        $('.right_nav').css('top',$(document).scrollTop());
+    }else if(top<464 && off_top>464){
+        $('.right_nav').css('top',464);
+    }
+});
+
+
+
