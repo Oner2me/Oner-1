@@ -99,6 +99,7 @@ section table .col_width_9 {
 }
 section table .col_width_9 span {
   color: #a7a4a4;
+  cursor: pointer;
 }
 section table .col_width_3,
 section table .col_width_4,
