@@ -1,0 +1,78 @@
+header {
+  .up {
+    height: 32px;
+    background: #f7d2cf;
+  }
+  .down {
+    background:#fbf2f1;
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      a.logo {
+        display: block;
+        float: left;
+        width: 200px;
+        padding: 24px 0 14px;
+        img {
+          width: 140px;
+          height: 140px;
+          margin-left: 32px;
+        }
+        }
+      &>div {
+        float: left;
+        width:306px;
+        padding-top: 88px;
+        font-size: 18px;
+        span:first-child {
+          letter-spacing: 2px;
+          margin: 0 68px 0 48px;
+        }
+      }
+    }
+  }
+}
+section{
+  background:url('../img/register_background.png') no-repeat;
+  background-size:100% 100%;padding-bottom:24px;
+  position:relative;
+  .register{
+    position:relative;left:50%;margin-left:42px;padding:46px 0 0 0;
+    width:420px;
+    .left{
+      float:left;font:24px/30px '微软雅黑 Regular';margin-bottom:18px;
+    }
+    .right{
+      float:right;font:12px/20px '微软雅黑 Regular';
+      padding-top:6px;
+      a{color:#ff0000;font-size:12px;}
+    }
+    form{
+      text-align:center;padding:30px 0 28px;background:#fcede9;
+      input{
+        width:292px;height:40px;border:none;
+        margin-bottom:14px;padding-left:24px;
+        &.code{width:144px;float:left;margin-left:52px;}
+        &.reg{width:316px;height:40px;padding-left:0;background:#ff9b94;cursor:pointer;color:#fff;}
+      }
+      a{
+        color:#fff;background:#ff9b94;display:block;margin:0 auto;
+        width:316px;line-height: 40px;text-align:center;font-size:12px;
+        &.code{
+          width:148px;float:left;
+        }
+      }
+      .clear{
+        width:316px;line-height:24px;font-size:12px;margin:0 auto;
+        padding:10px 0 18px;
+        position:relative;
+        span{margin-left:40px;}
+        &>div{
+          width:24px;height:24px;background:#fff;
+          position:absolute;left:0;top:10px;cursor:pointer;
+          img{width:8px;height:12px;margin:6px auto 0;display:none;}
+        }
+      }
+    }
+  }
+}

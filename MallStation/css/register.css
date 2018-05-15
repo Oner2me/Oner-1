@@ -1,0 +1,124 @@
+header .up {
+  height: 32px;
+  background: #f7d2cf;
+}
+header .down {
+  background: #fbf2f1;
+}
+header .down .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+header .down .container a.logo {
+  display: block;
+  float: left;
+  width: 200px;
+  padding: 24px 0 14px;
+}
+header .down .container a.logo img {
+  width: 140px;
+  height: 140px;
+  margin-left: 32px;
+}
+header .down .container > div {
+  float: left;
+  width: 306px;
+  padding-top: 88px;
+  font-size: 18px;
+}
+header .down .container > div span:first-child {
+  letter-spacing: 2px;
+  margin: 0 68px 0 48px;
+}
+section {
+  background: url('../img/register_background.png') no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 24px;
+  position: relative;
+}
+section .register {
+  position: relative;
+  left: 50%;
+  margin-left: 42px;
+  padding: 46px 0 0 0;
+  width: 420px;
+}
+section .register .left {
+  float: left;
+  font: 24px/30px '微软雅黑 Regular';
+  margin-bottom: 18px;
+}
+section .register .right {
+  float: right;
+  font: 12px/20px '微软雅黑 Regular';
+  padding-top: 6px;
+}
+section .register .right a {
+  color: #ff0000;
+  font-size: 12px;
+}
+section .register form {
+  text-align: center;
+  padding: 30px 0 28px;
+  background: #fcede9;
+}
+section .register form input {
+  width: 292px;
+  height: 40px;
+  border: none;
+  margin-bottom: 14px;
+  padding-left: 24px;
+}
+section .register form input.code {
+  width: 144px;
+  float: left;
+  margin-left: 52px;
+}
+section .register form input.reg {
+  width: 316px;
+  height: 40px;
+  padding-left: 0;
+  background: #ff9b94;
+  cursor: pointer;
+  color: #fff;
+}
+section .register form a {
+  color: #fff;
+  background: #ff9b94;
+  display: block;
+  margin: 0 auto;
+  width: 316px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 12px;
+}
+section .register form a.code {
+  width: 148px;
+  float: left;
+}
+section .register form .clear {
+  width: 316px;
+  line-height: 24px;
+  font-size: 12px;
+  margin: 0 auto;
+  padding: 10px 0 18px;
+  position: relative;
+}
+section .register form .clear span {
+  margin-left: 40px;
+}
+section .register form .clear > div {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  cursor: pointer;
+}
+section .register form .clear > div img {
+  width: 8px;
+  height: 12px;
+  margin: 6px auto 0;
+  display: none;
+}
