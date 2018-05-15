@@ -1,0 +1,98 @@
+header {
+  .up {
+    height: 32px;
+    background: #f7d2cf;
+  }
+  .down {
+    background:#fbf2f1;
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      a.logo {
+        display: block;
+        float: left;
+        width: 200px;
+        padding: 24px 0 14px;
+        img {
+          width: 140px;
+          height: 140px;
+          margin-left: 32px;
+        }
+      }
+      &>div {
+        float: left;
+        width:306px;
+        padding-top: 88px;
+        font-size: 18px;
+        span:first-child {
+          letter-spacing: 2px;
+          margin: 0 68px 0 48px;
+        }
+      }
+    }
+  }
+}
+section{
+  background:url('../img/register_background.png') no-repeat;
+  background-size:100% 100%;
+  position:relative;
+  .register{
+    position:relative;left:50%;margin-left:42px;padding:40px 0 64px;
+    width:420px;
+    .left{
+      float:left;font:24px/30px '微软雅黑 Regular';margin-bottom:38px;
+    }
+    .right{
+      float:right;font:12px/20px '微软雅黑 Regular';
+      padding-top:6px;
+      a{color:#ff0000;font-size:12px;font-weight:bold;}
+    }
+    form{
+      text-align:center;padding:32px 0 18px;background:#fcede9;
+      input{
+        width:292px;height:40px;border:none;
+        margin-bottom:30px;padding-left:24px;
+        &#code{width:150px;float:left;margin-left:52px;margin-bottom:0;}
+        &.reg{
+          width:316px;height:40px;padding-left:0;background:#ff9b94;
+          cursor:pointer;color:#fff;margin-bottom:0;
+        }
+      }
+      &>.code{
+        display:block;float:left;margin: 3px 0 3px 40px;width:98px;line-height:34px;
+        background:#ef99ca;font-weight:900;cursor:pointer;
+      }
+      &>a{
+        color:#fff;background:#ff9b94;display:block;margin:0 auto;
+        width:316px;line-height: 40px;text-align:center;font-size:12px;
+      }
+      .clear{
+        width:316px;line-height:24px;font-size:12px;margin:0 auto;
+        padding:24px 0 20px;color:#8f8785;
+        position:relative;
+        span{
+          margin-left:34px;float:left;
+        }
+        &>a{
+          float:right;font-size:12px;margin-right:4px;color:#8f8785;
+        }
+        &>div{
+          width:24px;height:24px;background:#fff;
+          position:absolute;left:0;top:24px;cursor:pointer;
+          img{width:8px;height:12px;margin:6px auto 0;display:none;}
+        }
+      }
+    }
+    .partnership{
+      background:#fcede9;padding-bottom:8px;
+      h3{text-align:center;font-size:12px; width:316px;margin:0 auto;}
+      ul{
+        width:316px;margin:16px auto 0;
+        li{
+          width:46px;height:46px;float:left;margin:0 16px;
+          background:#fdf8f5;border-radius:50%;
+        }
+      }
+    }
+  }
+}
