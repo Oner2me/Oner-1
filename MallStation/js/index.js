@@ -60,15 +60,45 @@ $('.banner').hover(function(){
 });
 play();
 
-//点击说有商品分类实现下拉效果
+//点击所有商品分类实现下拉效果
 $('header .bottom dl dt').click(function(){
     $(this).next().slideToggle(1000);
 });
 
 
-//HOT BRAND
-$('.hotBrand>div>div ol li').hover(function(){
-    $(this).addClass('current').siblings().addClass('change');
+//HOT BRAND 鼠标移上图片放大效果
+$('.hotBrand>div>div ol li img').hover(function(){
+    $(this).parents('li').addClass('current').siblings().addClass('change');
 },function(){
-    $(this).removeClass('current').siblings().removeClass('change');
+    $(this).parents('li').removeClass('current').siblings().removeClass('change');
+});
+
+//婚戒推荐轮播
+var k=0;
+var wed_length = $('section .weddingring div ul li').length;
+var wed_li_width = $('section .weddingring div ul li').width()+100;
+$('section .weddingring div .right').click(function(){
+    k++;
+    if(k>wed_length-4){
+        k=4;
+    }
+    $('section .weddingring div ul').animate({'left':-k*wed_li_width});
+
+});
+$('section .weddingring div .left').click(function(){
+    k--;
+    if(k<0){
+        k=0;
+        $('section .weddingring div ul').css({'left':0});
+    }
+    $('section .weddingring div ul').animate({'left':-k*wed_li_width});
+});
+
+//鼠标移上更换图片
+$('section .weddingring ol li').hover(function(){
+    var src = $(this).children('img').attr('src');
+    $(this).children('img').attr('src','img/change_'+src.slice('4'));
+},function(){
+    var src = $(this).children('img').attr('src');
+    $(this).children('img').attr('src','img/'+src.slice('11'));
 });

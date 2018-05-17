@@ -69,32 +69,97 @@ section{
     &>div{
       margin:10px 0;
       img{width:464px;height:712px;float:left;}
-      div{
+      &>div{
         float:right;width:716px;margin-top:28px;
         ol{
-          width:100%;height:332px;
+          width:100%;height:370px;
           li{
-            float:left;width:170px;padding:42px 34px 0;
-            &>a{
-              font-size:12px;display:block;margin-bottom:4px;
-              img{
-                width:168px;height:168px;border:1px solid #bfbfbf;
-                margin-bottom:6px;
+            float:left;width:170px;height:250px;padding:42px 34px 0;
+            &>div{
+              &>a{
+                font-size:12px;display:block;margin-bottom:4px;
+                img{
+                  width:168px;height:168px;border:1px solid #bfbfbf;
+                  margin-bottom:12px;
+                }
+                span{line-height:20px;display:inline-block;}
               }
-              span{line-height:20px;}
-            }
-            &>span{
-              font-size:18px;color:#ff0000;
-              i{font-size:18px;}
+              &>span{
+                font-size:18px;color:#ff0000;line-height:20px;
+                i{font-size:18px;}
+              }
             }
             &.current{
-              width:286px;padding:0 15px 0;
-              img{width:278px;height:278px;border:4px solid #ff9b94;}
+              width:286px;padding:0 15px 0;position:relative;
+              div{
+                position:absolute;z-index:2;
+                a{
+                  display:block;margin-bottom:8px;width:286px;
+                  img{width:278px;height:278px;border:4px solid #ff9b94;margin-bottom:4px;}
+                  span{
+                    font-size:18px;line-height:26px;
+                  }
+                }
+                &>span{
+                  font-size:24px;display:inline-block;
+                  i{font-size:24px;line-height:30px;display:inline-block;}
+                }
+              }
             }
             &.change{
               padding:42px 15px 0;
             }
           }
+        }
+      }
+    }
+  }
+  .weddingring{
+    padding-bottom:38px;
+    h3{
+      line-height:50px;color:#fff;background:#ff9b94;
+      font-size:30px;text-align:center;
+    }
+    div{
+      position:relative;
+      overflow:hidden;margin:40px 0 106px;
+      ul{
+        width:1000%;position:relative;
+        li{
+          float:left;width:200px;margin:0 50px;
+          a{
+            display:block;
+            img{width:200px;height:100px;}
+          }
+        }
+      }
+      &>span{
+        width:22px;height:22px;cursor:pointer;display:none;
+        position:absolute;top:50%;margin-top:-11px;
+        &.left{
+          left:0;background:url('../img/weddingring_left.png');
+        }
+        &.right{
+          right:0;background:url('../img/weddingring_right.png');
+        }
+      }
+      &:hover{
+        span{display:block;}
+      }
+    }
+    ol{
+      width:1020px;margin:0 auto;
+      li{
+        width:72px;
+        float:left;margin:0 15px;text-align:center;
+        img{
+          width:64px;height:74px;margin:0 auto 4px;
+        }
+        span{
+          font-size:14px;display:block;color:#a9a6a6;margin:0 auto;
+        }
+        &:hover{
+          span{color:#ff0000;}
         }
       }
     }
