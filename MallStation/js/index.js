@@ -80,7 +80,7 @@ var wed_li_width = $('section .weddingring div ul li').width()+100;
 $('section .weddingring div .right').click(function(){
     k++;
     if(k>wed_length-4){
-        k=4;
+        k=wed_length-4;
     }
     $('section .weddingring div ul').animate({'left':-k*wed_li_width});
 
@@ -101,4 +101,25 @@ $('section .weddingring ol li').hover(function(){
 },function(){
     var src = $(this).children('img').attr('src');
     $(this).children('img').attr('src','img/'+src.slice('11'));
+});
+
+//更多好礼轮播
+var j=0;
+var more_length = $('section .more div ul li').length;
+var more_li_width = $('section .more div ul li').width()+60;
+$('section .more .right').click(function(){
+    j++;
+    if(j>more_length-7){
+        j=more_length-7;
+    }
+    $('section .more div ul').animate({'left':-j*more_li_width});
+
+});
+$('section .more .left').click(function(){
+    j--;
+    if(j<0){
+        j=0;
+        $('section .more div ul').css({'left':0});
+    }
+    $('section .more div ul').animate({'left':-j*more_li_width});
 });
