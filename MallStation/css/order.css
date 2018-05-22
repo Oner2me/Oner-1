@@ -1,0 +1,88 @@
+header .bottom .container dl dd {
+  display: none;
+}
+section {
+  padding-top: 26px;
+  width: 1200px;
+  margin: 0 auto;
+}
+section h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+section ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav {
+  float: left;
+  width: 188px;
+  padding-left: 40px;
+}
+section .sidenav .mecenter {
+  margin-bottom: 26px;
+}
+section .sidenav .mecenter ul li span {
+  margin-left: 32px;
+  color: #bbb;
+}
+section .sidenav .mecenter ul li span a {
+  font-size: 14px;
+  color: #bbb;
+}
+section .sidenav .mefengling ul li ol {
+  margin-left: 18px;
+}
+section .sidenav .mefengling ul li.current > a {
+  color: #ff9b94;
+}
+section .myorder {
+  float: right;
+  width: 970px;
+  border-left: 2px solid #b5b5b5;
+}
+section .myorder .search {
+  background: #f5f7f6;
+  margin-left: 30px;
+}
+section .myorder .search span {
+  float: left;
+  display: inline-block;
+  line-height: 44px;
+  margin-left: 8px;
+}
+section .myorder .search form {
+  float: right;
+  position: relative;
+  padding: 8px 0;
+}
+section .myorder .search form > input {
+  width: 204px;
+  line-height: 26px;
+  border: 1px solid #b5b5b5;
+  margin-right: 48px;
+  padding: 0 52px 0 8px ;
+}
+section .myorder .search form label {
+  display: block;
+  width: 26px;
+  height: 16px;
+  position: absolute;
+  right: 68px;
+  top: 14px;
+  cursor: pointer;
+  background: url('../img/order_search_icon.png') no-repeat;
+}
+section .myorder .search form label input {
+  display: none;
+}
+section .myorder .ordercate {
+  margin-left: 30px;
+}
