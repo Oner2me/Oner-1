@@ -6,28 +6,28 @@ section {
   width: 1200px;
   margin: 0 auto;
 }
-section h2 {
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 6px;
-}
-section ul {
-  font-size: 14px;
-  line-height: 24px;
-  color: #686767;
-}
-section ul li > a {
-  font-size: 14px;
-  line-height: 24px;
-  color: #686767;
-}
 section .sidenav {
   float: left;
   width: 188px;
   padding-left: 40px;
 }
+section .sidenav h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
 section .sidenav .mecenter {
   margin-bottom: 26px;
+}
+section .sidenav .mecenter ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mecenter ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
 }
 section .sidenav .mecenter ul li span {
   margin-left: 32px;
@@ -36,6 +36,21 @@ section .sidenav .mecenter ul li span {
 section .sidenav .mecenter ul li span a {
   font-size: 14px;
   color: #bbb;
+}
+section .sidenav .mefengling h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+section .sidenav .mefengling ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mefengling ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
 }
 section .sidenav .mefengling ul li ol {
   margin-left: 18px;
@@ -51,8 +66,10 @@ section .myorder {
 section .myorder .search {
   background: #f5f7f6;
   margin-left: 30px;
+  width: 940px;
 }
 section .myorder .search span {
+  font-size: 14px;
   float: left;
   display: inline-block;
   line-height: 44px;
@@ -85,4 +102,91 @@ section .myorder .search form label input {
 }
 section .myorder .ordercate {
   margin-left: 30px;
+  width: 940px;
+}
+section .myorder .ordercate > span {
+  float: left;
+  line-height: 50px;
+  font-size: 14px;
+  margin-left: 8px;
+  color: #ff0000;
+}
+section .myorder .ordercate ol {
+  float: left;
+  margin-left: 50px;
+}
+section .myorder .ordercate ol li {
+  float: left;
+  width: 88px;
+  text-align: left;
+}
+section .myorder .ordercate ol li a {
+  line-height: 50px;
+  font-size: 14px;
+}
+section .myorder .ordercate ol li a span {
+  color: #ff0000;
+}
+section .myorder .ordercate ol li a span i {
+  color: #ff0000;
+}
+section .myorder .ordercate ol li.wait {
+  margin-left: 34px;
+}
+section .myorder .ordercate ul {
+  float: left;
+  text-align: center;
+}
+section .myorder .ordercate ul li {
+  float: left;
+  width: 164px;
+  padding: 18px 0;
+}
+section .myorder .ordercate ul li a {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+}
+section .myorder .ordercate ul li.common a {
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+}
+section .myorder table {
+  margin-left: 30px;
+  width: 940px;
+  text-align: left;
+}
+section .myorder table tr {
+  line-height: 28px;
+}
+section .myorder table tr.bgcolor {
+  background: #f5f7f6;
+}
+section .myorder table tr.space {
+  height: 26px;
+}
+section .myorder table tr .date {
+  width: 310px;
+}
+section .myorder table tr .detail {
+  width: 180px;
+}
+section .myorder table tr .consig {
+  width: 130px;
+}
+section .myorder table tr .money {
+  width: 130px;
+}
+section .myorder table tr .state {
+  width: 104px;
+}
+section .myorder table tr .oper {
+  width: 84px;
+  text-align: center;
+}
+section .myorder table tr .pic {
+  width: 114px;
+}
+section .myorder table tr .pic img {
+  margin: 18px auto;
 }

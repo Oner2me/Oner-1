@@ -9,19 +9,15 @@ header{
 }
 section{
   padding-top:26px;width:1200px;margin:0 auto;
-  h2{font-size:18px;color:#000;margin-bottom:6px;}
-  ul{
-    font-size:14px;line-height:24px;color:#686767;
-    li{
-      &>a{font-size:14px;line-height:24px;color:#686767;}
-    }
-  }
   .sidenav{
     float:left;width:188px;padding-left:40px;
+    h2{font-size:18px;color:#000;margin-bottom:6px;}
     .mecenter{
       margin-bottom:26px;
       ul{
+        font-size:14px;line-height:24px;color:#686767;
         li{
+          &>a{font-size:14px;line-height:24px;color:#686767;}
           span{
             margin-left:32px;color:#bbb;
             a{font-size:14px;color:#bbb;}
@@ -30,8 +26,11 @@ section{
       }
     }
     .mefengling{
+      h2{font-size:18px;color:#000;margin-bottom:6px;}
       ul{
+        font-size:14px;line-height:24px;color:#686767;
         li{
+          &>a{font-size:14px;line-height:24px;color:#686767;}
           ol{
             margin-left:18px;
           }
@@ -45,8 +44,9 @@ section{
   .myorder{
     float:right;width:970px;border-left:2px solid #b5b5b5;
     .search{
-      background:#f5f7f6;margin-left:30px;
+      background:#f5f7f6;margin-left:30px;width:940px;
       span{
+        font-size:14px;
         float:left;display:inline-block;line-height:44px;margin-left:8px;
       }
       form{
@@ -64,15 +64,68 @@ section{
       }
     }
     .ordercate{
-      margin-left:30px;
+      margin-left:30px;width:940px;
+      &>span{float:left;line-height:50px;font-size:14px;margin-left:8px;color:#ff0000;}
       ol{
+        float:left;margin-left:50px;
         li{
-
+          float:left;width:88px;text-align:left;
+          a{
+            line-height:50px;font-size:14px;
+            span{
+              color:#ff0000;
+              i{ color:#ff0000;}
+            }
+          }
+          &.wait{
+            margin-left:34px;
+          }
         }
       }
       ul{
+        float:left;text-align:center;
         li{
-
+          float:left;width:164px;padding:18px 0;
+          a{
+            display:block;font-size:14px;line-height:14px;
+          }
+          &.common{
+            a{border-left:1px solid #aaa;border-right:1px solid #aaa;}
+          }
+        }
+      }
+    }
+    table{
+      margin-left:30px;width:940px;text-align:left;
+      tr{
+        line-height:28px;
+        &.bgcolor{
+          background:#f5f7f6;
+        }
+        &.space{
+          height:26px;
+        }
+        .date{
+          width:310px;
+        }
+        .detail{
+          width:180px;
+        }
+        .consig{
+          width:130px;
+        }
+        .money{
+          width:130px;
+        }
+        .state{
+          width:104px;
+        }
+        .oper{
+          width:84px;text-align:center;
+        }
+        .pic{
+          width:114px;
+          img{margin:18px auto;}
         }
       }
     }

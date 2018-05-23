@@ -205,26 +205,65 @@
         <div class="search clearfix">
             <span>我的订单</span>
             <form action="#">
-            <input type="text" placeholder="商品名称/商品编号/订单搜索">
-            <label>
-                <input type="submit">
-            </label>
+                <input type="text" placeholder="商品名称/商品编号/订单搜索">
+                <label>
+                    <input type="submit">
+                </label>
             </form>
         </div>
         <!--订单分类Order category-->
-        <div class="ordercate">
+        <div class="ordercate clearfix">
+            <span>全部订单</span>
             <ol>
-                <li><a href="#">全部订单</a></li>
-                <li><a href="#">代付款（1）</a></li>
-                <li><a href="#">待收货</a></li>
+                <li><a href="#">代付款<span>（<i>1</i>）</span></a></li>
+                <li class="wait"><a href="#">待收货</a></li>
                 <li><a href="#">待评价</a></li>
             </ol>
             <ul>
-                <li><a href="#">我常购的物品</a></li>
+                <!--常用common use-->
+                <li class="common"><a href="#">我常购的物品</a></li>
                 <li><a href="#">好货清仓</a></li>
                 <li><a href="#">订单回收站</a></li>
             </ul>
         </div>
+        
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+                <tr class="bgcolor">
+                    <th colspan="2" class="date"></th>
+                    <!--订单详情Order details-->
+                    <th class="detail">订单详情</th>
+                    <!--收货人Consignee-->
+                    <th class="consig">收货人</th>
+                    <!--金额Money-->
+                    <th class="money">金额</th>
+                    <!--状态State-->
+                    <th class="state">全部状态</th>
+                    <!--操作operation-->
+                    <th class="oper">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="space"></tr>
+                <tr class="bgcolor">
+                    <td colspan="2" class="date">2017-11-15  14:32:15</td>
+                    <td colspan="5" class="detail">订单号： 63251233962</td>
+                </tr>
+                <tr>
+                    <!--商品图片Picture-->
+                    <td class="pic">
+                        <img src="img/order_shop_pic_1.png" alt="order_shop_pic_1.png">
+                    </td>
+                    <!--商品名称Shopname-->
+                    <td class="shopname">灵境-白18K金钻石对戒(女)</td>
+                    <td></td>
+                    <td class="consig">草莓牛奶瓶</td>
+                    <td class="money">￥10379 </td>
+                    <td class="state">等待付款</td>
+                    <td class="oper">取消订单</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 
