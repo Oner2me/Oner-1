@@ -135,7 +135,6 @@
   position: absolute;
   top: 0;
   background: rgba(127, 148, 184, 0.7);
-  filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#b27f94b8,endcolorstr=#b27f94b8);
 }
 .main .product ul li a span {
   font-size: 18px;

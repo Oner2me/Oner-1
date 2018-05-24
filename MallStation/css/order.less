@@ -8,7 +8,7 @@ header{
   }
 }
 section{
-  padding-top:26px;width:1200px;margin:0 auto;
+  padding:26px 0;width:1200px;margin:0 auto;
   .sidenav{
     float:left;width:188px;padding-left:40px;
     h2{font-size:18px;color:#000;margin-bottom:6px;}
@@ -98,6 +98,13 @@ section{
     table{
       margin-left:30px;width:940px;text-align:left;
       tr{
+        font-size:12px;
+        th{
+          font-size:14px;font-weight:normal;
+          &.state{
+            color:#000;
+          }
+        }
         line-height:28px;
         &.bgcolor{
           background:#f5f7f6;
@@ -106,26 +113,74 @@ section{
           height:26px;
         }
         .date{
-          width:310px;
+          width:310px;font-size:14px;padding-left:8px;
         }
         .detail{
-          width:180px;
+          width:180px; font-size:14px;
         }
         .consig{
           width:130px;
         }
         .money{
           width:130px;
+          i{font-size:12px;}
         }
         .state{
           width:104px;
+          color:#ababab;
         }
         .oper{
-          width:84px;text-align:center;
+          width:84px;text-align:center;position:relative;
+          .nextstep{
+            position:absolute;width:84px;line-height:24px;
+            color:#fff;background:#ff9b94;left:0;top:18px;
+          }
+          .sign{background:#ababab;}
         }
         .pic{
           width:114px;
-          img{margin:18px auto;}
+          a{
+            display:block;width:70px;margin:18px auto;
+            img{width:70px;height:70px;}
+          }
+        }
+        .mark{
+          color:#ff0000;
+        }
+      }
+    }
+    .page{
+      width:348px;margin-left:622px;
+      a{
+        width:42px;height:42px;border:1px solid #b5b5b5;float:left;
+        margin:0 3px;
+        &.pre{position:relative;}
+        &.pre:after{
+          content:'';width:0;height:0;display:block;
+          border:8px solid transparent;border-right-color:#000;
+          position:absolute;
+          left:20%;top:50%;margin-top:-8px;
+        }
+        &.next{position:relative;margin-right:0}
+        &.next:after{
+          content:'';width:0;height:0;display:block;
+          border:8px solid transparent;border-left-color:#000;
+          position:absolute;
+          right:20%;top:50%;margin-top:-8px;
+        }
+      }
+      ol{
+        float:left;
+        li{
+          text-align:center;
+          float:left;width:42px;line-height:42px;border:1px solid #b5b5b5;
+          margin:0 3px;cursor:pointer;
+          span{
+            position:relative;top:-4px;
+          }
+          &:hover{
+            background:#ff9b94;
+          }
         }
       }
     }

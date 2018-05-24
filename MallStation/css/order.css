@@ -2,7 +2,7 @@ header .bottom .container dl dd {
   display: none;
 }
 section {
-  padding-top: 26px;
+  padding: 26px 0;
   width: 1200px;
   margin: 0 auto;
 }
@@ -157,7 +157,15 @@ section .myorder table {
   text-align: left;
 }
 section .myorder table tr {
+  font-size: 12px;
   line-height: 28px;
+}
+section .myorder table tr th {
+  font-size: 14px;
+  font-weight: normal;
+}
+section .myorder table tr th.state {
+  color: #000;
 }
 section .myorder table tr.bgcolor {
   background: #f5f7f6;
@@ -167,9 +175,12 @@ section .myorder table tr.space {
 }
 section .myorder table tr .date {
   width: 310px;
+  font-size: 14px;
+  padding-left: 8px;
 }
 section .myorder table tr .detail {
   width: 180px;
+  font-size: 14px;
 }
 section .myorder table tr .consig {
   width: 130px;
@@ -177,16 +188,103 @@ section .myorder table tr .consig {
 section .myorder table tr .money {
   width: 130px;
 }
+section .myorder table tr .money i {
+  font-size: 12px;
+}
 section .myorder table tr .state {
   width: 104px;
+  color: #ababab;
 }
 section .myorder table tr .oper {
   width: 84px;
   text-align: center;
+  position: relative;
+}
+section .myorder table tr .oper .nextstep {
+  position: absolute;
+  width: 84px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff9b94;
+  left: 0;
+  top: 18px;
+}
+section .myorder table tr .oper .sign {
+  background: #ababab;
 }
 section .myorder table tr .pic {
   width: 114px;
 }
-section .myorder table tr .pic img {
+section .myorder table tr .pic a {
+  display: block;
+  width: 70px;
   margin: 18px auto;
+}
+section .myorder table tr .pic a img {
+  width: 70px;
+  height: 70px;
+}
+section .myorder table tr .mark {
+  color: #ff0000;
+}
+section .myorder .page {
+  width: 348px;
+  margin-left: 622px;
+}
+section .myorder .page a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #b5b5b5;
+  float: left;
+  margin: 0 3px;
+}
+section .myorder .page a.pre {
+  position: relative;
+}
+section .myorder .page a.pre:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  border: 8px solid transparent;
+  border-right-color: #000;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  margin-top: -8px;
+}
+section .myorder .page a.next {
+  position: relative;
+  margin-right: 0;
+}
+section .myorder .page a.next:after {
+  content: '';
+  width: 0;
+  height: 0;
+  display: block;
+  border: 8px solid transparent;
+  border-left-color: #000;
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  margin-top: -8px;
+}
+section .myorder .page ol {
+  float: left;
+}
+section .myorder .page ol li {
+  text-align: center;
+  float: left;
+  width: 42px;
+  line-height: 42px;
+  border: 1px solid #b5b5b5;
+  margin: 0 3px;
+  cursor: pointer;
+}
+section .myorder .page ol li span {
+  position: relative;
+  top: -4px;
+}
+section .myorder .page ol li:hover {
+  background: #ff9b94;
 }
