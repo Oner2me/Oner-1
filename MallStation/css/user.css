@@ -1,0 +1,283 @@
+header .bottom .container dl dd {
+  display: none;
+}
+section {
+  padding: 26px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+section .sidenav {
+  float: left;
+  width: 188px;
+  padding-left: 40px;
+}
+section .sidenav h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+section .sidenav .mecenter {
+  margin-bottom: 26px;
+}
+section .sidenav .mecenter ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mecenter ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mecenter ul li span {
+  margin-left: 32px;
+  color: #bbb;
+}
+section .sidenav .mecenter ul li span a {
+  font-size: 14px;
+  color: #bbb;
+}
+section .sidenav .mefengling h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+section .sidenav .mefengling ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mefengling ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mefengling ul li ol {
+  margin-left: 18px;
+}
+section .sidenav .mefengling ul li.current > a {
+  color: #ff9b94;
+}
+section .user {
+  float: right;
+  width: 956px;
+  border-left: 2px solid #b5b5b5;
+  padding-left: 14px;
+}
+section .user .per_info {
+  width: 632px;
+  border: 1px solid #ffe0dd;
+  margin: 36px 0 62px 188px;
+  position: relative;
+  border-left-color: #fff;
+}
+section .user .per_info > div {
+  float: left;
+  width: 224px;
+  border: 1px solid #ffe0dd;
+  text-align: left;
+  padding-left: 40px;
+  border-left-color: #fff;
+}
+section .user .per_info > div h2 {
+  margin: 8px 0;
+}
+section .user .per_info > div h2 a {
+  font-size: 18px;
+}
+section .user .per_info > div > div {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+section .user .per_info > div > div span {
+  display: inline-block;
+  border-radius: 10px;
+  background: #24c81c;
+  width: 76px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  margin: 0 8px;
+}
+section .user .per_info > div > div i {
+  font-size: 12px;
+}
+section .user .per_info > div > a {
+  color: #ffa29b;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 3px;
+}
+section .user .per_info > div > a.head {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #ffe0dd;
+  border-radius: 50%;
+  background: url('../img/user_head_pic.png') no-repeat;
+  position: absolute;
+  top: -8px;
+  left: -78px;
+}
+section .user .per_info ul {
+  float: left;
+}
+section .user .per_info ul li {
+  float: left;
+  width: 120px;
+  border: 1px solid #ffe0dd;
+  text-align: center;
+  padding: 32px 0;
+}
+section .user .per_info ul li a {
+  display: inline-block;
+  position: relative;
+}
+section .user .per_info ul li a img {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+}
+section .user .per_info ul li a span {
+  margin-left: 36px;
+  font-size: 12px;
+  line-height: 24px;
+  display: inline-block;
+}
+section .user .ordercaption {
+  display: flex;
+  width: 942px;
+  margin-bottom: 6px;
+}
+section .user .ordercaption span {
+  display: block;
+  line-height: 44px;
+  background: #f5f7f6;
+  text-align: center;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+section .user .ordercaption span.ordernumber {
+  width: 170px;
+}
+section .user .ordercaption span.shopinfo {
+  width: 220px;
+}
+section .user .ordercaption span.orderamount {
+  width: 106px;
+}
+section .user .ordercaption span.amountpaid {
+  width: 132px;
+}
+section .user .ordercaption span.ordertime {
+  width: 126px;
+}
+section .user .ordercaption span.orderstatue {
+  width: 126px;
+}
+section .user .ordercaption span.operation {
+  width: 62px;
+}
+section .user .orderinfo .orderdetail {
+  display: flex;
+  align-items: center;
+  width: 942px;
+  height: 138px;
+  background: #f5f7f6;
+  margin-bottom: 22px;
+}
+section .user .orderinfo .orderdetail span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+section .user .orderinfo .orderdetail span.ordernumber {
+  width: 170px;
+  font-size: 14px;
+}
+section .user .orderinfo .orderdetail span.orderamount {
+  width: 106px;
+}
+section .user .orderinfo .orderdetail span.amountpaid {
+  width: 132px;
+}
+section .user .orderinfo .orderdetail span.ordertime {
+  width: 126px;
+}
+section .user .orderinfo .orderdetail div.shopinfo a {
+  display: block;
+  width: 220px;
+}
+section .user .orderinfo .orderdetail div.shopinfo a img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+section .user .orderinfo .orderdetail div.orderstatue {
+  width: 126px;
+}
+section .user .orderinfo .orderdetail div.orderstatue a {
+  display: block;
+  text-align: center;
+  width: 86px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff9b94;
+  margin: 0 auto;
+}
+section .user .orderinfo .orderdetail div.operation {
+  width: 62px;
+  text-align: center;
+}
+section .user .orderinfo .orderdetail div.operation a {
+  font-size: 12px;
+  display: block;
+}
+section .user .like h2 {
+  overflow: hidden;
+  padding: 8px 0;
+  border-bottom: 2px solid #625e5e;
+}
+section .user .like h2 span {
+  font-size: 24px;
+  display: block;
+  color: #454545;
+  float: left;
+  line-height: 26px;
+  margin-left: 30px;
+}
+section .user .like h2 a {
+  display: block;
+  width: 172px;
+  line-height: 26px;
+  color: #fff;
+  background: #ff9b94;
+  float: right;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 10px;
+}
+section .user .like ul li {
+  text-align: center;
+  width: 242px;
+  padding-top: 20px;
+}
+section .user .like ul li a {
+  display: block;
+}
+section .user .like ul li a img {
+  width: 186px;
+  height: 186px;
+  margin: 0 auto;
+}
+section .user .like ul li h3 a {
+  display: inline-block;
+  font-size: 16px;
+}
+section .user .like ul li span.price {
+  display: block;
+  color: #ffa59e;
+}
+section .user .like ul li span.price i {
+  color: #ffa59e;
+}

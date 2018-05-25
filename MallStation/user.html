@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人管理</title>
+    <meta name="keywords" content="#">
+    <meta name="discription" content="#">
+    <meta name="author" content="#">
+    <link rel="shrotcut icon" href="logo.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/user.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<!--<header>
+    <div class="top">
+        <div class="container clearfix">
+            <ol class="clearfix">
+                <li>风灵商城官方网站欢迎您！</li>
+                <li><a href="login.html" class="login">登陆</a><a href="#">快速注册</a></li>
+            </ol>
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img src="img/cart_icon.png" alt="cart_icon.png">
+                        <span>购物车</span>
+                    </a>
+                    <div>
+                        <span>0</span>
+                        <img src="img/L_icon.png" alt="L_icon.png">
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="my_order"><span>我的订单</span><img src="img/L_icon.png" alt="L_icon.png"></a>
+                    <a href="#"><span>我的详情</span><img src="img/L_icon.png" alt="L_icon.png"></a>
+                </li>
+                <li>
+                    <a href="#" class="after_service">售后服务</a>
+                    <a href="#">手机官网</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="container clearfix">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo.png">
+            </a>
+            <ul>
+                <li><span>风  灵  饰  品</span><span>智  慧  首  选</span></li>
+                <li class="search clearfix">
+                    <form action="#" name="form1" method="get">
+                        <input type="text" placeholder="请输入要搜索的相关字">
+                        <label>
+                            <input type="submit" class="sub">
+                            <img src="img/search_icon.png" alt="search_icon.png">
+                        </label>
+                    </form>
+                    <a href="#">来电预约</a>
+                    <ol class="clearfix">
+                        <li><a href="#">人气TOP</a></li>
+                        <li><a href="#">黄金</a></li>
+                        <li><a href="#">黄金项链</a></li>
+                        <li><a href="#">钻石戒指</a></li>
+                        <li><a href="#">珍珠</a></li>
+                        <li><a href="#">玉手镯</a></li>
+                        <li><a href="#">手链</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container clearfix">
+            <dl>
+                <dt>
+                    <span>所有商品分类</span>
+                    <img src="img/dropdown_icon.png" alt="dropdown_icon.png">
+                </dt>
+                <dd>
+                    <ol>
+                        <li>
+                            <h2><a href="#">大家都在买 ></a></h2>
+                            <ul class="clearfix">
+                                <li><a href="#">珍珠</a></li>
+                                <li><a href="#">翡翠</a></li>
+                                <li><a href="#">钻石戒指</a></li>
+                                <li><a href="#">裸钻</a></li>
+                                <li><a href="#">黄金戒指</a></li>
+                                <li><a href="#">小叶紫檀</a></li>
+                                <li><a href="#">崖柏</a></li>
+                                <li><a href="#">菩提</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><a href="#">黄金珠宝 ></a></h2>
+                            <ul class="clearfix">
+                                <li><a href="#">钻石</a></li>
+                                <li><a href="#">玉石</a></li>
+                                <li><a href="#">黄金</a></li>
+                                <li><a href="#">珍珠</a></li>
+                                <li><a href="#">白银</a></li>
+                                <li><a href="#">铂金</a></li>
+                                <li><a href="#">和田玉</a></li>
+                                <li><a href="#">水晶</a></li>
+                                <li><a href="#">琥珀</a></li>
+                                <li><a href="#">玛瑙</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><a href="#">时尚饰品 ></a></h2>
+                            <ul class="clearfix">
+                                <li><a href="#">吊坠</a></li>
+                                <li><a href="#">手链</a></li>
+                                <li><a href="#">手串</a></li>
+                                <li><a href="#">戒指</a></li>
+                                <li><a href="#">耳环</a></li>
+                                <li><a href="#">耳钉</a></li>
+                                <li><a href="#">胸针</a></li>
+                                <li><a href="#">水晶手环</a></li>
+                                <li><a href="#">锁骨链</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><a href="#">奇趣收藏 ></a></h2>
+                            <ul class="clearfix">
+                                <li><a href="#">工艺品</a></li>
+                                <li><a href="#">创意礼品</a></li>
+                                <li><a href="#">瓷器</a></li>
+                                <li><a href="#">紫砂</a></li>
+                                <li><a href="#">奇石</a></li>
+                                <li><a href="#">印章</a></li>
+                                <li><a href="#">字画</a></li>
+                                <li><a href="#">壁纸</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2><a href="#">保税区 ></a></h2>
+                            <ul class="clearfix">
+                                <li><a href="#">美国</a></li>
+                                <li><a href="#">英国</a></li>
+                                <li><a href="#">法国</a></li>
+                                <li><a href="#">韩国</a></li>
+                                <li><a href="#">日本</a></li>
+                                <li><a href="#">德国</a></li>
+                                <li><a href="#">新加坡</a></li>
+                                <li><a href="#">加拿大</a></li>
+                                <li><a href="#">澳大利亚</a></li>
+                                <li><a href="#">马来西亚</a></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </dd>
+            </dl>
+            <ul class="clearfix">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">钻石</a></li>
+                <li><a href="#">黄金</a></li>
+                <li><a href="#">翡翠</a></li>
+                <li><a href="#">定制</a></li>
+                <li><a href="#">体验中心</a></li>
+            </ul>
+        </div>
+    </div>
+</header>-->
+<section class="clearfix">
+    <!--侧导航side nav-->
+    <div class="sidenav">
+        <!--会员中心Member Center-->
+        <div class="mecenter">
+            <h2>会员中心</h2>
+            <ul>
+                <li>个人资料<span><a href="#">修改</a>丨<a href="#">查看</a></span></li>
+                <li><a href="#">账户安全</a></li>
+                <li><a href="#">地址管理</a></li>
+                <li><a href="#">管理收货地址</a></li>
+                <li><a href="#">修改登陆密码</a></li>
+            </ul>
+        </div>
+        <!--我的风灵Me Fengling-->
+        <div class="mefengling">
+            <h2>我的风灵</h2>
+            <ul>
+                <li><a href="">交易管理</a></li>
+                <li><a href="">我的预约</a></li>
+                <li>
+                    <a href="#">我的订单</a>
+                    <ol>
+                        <li><a href="#">已完成</a></li>
+                        <li><a href="#">待收货</a></li>
+                        <li><a href="#">待付款</a></li>
+                        <li><a href="#">待评价</a></li>
+                    </ol>
+                </li>
+                <li><a href="">我的积分</a></li>
+                <li><a href="">我的礼券</a></li>
+                <li><a href="">我的礼品</a></li>
+                <li><a href="">我的评价</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--我的信息-->
+    <div class="user">
+        <!--个人信息Personal information-->
+        <div class="per_info clearfix">
+            <div>
+                <h2><a href="#">你表哥永远都是你表哥</a></h2>
+                <div>账户安全:<span></span><i>极好</i></div>
+                <a href="#">我的收货地址</a>
+                <a href="#" class="head"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/user_per_info_1.png" alt="user_per_info_1.png">
+                        <span>个人信息</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/user_per_info_2.png" alt="user_per_info_2.png">
+                        <span>我的优惠券</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/user_per_info_3.png" alt="user_per_info_3.png">
+                        <span>我的收藏</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--订单标题-->
+        <div class="ordercaption">
+            <!--订单编号order number-->
+            <span class="ordernumber">订单编号</span>
+            <!--商品信息shop info-->
+            <span class="shopinfo">商品信息</span>
+            <!--订单金额order amount-->
+            <span class="orderamount">订单金额</span>
+            <!--已付金额amount paid-->
+            <span class="amountpaid">已付金额</span>
+            <!--下单时间order time-->
+            <span class="ordertime">下单时间</span>
+            <!--订单状态order statue-->
+            <span class="orderstatue">订单状态</span>
+            <!--操作operation-->
+            <span class="operation">操作</span>
+        </div>
+        <!--订单信息-->
+        <div class="orderinfo">
+            <div class="orderdetail">
+                <!--订单编号order number-->
+                <span class="ordernumber">订单号： 6280523356</span>
+                <!--商品信息shop info-->
+                <div class="shopinfo">
+                    <a href="#">
+                        <img src="img/pro_pic_4.png" alt="pro_pic_4.png">
+                    </a>
+                </div>
+                <!--订单金额order amount-->
+                <span class="orderamount">¥4560</span>
+                <!--已付金额amount paid-->
+                <span class="amountpaid">¥4560</span>
+                <!--下单时间order time-->
+                <span class="ordertime">2018年03-15</span>
+                <!--订单状态order statue-->
+                <div class="orderstatue">
+                    <a href="#">去评价</a>
+                </div>
+                <!--操作operation-->
+                <div class="operation">
+                    <a href="#">订单详情</a>
+                </div>
+            </div>
+            <div class="orderdetail">
+                <!--订单编号order number-->
+                <span class="ordernumber">订单号： 6280523357</span>
+                <!--商品信息shop info-->
+                <div class="shopinfo">
+                    <a href="#">
+                        <img src="img/pro_pic_3.png" alt="pro_pic_3.png">
+                    </a>
+                </div>
+                <!--订单金额order amount-->
+                <span class="orderamount">¥6670</span>
+                <!--已付金额amount paid-->
+                <span class="amountpaid">¥6670</span>
+                <!--下单时间order time-->
+                <span class="ordertime">2018年03-16</span>
+                <!--订单状态order statue-->
+                <div class="orderstatue">
+                    <a href="#">待收货</a>
+                </div>
+                <!--操作operation-->
+                <div class="operation">
+                    <a href="#">订单详情</a>
+                </div>
+            </div>
+            <div class="orderdetail">
+                <!--订单编号order number-->
+                <span class="ordernumber">订单号： 6280523358</span>
+                <!--商品信息shop info-->
+                <div class="shopinfo">
+                    <a href="#">
+                        <img src="img/pro_pic_4.png" alt="pro_pic_4.png">
+                    </a>
+                </div>
+                <!--订单金额order amount-->
+                <span class="orderamount">¥88901</span>
+                <!--已付金额amount paid-->
+                <span class="amountpaid">¥88901</span>
+                <!--下单时间order time-->
+                <span class="ordertime"> 2018年03-17</span>
+                <!--订单状态order statue-->
+                <div class="orderstatue">
+                    <a href="#">待收货</a>
+                </div>
+                <!--操作operation-->
+                <div class="operation">
+                    <a href="#">订单详情</a>
+                </div>
+            </div>
+
+        </div>
+        <!--猜你喜欢like-->
+        <div class="like">
+            <h2>
+                <span>根据浏览 猜你喜欢</span>
+                <a href="#">查看更多</a>
+            </h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/like_pic_1.png" alt="like_pic_1.png">
+                    </a>
+                    <h3><a href="#">枕上</a></h3>
+                    <span class="price">¥<i>99999</i></span>
+                    <!--售出Sell out-->
+                    <span class="sellout">售出<i>36998</i></span>
+                    <span class="comment">评论<i>5351</i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--<footer>
+    <div class="container clearfix">
+        <ul class="clearfix">
+            <li>
+                <img src="img/footer_icon_1.png" alt="footer_icon_1.png">
+                <span>全国免费配送</span>
+            </li>
+            <li>
+                <img src="img/footer_icon_2.png" alt="footer_icon_2.png">
+                <span>商品货到付款</span>
+            </li>
+            <li>
+                <img src="img/footer_icon_3.png" alt="footer_icon_3.png">
+                <span>钻石以小换大</span>
+            </li>
+            <li>
+                <img src="img/footer_icon_4.png" alt="footer_icon_4.png">
+                <span>钻石一钻双证</span>
+            </li>
+            <li>
+                <img src="img/footer_icon_5.png" alt="footer_icon_5.png">
+                <span>15天免费退换</span>
+            </li>
+            <li>
+                <img src="img/footer_icon_6.png" alt="footer_icon_6.png">
+                <span>商品终身保养</span>
+            </li>
+        </ul>
+        <div class="list clearfix">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo.png">
+            </a>
+            <dl>
+                <dt><a href="#">关于我们</a></dt>
+                <dd><a href="#">品牌推荐</a></dd>
+                <dd><a href="#">市场合作</a></dd>
+                <dd><a href="#">诚聘贤才</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+                <dd><a href="#">商务加盟</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">购物指南</a></dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">订单处理时间</a></dd>
+                <dd><a href="#">订单查询</a></dd>
+                <dd><a href="#">特殊商品说明</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">支付方式</a></dt>
+                <dd><a href="#">在线支付</a></dd>
+                <dd><a href="#">货到付款</a></dd>
+                <dd><a href="#">银行汇款</a></dd>
+                <dd><a href="#">海外汇款</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">配送方式</a></dt>
+                <dd><a href="#">体验中心自提</a></dd>
+                <dd><a href="#">全国免费配送</a></dd>
+                <dd><a href="#">海外配送</a></dd>
+                <dd><a href="#">货品包装</a></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">售后服务</a></dt>
+                <dd><a href="#">售后政策</a></dd>
+                <dd><a href="#">15天退换</a></dd>
+                <dd><a href="#">以小换大</a></dd>
+                <dd><a href="#">优惠换款</a></dd>
+            </dl>
+            <div class="code">
+                <img src="img/QR_Code.png" alt="QR_Code.png">
+                <span class="microblogs">微博</span><span>微信</span>
+            </div>
+        </div>
+        <div class="contact clear">
+            <img src="img/footer_icon_telephone.png" alt="footer_icon_telephone.png">
+            <div>
+                <span>400-880-0051</span>
+                <span><i>咨询时间</i> 9:00 - 21:00</span>
+            </div>
+            <a href="#">进店有礼 · 甜蜜不停</a>
+        </div>
+        <ol class="clearfix">
+            <li><a href="#">网站地图</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">在线投诉</a></li>
+            <li>沪ICP备08011593号</li>
+            <li>copyright&copy;2002-2018 www.fengling.com 风灵 All Rights Reserved</li>
+        </ol>
+        <div class="friend">
+            <span><i>广东风灵有限公司</i>400 880 0051</span>
+            <ul class="clearfix">
+                <li><a href="#">团购</a></li>
+                <li><a href="#">中国品牌网</a></li>
+                <li><a href="#">中国婚博会</a></li>
+                <li><a href="#">生日礼物</a></li>
+                <li><a href="#">中国女装品牌</a></li>
+                <li><a href="#">钻石饰品价格</a></li>
+                <li><a href="#">加盟网</a></li>
+                <li><a href="#">翡翠</a></li>
+                <li><a href="#">返利网</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>-->
+</body>
+</html>
