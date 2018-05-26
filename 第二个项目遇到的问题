@@ -1,3 +1,16 @@
 1、写公共样式时如果不加入这句话
     img{display:block;border:none;}
     调试图片的时候，图片撑起的高度会莫名奇妙的增加3px，因为图片默认自带边框，而且只有转换为块级之后才能去掉
+2、placeholder设置颜色和大小
+        &::-webkit-input-placeholder{// WebKit browsers
+          color: #b1b1b1;font-size:14px;
+        }
+        &:-moz-placeholder{//Mozilla Firefox 4 to 18
+          color: #b1b1b1;font-size:14px;
+        }
+        &::-moz-placeholder{//Mozilla Firefox 19+
+          color: #b1b1b1;font-size:14px;
+        }
+        &:-ms-input-placeholder{// Internet Explorer 10+
+          color: #b1b1b1;font-size:14px;
+        }
