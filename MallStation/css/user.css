@@ -257,10 +257,16 @@ section .user .like h2 a {
   text-align: center;
   margin-right: 10px;
 }
+section .user .like ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 section .user .like ul li {
   text-align: center;
   width: 242px;
   padding-top: 20px;
+  margin-bottom: 70px;
 }
 section .user .like ul li a {
   display: block;
@@ -277,7 +283,73 @@ section .user .like ul li h3 a {
 section .user .like ul li span.price {
   display: block;
   color: #ffa59e;
+  margin-bottom: 4px;
 }
 section .user .like ul li span.price i {
   color: #ffa59e;
+}
+section .user .like ul li span.comment {
+  margin-left: 14px;
+}
+section .user .like ul li span.sellout,
+section .user .like ul li span.comment {
+  color: #969595;
+  font-size: 16px;
+}
+section .user .like ul li span.sellout i,
+section .user .like ul li span.comment i {
+  font-size: 16px;
+  color: #000;
+  margin-left: 10px;
+}
+.right_nav {
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 414px;
+  margin-left: 604px;
+  z-index: 999;
+}
+.right_nav > img {
+  width: 62px;
+  height: 68px;
+  margin: 0 auto;
+  position: relative;
+  left: -4px;
+}
+.right_nav ul li {
+  width: 60px;
+  background: #ff9b94;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+.right_nav ul li:first-child {
+  border-top: none;
+}
+.right_nav ul li a {
+  display: block;
+  border-top: 1px solid #ff9b94;
+  border-bottom: 1px solid #ff9b94;
+}
+.right_nav ul li a img {
+  width: 32px;
+  height: 28px;
+  margin: 12px auto 2px;
+}
+.right_nav ul li a span {
+  font-size: 12px;
+  color: #fff;
+  display: block;
+  margin: 2px auto 8px;
+}
+.right_nav ul li.code {
+  background: #525252;
+}
+.right_nav ul li.code a {
+  border-color: #525252;
+}
+.right_nav ul li.code a img {
+  width: 44px;
+  height: 44px;
+  margin: 8px auto;
 }
