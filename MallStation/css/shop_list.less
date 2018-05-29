@@ -1,0 +1,115 @@
+//轮播图
+.banner{
+  position:relative;
+  overflow:hidden;
+  ul{
+    width:1000%;position:relative;
+    li{
+      width:10%;float:left;
+      img{
+        width:1200px;margin:0 auto;
+      }
+    }
+  }
+  span{
+    width:82px;height:154px;cursor:pointer;display:none;
+    position:absolute;top:50%;margin-top:-77px;
+    &.left{
+      left:40px;
+      background:url('../img/banner_left_icon.png');
+    }
+    &.right{
+      right:40px;
+      background:url('../img/banner_right_icon.png');
+    }
+  }
+  ol{
+    width:168px;position:absolute;left:50%;margin-left:-84px;bottom:30px;
+    li{
+      width:12px;height:12px;border-radius:50%;cursor:pointer;
+      background: #5c5b5b;float:left;margin:0 22px;
+      &.on{
+        background: #dfa973;
+      }
+    }
+  }
+}
+//菜单初始时是收缩的
+header{
+  .bottom{
+    .container{
+      dl{
+        dd{
+          display:none;
+        }
+      }
+    }
+  }
+}
+//主体部分
+section{
+  width:1200px;margin:0 auto;
+  .leftsidebar{
+    padding:16px 0 0 0;
+    h2{
+      font-size:14px;
+      color:#000;
+      margin-bottom:20px;
+    }
+    .category{
+      padding:16px 0 28px 38px;
+      font-size:14px;
+      width:200px;
+      border-top:1px solid #000;
+      border-bottom:1px solid #000;
+      dl{
+        margin-top:22px;
+        dt{
+          position:relative;
+          span{
+            cursor:pointer;
+          }
+          b{
+            font-size:22px;
+            width:16px;
+            height:16px;
+            transform:rotate(0deg);
+            line-height:14px;
+            position:absolute;
+            top:50%;
+            left:-30px;
+            margin-top:-9px;
+          }
+        }
+        dd{
+          display:block;
+          margin-top:12px;
+          padding-left:4px;
+          ol{
+            li{
+              margin-top:6px;
+              &:first-child{
+                margin-top:0;
+              }
+              a{
+                font-size:14px;
+                color:#908e8e;
+              }
+            }
+          }
+        }
+        &:first-child{
+          margin-top:0;
+        }
+        &.unfold{
+          padding-bottom:0;
+          dt{
+            b{
+              transform:rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

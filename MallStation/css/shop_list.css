@@ -1,0 +1,118 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+.banner ul {
+  width: 1000%;
+  position: relative;
+}
+.banner ul li {
+  width: 10%;
+  float: left;
+}
+.banner ul li img {
+  width: 1200px;
+  margin: 0 auto;
+}
+.banner span {
+  width: 82px;
+  height: 154px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -77px;
+}
+.banner span.left {
+  left: 40px;
+  background: url('../img/banner_left_icon.png');
+}
+.banner span.right {
+  right: 40px;
+  background: url('../img/banner_right_icon.png');
+}
+.banner ol {
+  width: 168px;
+  position: absolute;
+  left: 50%;
+  margin-left: -84px;
+  bottom: 30px;
+}
+.banner ol li {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #5c5b5b;
+  float: left;
+  margin: 0 22px;
+}
+.banner ol li.on {
+  background: #dfa973;
+}
+header .bottom .container dl dd {
+  display: none;
+}
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+section .leftsidebar {
+  padding: 16px 0 0 0;
+}
+section .leftsidebar h2 {
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 20px;
+}
+section .leftsidebar .category {
+  padding: 16px 0 28px 38px;
+  font-size: 14px;
+  width: 200px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+section .leftsidebar .category dl {
+  margin-top: 22px;
+}
+section .leftsidebar .category dl dt {
+  position: relative;
+}
+section .leftsidebar .category dl dt span {
+  cursor: pointer;
+}
+section .leftsidebar .category dl dt b {
+  font-size: 22px;
+  width: 16px;
+  height: 16px;
+  transform: rotate(0deg);
+  line-height: 14px;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -9px;
+}
+section .leftsidebar .category dl dd {
+  display: block;
+  margin-top: 12px;
+  padding-left: 4px;
+}
+section .leftsidebar .category dl dd ol li {
+  margin-top: 6px;
+}
+section .leftsidebar .category dl dd ol li:first-child {
+  margin-top: 0;
+}
+section .leftsidebar .category dl dd ol li a {
+  font-size: 14px;
+  color: #908e8e;
+}
+section .leftsidebar .category dl:first-child {
+  margin-top: 0;
+}
+section .leftsidebar .category dl.unfold {
+  padding-bottom: 0;
+}
+section .leftsidebar .category dl.unfold dt b {
+  transform: rotate(90deg);
+}
