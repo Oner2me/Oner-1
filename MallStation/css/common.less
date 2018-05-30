@@ -7,6 +7,13 @@ img{display:block;border:none;}
 input,select,textarea,button,a{outline:none;}
 textarea{resize:none;}
 .clear{clear:both;}
+.flipx{
+  -moz-transform:scaleX(-1);
+  -webkit-transform:scaleX(-1);
+  -o-transform:scaleX(-1);
+  transform:scaleX(-1);
+}
+
 .clearfix:after{content:'';display:block;width:0;height:0;visibility:hidden;clear:both;}
 /*--------网页头部样式--------*/
 header{
@@ -305,6 +312,36 @@ footer{
           &:hover{
             a{color:#e21a1a;}
           }
+        }
+      }
+    }
+  }
+}
+/*--------网页右侧导航样式--------*/
+.right_nav{
+  width:60px;position:absolute;left:50%;top:464px;margin-left:604px;z-index: 999;
+  &>img{width:62px;height:68px;margin:0 auto;position:relative;left:-4px;}
+  ul{
+    li{
+      width:60px;background:#ff9b94;text-align:center;
+      border-top:1px solid #fff;
+      &:first-child{border-top:none;}
+      a{
+        display:block;border-top:1px solid #ff9b94;
+        border-bottom:1px solid #ff9b94;
+        img{
+          width:32px;height:28px;margin:12px auto 2px;
+        };
+        span{
+          font-size:12px;color:#fff;display:block;margin:2px auto 8px;
+
+        }
+      }
+      &.code{
+        background:#525252;
+        a{
+          border-color:#525252;
+          img{width:44px;height:44px;margin:8px auto;}
         }
       }
     }

@@ -69,8 +69,8 @@ $('header .bottom dl dt').click(function(){
 //左侧导航分类中点击下啦效果
 $('#category dl').on('click',function(){
     if($(this).hasClass('unfold')){
-        $(this).removeClass('unfold').find('dd').slideUp(1000);
+        $(this).removeClass('unfold').find('dd').slideUp(500);
     }else{
-        $(this).addClass('unfold').find('dd').slideDown(1000);
+        $(this).addClass('unfold').find('dd').slideDown(500);
     }
 });
