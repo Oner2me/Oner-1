@@ -1,0 +1,246 @@
+header{
+  .bottom{
+    .container{
+      dl{
+        dd{
+          display:none;
+        }
+      }
+    }
+  }
+}
+section{
+  width:1200-28px;
+  margin:0 auto;
+  padding-left:28px;
+  h1{
+    font-size:24px;
+    color:#000;
+    padding:26px 0 26px 18px;
+  }
+  .address{
+    border-bottom:1px solid #333;
+    font-size:14px;
+    position:relative;
+    h2{
+      font-size:14px;
+      padding:16px 0 16px 18px;
+    }
+    dl.addr{
+      padding:10px 0 50px 58px;
+      overflow:hidden;
+    }
+    dd,dt{
+      float:left;
+      width:308-50px;
+      margin-left:36px;
+      padding:12px 30px 16px 20px;
+      border:1px solid #979797;
+    }
+    .addcity{
+      padding:10px 0;
+      border-bottom:1px solid #8a8a8a;
+    }
+    .addrdetail{
+      line-height:26px;
+      margin-top:6px;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap
+    }
+    .call{
+      line-height:26px;
+    }
+    dt{
+      a{
+        display:block;
+        line-height:98px;
+        text-align:center;
+        color:#979797;
+      }
+    }
+    dd.current{
+      border-color:#ff9b94;
+      .addcity{
+        border-bottom:1px solid #bc7d7d;
+      }
+    }
+    .manage{
+      position:absolute;
+      right:46px;
+      bottom:12px;
+      font-size:14px;
+      color:#ff9b94;
+    }
+  }
+  .orderinfo{
+    h2{
+      font-size:18px;
+      padding:48px 0 48px 20px;
+    }
+    .caption{
+      line-height:44px;
+      font-size:14px;
+      text-align:center;
+      color:#9b9b9b;
+      width:940px;
+      margin:10px 0 0 122px;
+      overflow:hidden;
+      background:#f5f7f6;
+    }
+    span{
+      float:left;
+      &.shopinfo{
+        width:110px+22px;
+        padding-left:14px;
+        text-align:left;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap
+      }
+      &.prop{
+        width:144px;
+      }
+      &.price{
+        width:102px;
+      }
+      &.num{
+        width:186px;
+      }
+      &.discount{
+        width:146px;
+      }
+      &.subtotal{
+        width:128px;
+      }
+    }
+    a.img{
+      float:left;
+      width:88px;
+      height:44px;
+      img{
+        width:70px;
+        height:70px;
+        margin:0 auto;
+      }
+    }
+    .content{
+      padding-top:6px;
+      width:940px;
+      margin:6px 0 0 122px;
+      background:#f5f7f6;
+      .orderdetail{
+        overflow:hidden;
+        padding:20px 0;
+        line-height:70px;
+        text-align:center;
+        background:#f5f7f6;
+        font-size:12px;
+        a{
+          height:auto;
+        }
+        i{
+          font-size:12px;
+        }
+      }
+      .leave{
+        margin-bottom:26px;
+        display:block;
+        span{
+          font-size:12px;
+          line-height:32px;
+          width:88px;
+          text-align:center;
+        }
+        input{
+          margin-left:7px;
+          width:840-8px;
+          height:30px;
+          padding:0 4px;
+          border:1px solid #b5b5b5;
+        }
+      }
+      .transport{
+        overflow:hidden;
+        padding-bottom:12px;
+        .left{
+          float:left;
+          margin-left:14px;
+          span{
+            margin-right:14px;
+            font-size:12px;
+            color:#a5a5a5;
+            &.delivery{
+              margin-right:6px;
+            }
+          }
+        }
+        .right{
+          float:right;
+          width:166px;
+          .payroll,.anonymity{
+            float:left;
+            margin-right:12px;
+            position:relative;
+            font-size:12px;
+            color:#a5a5a5;
+            input{
+              display:none;
+              &:checked + b{
+                  background:url('../img/shop_cart_radio_mark.png') no-repeat 3px 1px;
+              }
+            }
+            span{
+              margin-left:20px;
+              cursor:pointer;
+            }
+            label{
+              height:15px;
+              b{
+                position:absolute;
+                width:14px;
+                height:14px;
+                border:1px solid #b5b5b5;
+                cursor:pointer;
+              }
+            }
+
+          }
+        }
+      }
+    }
+    .affirm{
+      margin:32px 8px 20px 0;
+      text-align:right;
+      font-size:16px;
+      overflow:hidden;
+      b,i{
+        font-size:30px;
+        color:#ff9b94;
+      }
+      .cont{
+        display:inline-block;
+        width:208px;
+        overflow:hidden;
+        text-align:center;
+        .affprice{
+          margin-bottom:4px;
+          b{
+            margin:0 8px;
+          }
+        }
+        a{
+          clear:both;
+          line-height:38px;
+          display:block;
+          color:#fff;
+          background:#ff9b94;
+          width:208px;
+        }
+      }
+    }
+  }
+}
+.right_nav{
+  top:420px;
+}

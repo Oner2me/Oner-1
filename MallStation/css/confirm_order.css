@@ -1,0 +1,241 @@
+header .bottom .container dl dd {
+  display: none;
+}
+section {
+  width: 1172px;
+  margin: 0 auto;
+  padding-left: 28px;
+}
+section h1 {
+  font-size: 24px;
+  color: #000;
+  padding: 26px 0 26px 18px;
+}
+section .address {
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+  position: relative;
+}
+section .address h2 {
+  font-size: 14px;
+  padding: 16px 0 16px 18px;
+}
+section .address dl.addr {
+  padding: 10px 0 50px 58px;
+  overflow: hidden;
+}
+section .address dd,
+section .address dt {
+  float: left;
+  width: 258px;
+  margin-left: 36px;
+  padding: 12px 30px 16px 20px;
+  border: 1px solid #979797;
+}
+section .address .addcity {
+  padding: 10px 0;
+  border-bottom: 1px solid #8a8a8a;
+}
+section .address .addrdetail {
+  line-height: 26px;
+  margin-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .address .call {
+  line-height: 26px;
+}
+section .address dt a {
+  display: block;
+  line-height: 98px;
+  text-align: center;
+  color: #979797;
+}
+section .address dd.current {
+  border-color: #ff9b94;
+}
+section .address dd.current .addcity {
+  border-bottom: 1px solid #bc7d7d;
+}
+section .address .manage {
+  position: absolute;
+  right: 46px;
+  bottom: 12px;
+  font-size: 14px;
+  color: #ff9b94;
+}
+section .orderinfo h2 {
+  font-size: 18px;
+  padding: 48px 0 48px 20px;
+}
+section .orderinfo .caption {
+  line-height: 44px;
+  font-size: 14px;
+  text-align: center;
+  color: #9b9b9b;
+  width: 940px;
+  margin: 10px 0 0 122px;
+  overflow: hidden;
+  background: #f5f7f6;
+}
+section .orderinfo span {
+  float: left;
+}
+section .orderinfo span.shopinfo {
+  width: 132px;
+  padding-left: 14px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .orderinfo span.prop {
+  width: 144px;
+}
+section .orderinfo span.price {
+  width: 102px;
+}
+section .orderinfo span.num {
+  width: 186px;
+}
+section .orderinfo span.discount {
+  width: 146px;
+}
+section .orderinfo span.subtotal {
+  width: 128px;
+}
+section .orderinfo a.img {
+  float: left;
+  width: 88px;
+  height: 44px;
+}
+section .orderinfo a.img img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+section .orderinfo .content {
+  padding-top: 6px;
+  width: 940px;
+  margin: 6px 0 0 122px;
+  background: #f5f7f6;
+}
+section .orderinfo .content .orderdetail {
+  overflow: hidden;
+  padding: 20px 0;
+  line-height: 70px;
+  text-align: center;
+  background: #f5f7f6;
+  font-size: 12px;
+}
+section .orderinfo .content .orderdetail a {
+  height: auto;
+}
+section .orderinfo .content .orderdetail i {
+  font-size: 12px;
+}
+section .orderinfo .content .leave {
+  margin-bottom: 26px;
+  display: block;
+}
+section .orderinfo .content .leave span {
+  font-size: 12px;
+  line-height: 32px;
+  width: 88px;
+  text-align: center;
+}
+section .orderinfo .content .leave input {
+  margin-left: 7px;
+  width: 832px;
+  height: 30px;
+  padding: 0 4px;
+  border: 1px solid #b5b5b5;
+}
+section .orderinfo .content .transport {
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+section .orderinfo .content .transport .left {
+  float: left;
+  margin-left: 14px;
+}
+section .orderinfo .content .transport .left span {
+  margin-right: 14px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+section .orderinfo .content .transport .left span.delivery {
+  margin-right: 6px;
+}
+section .orderinfo .content .transport .right {
+  float: right;
+  width: 166px;
+}
+section .orderinfo .content .transport .right .payroll,
+section .orderinfo .content .transport .right .anonymity {
+  float: left;
+  margin-right: 12px;
+  position: relative;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+section .orderinfo .content .transport .right .payroll input,
+section .orderinfo .content .transport .right .anonymity input {
+  display: none;
+}
+section .orderinfo .content .transport .right .payroll input:checked + b,
+section .orderinfo .content .transport .right .anonymity input:checked + b {
+  background: url('../img/shop_cart_radio_mark.png') no-repeat 3px 1px;
+}
+section .orderinfo .content .transport .right .payroll span,
+section .orderinfo .content .transport .right .anonymity span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+section .orderinfo .content .transport .right .payroll label,
+section .orderinfo .content .transport .right .anonymity label {
+  height: 15px;
+}
+section .orderinfo .content .transport .right .payroll label b,
+section .orderinfo .content .transport .right .anonymity label b {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #b5b5b5;
+  cursor: pointer;
+}
+section .orderinfo .affirm {
+  margin: 32px 8px 20px 0;
+  text-align: right;
+  font-size: 16px;
+  overflow: hidden;
+}
+section .orderinfo .affirm b,
+section .orderinfo .affirm i {
+  font-size: 30px;
+  color: #ff9b94;
+}
+section .orderinfo .affirm .cont {
+  display: inline-block;
+  width: 208px;
+  overflow: hidden;
+  text-align: center;
+}
+section .orderinfo .affirm .cont .affprice {
+  margin-bottom: 4px;
+}
+section .orderinfo .affirm .cont .affprice b {
+  margin: 0 8px;
+}
+section .orderinfo .affirm .cont a {
+  clear: both;
+  line-height: 38px;
+  display: block;
+  color: #fff;
+  background: #ff9b94;
+  width: 208px;
+}
+.right_nav {
+  top: 420px;
+}
