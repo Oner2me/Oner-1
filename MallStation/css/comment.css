@@ -1,0 +1,257 @@
+header .bottom .container dl dd {
+  display: none;
+}
+section {
+  padding: 26px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+section .sidenav {
+  float: left;
+  width: 188px;
+  padding-left: 40px;
+}
+section .sidenav h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+section .sidenav .mecenter {
+  margin-bottom: 26px;
+}
+section .sidenav .mecenter ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mecenter ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mecenter ul li span {
+  margin-left: 32px;
+  color: #bbb;
+}
+section .sidenav .mecenter ul li span a {
+  font-size: 14px;
+  color: #bbb;
+}
+section .sidenav .mefengling h2 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 6px;
+}
+section .sidenav .mefengling ul {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mefengling ul li > a {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686767;
+}
+section .sidenav .mefengling ul li ol {
+  margin-left: 18px;
+}
+section .sidenav .mefengling ul li.current > a {
+  color: #ff9b94;
+}
+section .goodeva {
+  float: right;
+  width: 956px;
+  border-left: 2px solid #b5b5b5;
+  padding-left: 14px;
+}
+section .goodeva h2 {
+  font-size: 24px;
+  margin: 66px 0 80px;
+}
+section .goodeva ul {
+  margin: 0 0 84px 72px;
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section .goodeva ul li {
+  text-align: center;
+  font-size: 14px;
+}
+section .goodeva ul li div {
+  width: 60px;
+  line-height: 60px;
+  margin: 0 auto 8px;
+  border-radius: 50%;
+  background: #ff9b94;
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+section .goodeva ul li div:after {
+  content: '';
+  display: block;
+  width: 170px;
+  height: 6px;
+  background: #ff9b94;
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  left: -170px;
+}
+section .goodeva ul li:first-child div:after {
+  display: none;
+}
+section .goodeva .goods {
+  overflow: hidden;
+}
+section .goodeva .goods a {
+  display: block;
+  float: left;
+}
+section .goodeva .goods a img {
+  width: 482px;
+  height: 468px;
+  border: 1px solid #d1d1d1;
+}
+section .goodeva .goods .content {
+  float: left;
+  width: 430px;
+  margin-left: 18px;
+}
+section .goodeva .goods .content h1 {
+  margin-left: 4px;
+  font-size: 20px;
+  line-height: 20px;
+}
+section .goodeva .goods .content h1 span {
+  font-size: 12px;
+  margin-left: 6px;
+}
+section .goodeva .goods .content dl {
+  margin-left: 4px;
+  margin-bottom: 26px;
+  font-size: 12px;
+  color: #b2acac;
+}
+section .goodeva .goods .content dl dt {
+  line-height: 21px;
+  margin: 12px 0 14px;
+}
+section .goodeva .goods .content dl dt span {
+  color: #ff9b94;
+  margin-left: 34px;
+}
+section .goodeva .goods .content dl dd {
+  line-height: 21px;
+}
+section .goodeva .goods .content dl dd span {
+  margin-left: 30px;
+}
+section .goodeva .goods .content .star {
+  width: 100%;
+  display: flex;
+  line-height: 22px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+  align-items: center;
+}
+section .goodeva .goods .content .star span {
+  display: block;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 2px;
+  cursor: pointer;
+  background: url('../img/comment_heart.png') 15px 0;
+}
+section .goodeva .goods .content .star span.on {
+  background: url('../img/comment_heart.png') 30px 0;
+}
+section .goodeva .goods .content .star b.service,
+section .goodeva .goods .content .star b.logistics,
+section .goodeva .goods .content .star b.eva {
+  width: 50px;
+  line-height: 15px;
+  font-size: 12px;
+  margin-right: 12px;
+}
+section .goodeva .goods .content .star i.percent {
+  width: 32px;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 6px;
+  display: none;
+}
+section .goodeva .goods .content .discription {
+  width: 400px;
+  margin-top: 16px;
+  height: 182px;
+  border: 1px solid #d1d1d1;
+  padding: 12px 12px 0px 12px;
+}
+section .goodeva .goods .content .discription textarea {
+  width: 100%;
+  height: 140px;
+  border: none;
+  resize: none;
+  margin-bottom: -4px;
+}
+section .goodeva .goods .content .discription textarea::-webkit-input-placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+section .goodeva .goods .content .discription textarea:-moz-placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+section .goodeva .goods .content .discription textarea::-moz-placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+section .goodeva .goods .content .discription textarea:-ms-input-placeholder {
+  color: #b9b9b9;
+  font-size: 14px;
+}
+section .goodeva .goods .content .discription .show {
+  overflow: hidden;
+  margin: 2px 0 2px 14px;
+}
+section .goodeva .goods .content .discription .show span {
+  float: left;
+  margin-right: 16px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #b9b9b9;
+}
+section .goodeva .goods .content .discription .show ol {
+  float: left;
+  overflow: hidden;
+}
+section .goodeva .goods .content .discription .show ol li {
+  float: left;
+  margin: 0 3px;
+}
+section .goodeva .goods .content .discription .show ol li a {
+  display: block;
+}
+section .goodeva .goods .content .discription .show ol li a img {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d5d5d5;
+}
+section .goodeva .comm {
+  width: 126px;
+  display: block;
+  line-height: 30px;
+  margin: 14px 0 86px 774px;
+  color: #fff;
+  text-align: center;
+  background: #ff9b94;
+}
+.right_nav {
+  top: 414px;
+}
