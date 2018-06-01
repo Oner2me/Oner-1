@@ -21,7 +21,13 @@ $('form .clear div').click(function(){
     $(this).children('img').toggle();
 });
 
-$('#login').click(function(){
+$('#login').click(function(e){
+    e.preventDefault();
+    var data = $('#login_form').serializeArray();
+    data = unSerializeArray(data);
+    var storageUsers = LsyStorage.getItem('users');
+    console.log(storageUsers);
+    console.log(data);
     //判断验证码是否正确
     var code = $('#code').val();
     if(!code){
@@ -30,7 +36,15 @@ $('#login').click(function(){
     }else if(code != verti){
         alert('验证码输入有误');
         return false;
-    }else{
-        return true;
     }
+    if(!storageUsers[data.username]){
+        alert('用户未注册');
+        return false;
+    }
+    if(storageUsers[data.username].password !== data.password ){
+        alert('密码不正确');
+        return false;
+    }
+    alert('登录成功');
+    window.location.href="index.html";
 });

@@ -74,7 +74,7 @@ $('form .clear div').click(function(){
     $(this).children('img').toggle();
 });
 //单击注册，调用所有验证方法
-$('section div form .reg').click(function(){
+/*$('section div form .reg').click(function(){
     var clear = $('form .clear div img').is(':visible');
     if(C1&&C2&&C3&&C4&&C5&&clear){
         return true;
@@ -86,7 +86,35 @@ $('section div form .reg').click(function(){
         $("#phone").trigger('blur');
         return false;
     }
+});*/
+
+$('#submit').click(function(e){
+    e.preventDefault();
+    var data = $('#form1').serializeArray();
+    data = unaaa(data);
+    var storageUsers = LsyStorage.getItem('users');
+    storageUsers = storageUsers || {};
+    if(storageUsers[data.username]){
+        alert('当前用户已经注册');
+        return false;
+    }
+    storageUsers[data.username] = data;
+    LsyStorage.setItem('users',storageUsers);
 });
+function unaaa(data){
+    var obj={};
+    $.each(data,function(key,val){
+        var _index = val.name;
+        var _val = val.value;
+        obj[_index] = _val;
+    });
+    return obj;
+
+}
+
+function errorStyle(target,msg){
+    target.css({'box-shadow':'0 0 3px 2px #FF84B5'}).attr('placeholder',msg);
+}
 
 
 

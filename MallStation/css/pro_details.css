@@ -102,8 +102,268 @@ section article .parameter .picture .big img {
 section article .parameter .data {
   float: right;
   width: 394px;
+  margin-left: 90px;
+}
+section article .parameter .data h1 {
+  font-size: 24px;
+}
+section article .parameter .data h1 b {
+  font-size: 24px;
+  font-weight: bold;
+}
+section article .parameter .data h1 i {
+  font-size: 24px;
+}
+section article .parameter .data .param {
+  font-size: 14px;
+  padding: 26px 0 32px;
+  border-bottom: 1px solid #ebebeb;
+}
+section article .parameter .data .param i {
+  font-size: 14px;
+  color: #b2acac;
+}
+section article .parameter .data .param .price i {
+  font-size: 24px;
+  margin-left: 40px;
+  color: #ff9b94;
+}
+section article .parameter .data .param .workoff,
+section article .parameter .data .param .comment {
+  margin-left: 36px;
+  color: #b8b2b2;
+}
+section article .parameter .data .param .workoff i,
+section article .parameter .data .param .comment i {
+  color: #ff9b94;
+  margin-left: 14px;
+}
+section article .parameter .data dl {
+  padding-top: 10px;
+}
+section article .parameter .data dl dd {
+  font-size: 14px;
+  line-height: 24px;
+  color: #b8b2b2;
+}
+section article .parameter .data dl dd a {
+  margin-left: 22px;
+}
+section article .parameter .data dl dd span {
+  margin-left: 32px;
+}
+section article .parameter .data .ringsize {
+  margin-top: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebebeb;
+  overflow: hidden;
+}
+section article .parameter .data .ringsize b {
+  float: left;
+  color: #b8b2b2;
+  font-size: 14px;
+  line-height: 20px;
+}
+section article .parameter .data .ringsize .category {
+  float: left;
+  width: 280px;
+  color: #b8b2b2;
+  margin-left: 20px;
+}
+section article .parameter .data .ringsize .category span {
+  display: block;
+  float: left;
+  margin: 2px 2px;
+  width: 64px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  border: 1px solid #b5b5b5;
+}
+section article .parameter .data .ringsize .category span.current {
+  width: 66px;
+  line-height: 20px;
+  border: 1px solid #eb6877;
+  margin: 0 1px;
+}
+section article .parameter .data .number {
+  line-height: 24px;
+  margin: 12px 0 72px;
+  color: #b8b2b2;
+  font-size: 14px;
+  overflow: hidden;
+}
+section article .parameter .data .number b {
+  float: left;
+  line-height: 24px;
+}
+section article .parameter .data .number .num {
+  float: left;
+  margin: 2px 10px 2px 30px;
+  border: 1px solid #dbdbdb;
+}
+section article .parameter .data .number .num span {
+  text-align: center;
+  float: left;
+  display: block;
+  width: 18px;
+  line-height: 18px;
+}
+section article .parameter .data .number .num span.set {
+  border-right: 1px solid #dbdbdb;
+}
+section article .parameter .data .number .num span.add {
+  border-left: 1px solid #dbdbdb;
+}
+section article .parameter .data .number .num input {
+  float: left;
+  display: block;
+  width: 52px;
+  line-height: 18px;
+  border: none;
+}
+section article .parameter .data .number .repertory {
+  float: left;
+  line-height: 24px;
+}
+section article .parameter .data .button {
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+section article .parameter .data .button a {
+  float: left;
+  width: 144px;
+  line-height: 36px;
+  color: #fff;
+  text-align: center;
+  background: #ff9b94;
+}
+section article .parameter .data .button a.addsc {
+  margin: 0 62px 0 14px;
+}
+section article .parameter .data .share {
+  margin-bottom: 52px;
+}
+section article .parameter .data .share span {
+  float: left;
+  font-size: 14px;
+  color: #c2bdbd;
+  line-height: 38px;
+}
+section article .parameter .data .share ul {
+  float: left;
+  overflow: hidden;
+  margin-left: 40px;
+}
+section article .parameter .data .share ul li {
+  float: left;
+  margin: 0 3px;
+}
+section article .parameter .data .share ul li a {
+  display: block;
+}
+section article .parameter .data .share ul li a img {
+  width: 38px;
+  height: 38px;
 }
 section article .recommend {
   float: left;
   width: 160px;
+  margin: 10px 0 12px 82px;
+  border: 1px solid #ebebeb;
+}
+section article .recommend dt {
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+}
+section article .recommend dd {
+  padding: 40px 0 20px;
+  text-align: center;
+  border-top: 1px solid #ebebeb;
+}
+section article .recommend dd:first-child {
+  border: none;
+}
+section article .recommend dd a {
+  display: block;
+}
+section article .recommend dd a img {
+  width: 158px;
+  height: 116px;
+  margin: 0 auto;
+}
+section article .recommend dd h2 {
+  font-size: 12px;
+  margin: 10px 0 4px;
+}
+section article .recommend dd h2 a {
+  display: inline-block;
+}
+section article .recommend dd .prices {
+  font-size: 12px;
+}
+section article .recommend dd .prices span.price {
+  color: #ff9b94;
+}
+section article .recommend dd .prices span.workoff {
+  color: #cbc9c9;
+  margin-left: 10px;
+}
+section article .recommend dd .prices span.workoff i {
+  font-size: 12px;
+  margin-left: 8px;
+}
+section article .params {
+  clear: both;
+  border-top: 1px solid #000;
+}
+section article .params ul {
+  width: 720px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+section article .params ul li {
+  float: left;
+  width: 144px;
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  line-height: 64px;
+}
+section article .params ul li.current {
+  color: #ff9b94;
+}
+section article .params ul li:before {
+  content: '';
+  width: 0;
+  height: 12px;
+  position: absolute;
+  border: 1px solid transparent;
+  border-right-color: #000;
+  top: 50%;
+  margin-top: -6px;
+  left: -2px;
+  transform: rotate(22deg);
+}
+section article .params ul li:first-child:before {
+  border: none;
+}
+section article .params img {
+  margin: 0 auto;
+}
+section article .params .explain {
+  padding: 58px 0 44px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+section article .params .explain h1 {
+  font-size: 14px;
+}
+section article .params .explain p {
+  font-size: 14px;
+}
+.right_nav {
+  top: 446px;
 }
