@@ -1,6 +1,12 @@
+header .bottom .container dl dd {
+  display: none;
+}
 section {
   width: 1200px;
   margin: 0 auto;
+}
+section article {
+  padding-bottom: 20px;
 }
 section article .parameter {
   padding-top: 20px;
